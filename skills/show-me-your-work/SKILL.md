@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Show me your work
 
+Before using T3 tools, read [the runtime contract](../p3-mode/references/t3-runtime.md).
+
 Keep one canonical log.
 
 ## The format

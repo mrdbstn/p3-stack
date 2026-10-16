@@ -1,44 +1,61 @@
 # p3-stack
 
-p3-stack is [pstack](https://github.com/cursor/plugins/tree/main/pstack) rebuilt for T3 Code. Same engineering discipline, native T3 orchestration.
+A maintained T3 Code adaptation of [Lauren Tan's pstack](https://github.com/backnotprop/pstack), forked from [uzairansaruzi/p3-stack](https://github.com/uzairansaruzi/p3-stack).
 
-pstack is poteto's answer to AI slop code. It turns an agent into an engineering team: one mode skill that routes to playbooks, principles that ground every decision, and verification strict enough that you can parallelize with confidence. p3-stack keeps that system and rewires the mechanics to T3 Code's primitives:
+The reviewed baseline is pstack **0.15.25**, commit `6f131f137de64fdaf928278c0fd9ecec520ccbee`. All **54 skills**, **24 principles**, and **23 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
 
-- **Delegation.** `delegate_task` child agents replace Cursor's Task tool, with per-role providers and models resolved from `orchestrator_capabilities`. Cross-model panels are native.
-- **Worktrees.** `t3_thread_launch` binds a worker to its own worktree and branch. One writer per worktree, enforced by the app instead of by advice.
-- **Watching.** `watch_pull_request` wakes the thread when checks finish, someone comments, or the branch conflicts. No polling loops.
-- **Scheduling.** `schedule_task` runs audits and overnight cadences even when no turn is active. No `/loop`.
-- **Memory.** `t3_thread_read` and `t3_thread_search` replace mining Cursor transcript files.
-- **Proof.** `preview_*` browser tools and `device_*` simulators replace external control skills. Screenshots and recordings land in the thread.
+pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
-## Install
+## Install in WSL or Linux
 
-```bash
-git clone https://github.com/uzairansaruzi/p3-stack.git
-cd p3-stack
-./install.sh
+Requires Node.js 22 or newer. The executable helper tooling also requires Bun 1.4.3 or newer and Git. GitHub workflows use `gh`.
+
+```sh
+mkdir -p ~/src
+git clone https://github.com/mrdbstn/p3-stack.git ~/src/p3-stack
+cd ~/src/p3-stack
+node install.mjs
 ```
 
-`install.sh` links every `skills/*` directory into `~/.agents/skills/`, where T3 Code reads skills. Use `./install.sh --project /path/to/repo` to install into a project's `.agents/skills/` instead.
+Use Linux-native Git, Node, and Bun from PATH. Keep this checkout, project checkouts, and dependency stores under your Linux home, not `/mnt/c`. Run the installer inside WSL using the same Linux user/environment as T3's agent. A Windows installation of the skills is not a WSL installation.
 
-## Get started
+For one project, use `node install.mjs --project /home/you/src/project`. The installer links skills into `~/.agents/skills/` or the project's `.agents/skills/`, preserves existing real directories, and can be rerun. Keep this checkout while its skills are installed. `./install.sh` is an equivalent Unix convenience wrapper. Native Windows is also supported through `node install.mjs`, using directory junctions.
 
-1. Run `/setup-p3`. It reads `orchestrator_capabilities` and writes `p3-models.md`, mapping each role (code, judgment, the review panels) to a provider and model you actually have.
-2. Use `/p3-mode` whenever you want rigorous work. It reads the request, picks a playbook, and runs the other skills as the steps need them.
-3. Stuck or unsure which skill fits? Ask `/p3-help`.
+## Use
 
-## The mode
+1. Run `/setup-p3` to choose your budget and available model roles.
+2. Prefix a task needing rigor with `/p3-mode` and state how to tell it is done.
+3. Ask `/p3-help` when unsure which skill fits.
 
-`p3-mode` routes every task. Its playbooks: investigation, bug fix, perf issue, hillclimb, runtime forensics, trace forensics, feature, refactoring, prototype, visual parity, authoring a skill, eval, babysit, shipping, autonomous run, orchestrate, autopilot-full, autopilot-stack, session pickup, pause safely, multi-phase plan, worktree cleanup, opening a PR.
+Project-root `p3-models.md` overrides `~/.agents/p3-models.md`. Settings are read at task start. Unconfigured roles inherit the parent model; configure panels to obtain model diversity. Installation alone does not invoke the skills. Save the full mode for work that needs its extra review and verification.
 
-## Skills
+T3 must expose the orchestration tools used by the chosen workflow. Models and options come from `orchestrator_capabilities`. Writers use isolated delegated worktrees. The parent owns PR watches. Ordinary top-level conversations are created only when explicitly requested. See the [runtime contract](skills/p3-mode/references/t3-runtime.md).
 
-architect, arena, automate-me, benchmark-checklist, blast-radius, bro, correct, create-verification-skill, figure-it-out, how, interrogate, maintain-verification-skill, make-bot-ui, no-comments, p3-help, recall, reflect, setup-p3, show-me-your-work, swarm, tdd, teach, technical-writing, typescript-best-practices, unslop, why.
+## Proof tooling
 
-## Principles
+The original executable plan checker and orchestration CLI are bundled:
 
-The twenty-four principle skills are indexed inside `p3-mode` and referenced by the other skills by name.
+```sh
+node skills/p3-mode/scripts/check-plan.mjs /path/to/plan.md
+bun skills/p3-mode/scripts/orch/orch.ts --store /path/to/project/orchestrate/run init
+```
+
+Installed skills resolve these paths from their own location. The store retains atomic writes, locking, current-head verification verdicts, inboxes, and derived status. Native T3 links and schedules complement that store.
+
+## Verify and maintain
+
+```sh
+node scripts/check.mjs
+node --test tests/*.test.mjs
+bun install --cwd skills/p3-mode/scripts --frozen-lockfile
+bun test --cwd skills/p3-mode/scripts
+bun run --cwd skills/p3-mode/scripts typecheck
+```
+
+CI runs the same checks on Linux and Windows. [UPSTREAM.md](UPSTREAM.md) explains the read-only upstream status, three-way proposal, review, and lock-recording process. New source revisions require review; nothing automatically overwrites the T3 adaptations.
+
+These checks establish source coverage and tool behavior. A live T3 model-behavior smoke run is still required to validate an installed app/provider combination.
 
 ## Credit
 
-p3-stack adapts [pstack](https://github.com/cursor/plugins/tree/main/pstack) by [poteto](https://x.com/poteto). The skills, principles, and language are hers; the T3 Code rewiring is this repo's. MIT, see [LICENSE](LICENSE).
+The skills, principles, and engineering approach are Lauren Tan's [pstack](https://github.com/cursor/plugins/tree/main/pstack). The original T3 adaptation is by [uzairansaruzi](https://github.com/uzairansaruzi/p3-stack). This fork maintains the source sync, native runtime mappings, packaging, and verification. MIT, see [LICENSE](LICENSE).

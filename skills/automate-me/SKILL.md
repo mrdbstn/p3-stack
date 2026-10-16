@@ -6,9 +6,13 @@ disable-model-invocation: true
 
 # Automate me
 
+Before using T3 tools, read [the runtime contract](../p3-mode/references/t3-runtime.md).
+
 A guided flow for turning the user's working conventions into a skill agents will follow. The output is one `-mode` skill tailored to them (e.g. `jay-mode`, `priya-mode`).
 
-This skill orchestrates three others: an inline mining pass (see step 1), the `authoring-a-skill` playbook (authoring), and the **unslop** skill (prose discipline). It sequences them. It doesn't replace them.
+This skill orchestrates three others: an inline mining pass (see step 1), your harness's skill-authoring skill (authoring), and the **unslop** skill (prose discipline). It sequences them. It doesn't replace them.
+
+Use an available skill-authoring skill, or follow the Agent Skills format at agentskills.io. Write project skills under `.agents/skills/`. "`create-skill`" below means that authoring workflow.
 
 ## Flow
 
@@ -43,7 +47,7 @@ Cross-check across slices before elevating a signal. Patterns seen in 2+ slices 
 
 Mining misses intent that hasn't come up yet. Ask in the thread with short multi-choice questions rather than asking the user to type from scratch.
 
-Shape: one or two questions with 4-6 options each, multi-select for category questions. Start broad ("Which areas matter most?"), then follow up on selected areas with specific options. After the structured rounds, one free-form question catches anything the options missed.
+Shape: one or two questions with 4-6 options each, multi-select when the available question tool supports it for category questions. Start broad ("Which areas matter most?"), then follow up on selected areas with specific options. After the structured rounds, one free-form chat question catches anything the options missed.
 
 Don't dump 20 questions.
 
@@ -64,7 +68,7 @@ The **p3-mode** skill shows the shape. Read it for granularity. Don't copy its c
 
 ### 4. Draft the skill
 
-Use the `authoring-a-skill` playbook to author the skill. Placement:
+Use your skill-authoring skill (`create-skill`) to author the skill. Placement:
 
 - Path: preserve an existing mode skill's category. For a new mode, use `.agents/skills/<handle>/<handle>-mode/SKILL.md` when the repo has an established personal category for that handle. Otherwise default to `.agents/skills/<handle>-mode/SKILL.md` in the project (or `~/.agents/skills/<handle>-mode/` if the user prefers a personal skill).
 - Handle: the user's first name or chosen identifier.

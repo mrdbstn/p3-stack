@@ -1,10 +1,15 @@
 ---
 name: make-bot-ui
-description: "Use when building a custom UI (page, dashboard, buttons) that should wake the agent over a webhook, when the user must provide a webhook secret, or when exposing that UI on Tailscale."
+description: >-
+  Use when building a custom UI (page, dashboard, buttons) that should wake a
+  Grok Bot over a webhook, when the user must provide a webhook sender key, or
+  when exposing that UI on Tailscale.
 disable-model-invocation: true
 ---
 
 # How to make a bot UI
+
+Before using T3 tools, read [the runtime contract](../p3-mode/references/t3-runtime.md).
 
 Build a page the user clicks. A server on this computer POSTs JSON to a webhook task. The agent wakes with that JSON. Keep the webhook URL on the server. Do not put the webhook URL in the browser or in this skill.
 

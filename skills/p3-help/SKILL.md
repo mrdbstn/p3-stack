@@ -5,6 +5,8 @@ description: Guides users through p3-stack setup, /p3-mode, and picking the skil
 
 # P3 help
 
+Before using T3 tools, read [the runtime contract](../p3-mode/references/t3-runtime.md).
+
 Answer the user's question about p3-stack, hand them a prompt they can send, and link the file the answer came from. For a help question, don't start the work. The user asked how, and a p3-stack run spends real tokens, so let them send the prompt.
 
 A message that asks for work, such as "use p3-stack to fix this bug", is not a help question. Read [`p3-mode`](../p3-mode/SKILL.md), do the work under it, and mention once that invoking `/p3-mode` keeps the work in this style.
@@ -15,7 +17,7 @@ This file maps questions to the skills and playbooks that hold the answers. Thos
 
 Infer the need from the message and the conversation. A named situation, such as "which skill reviews a PR?", goes straight to its section. If the need is still unclear, ask one multiple-choice question with these options, then answer only the section they pick: get set up, start a task with `/p3-mode`, pick a skill for a situation, fix a run that went wrong, or make p3-stack my own.
 
-Check the state that changes the answer, and mention it only when it does. No `p3-models.md` means `/setup-p3` hasn't run for this user, so every role uses its default model. No `verify-*` skill or other app harness in the project means agents have no scripted way to drive the app; mention `/create-verification-skill` when the question is about proving a change works.
+Check the state that changes the answer, and mention it only when it does. No `p3-models.md` means `/setup-p3` hasn't run for this user, so an unconfigured role inherits the parent model; panels require explicit configuration to guarantee diversity. No `verify-*` skill or other app harness in the project means agents have no scripted way to drive the app; mention `/create-verification-skill` when the question is about proving a change works.
 
 ## Get set up
 
@@ -31,7 +33,7 @@ If cost is the worry, say where the tokens go and how to spend fewer. p3-stack s
 
 `/p3-mode` matches the task to a playbook, copies the playbook's steps into the todo list, and runs the other skills as the steps need them. A step it skips stays in the list as `skip: <reason>`. A good prompt states the goal and how to tell it's done. It doesn't list skills, because a hand-written sequence tends to drop or reorder steps the playbook would keep.
 
-Skills are invoked by name (`/p3-mode`). There are no mode toggles, so start each new task with `/p3-mode`. Mid-chat, "new task" makes the mode match a fresh playbook. `/p3-mode` already uses `agents/p3-agent.md` for the delegates its playbook steps spawn. To get the same style from a delegate of your own, open its brief with `agents/p3-agent.md`.
+Skills are invoked by name (`/p3-mode`). There are no mode toggles, so start each new task with `/p3-mode`. Mid-chat, "new task" makes the mode match a fresh playbook. `/p3-mode` already uses the absolute path of the installed p3-mode `SKILL.md` for the delegates its playbook steps spawn. To get the same style from a delegate of your own, open its brief with `the installed p3-mode skill's absolute SKILL.md path`.
 
 ## Pick a skill
 
@@ -52,6 +54,9 @@ The default answer is `/p3-mode`, which runs most of the others when its steps n
 | Fix a bug test-first when a cheap local test exists | [`/tdd`](../tdd/SKILL.md) |
 | Apply TypeScript rules to `.ts` or `.tsx` work | [`/typescript-best-practices`](../typescript-best-practices/SKILL.md) |
 | Strip comments before review, using a reviewer that didn't write them | [`/no-comments`](../no-comments/SKILL.md) |
+| Sharpen the task before starting | [`/sharpen`](../sharpen/SKILL.md) |
+| Have the agent restate the goal | [`/in-your-own-words`](../in-your-own-words/SKILL.md) |
+| Catch up on this chat | [`/ketchup`](../ketchup/SKILL.md) |
 | Clean AI tells out of prose | [`/unslop`](../unslop/SKILL.md) |
 | Write docs, an RFC, a README, a PR description, or a commit message to a standard | [`/technical-writing`](../technical-writing/SKILL.md) |
 | Hear the last reply again in plain words | [`/bro`](../bro/SKILL.md) |
@@ -101,7 +106,7 @@ Principles are one-rule skills that `/p3-mode` reads and cites in its replies. T
 | A new model choice had no effect | The file from `/setup-p3` applies to new sessions. Start one. |
 | Runs cost more than expected | See the cost paragraph under Get set up. |
 | A skill didn't load on its own | Only `/p3-help` loads from the user's words. The others load when the user invokes them by name or when `/p3-mode` runs them, and it doesn't run every skill. |
-| Parallel agents overwrote each other | Give each worker its own worktree through `t3_thread_launch`, and keep one writer per worktree. |
+| Parallel agents overwrote each other | Give each writing worker `delegate_task` isolation set to `worktree`, and keep one writer per worktree. |
 | An overnight run moved but finished nothing | It needs a check that can pass or fail, not a duration. |
 | The reply claims success from a green build | Ask for the real command, flow, stored value, or profile. That's the prove-it-works principle. |
 
