@@ -7,8 +7,8 @@ This directory is the maintained source for verifying the user-facing behavior o
 - Launch Notes at `http://127.0.0.1:4173` with a disposable data directory.
 - Set `NOTES_DATA_DIR=/tmp/notes-verify-$RUN_ID` so concurrent runs do not share state.
 - Seed notes titled `Quarterly plan` and `Grocery list`.
-- Put the `notes` CLI on `PATH`.
-- Run the skill's doctor check and require the expected URL, data directory, and build revision.
+- Put `control-notes` and the `notes` CLI on `PATH`.
+- Run `control-notes doctor` and require the expected URL, data directory, and build revision.
 - Never drive an instance that was not started by this verification run.
 
 ## Driving conventions
@@ -16,8 +16,8 @@ This directory is the maintained source for verifying the user-facing behavior o
 - Start every recipe from the baseline state unless its preconditions say otherwise.
 - Prefer ARIA roles and accessible names over CSS selectors or DOM position.
 - Treat every command as literal. Keep quoted names and flags unchanged.
-- Run browser actions through the `preview_*` tools.
-- Run terminal actions directly in the shell.
+- Run browser actions through `control-notes browser`.
+- Run terminal actions through `control-notes cli -- <command>`.
 - Restore seeded data after a mutation. Do not remove proof artifacts during cleanup.
 
 ## Proof and skip reporting

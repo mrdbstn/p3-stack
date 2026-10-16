@@ -1,0 +1,71 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
+import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
+import { tmpdir } from 'node:os';
+import { fileURLToPath } from 'node:url';
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+test('upstream proposals preserve local adaptations and stop on conflicts, removals, and collisions', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'p3-sync-test-'));
+  const source = join(dir, 'source'), port = join(dir, 'port');
+  mkdirSync(join(source, 'skills/sample'), { recursive: true });
+  mkdirSync(join(port, 'skills/sample'), { recursive: true });
+  const git = (...args) => {
+    const result = spawnSync('git', ['-c', 'core.fsmonitor=false', '-c', 'commit.gpgsign=false', '-c', 'user.name=Test', '-c', 'user.email=test@example.invalid', '-C', source, ...args], { encoding: 'utf8' });
+    assert.equal(result.status, 0, result.stderr);
+    return result.stdout.trim();
+  };
+  const upstreamFile = join(source, 'skills/sample/SKILL.md');
+  const portFile = join(port, 'skills/sample/SKILL.md');
+  const baseline = '# Sample\n\nSource rule.\n\nStable separator.\n\nHarness default.\n';
+  const local = baseline.replace('Harness default.', 'T3 runtime.');
+  writeFileSync(upstreamFile, baseline);
+  writeFileSync(portFile, local);
+  writeFileSync(join(source, 'plugin.json'), '{"version":"1.0.0"}\n');
+  git('init', '--initial-branch=main');
+  git('add', '.'); git('commit', '-m', 'baseline');
+  const initial = git('rev-parse', 'HEAD');
+  const run = command => spawnSync(process.execPath, [join(root, 'scripts/upstream.mjs'), command, '--source', source, '--port', port], { encoding: 'utf8' });
+  try {
+    const record = run('record');
+    assert.equal(record.status, 0, record.stderr);
+    const json = record.stdout.split('\n').filter(line => line.startsWith('+')).map(line => line.slice(1)).join('\n');
+    writeFileSync(join(port, 'upstream.lock.json'), json);
+    const lockBefore = readFileSync(join(port, 'upstream.lock.json'), 'utf8');
+    const state = JSON.parse(run('status').stdout);
+    assert.deepEqual(state.changed, []);
+    writeFileSync(upstreamFile, baseline.replace('Source rule.', 'New source rule.'));
+    git('add', '.'); git('commit', '-m', 'source update');
+    assert.deepEqual(JSON.parse(run('status').stdout).changed, ['skills/sample/SKILL.md']);
+    const proposal = run('propose');
+    assert.equal(proposal.status, 0, proposal.stderr);
+    assert.match(proposal.stdout, /\+New source rule\./);
+    assert.match(proposal.stdout, /\+T3 runtime\./);
+    assert.equal(readFileSync(portFile, 'utf8'), local);
+    assert.equal(readFileSync(join(port, 'upstream.lock.json'), 'utf8'), lockBefore);
+    writeFileSync(upstreamFile, baseline.replace('Harness default.', 'Changed harness.'));
+    git('add', '.'); git('commit', '-m', 'conflicting update');
+    const conflict = run('propose');
+    assert.equal(conflict.status, 1);
+    assert.equal(conflict.stdout, '');
+    assert.match(conflict.stderr, /skills\/sample\/SKILL.md/);
+    git('rm', 'skills/sample/SKILL.md'); git('commit', '-m', 'remove upstream skill');
+    const removed = run('propose');
+    assert.equal(removed.status, 1);
+    assert.match(removed.stderr, /upstream removed; review deletion/);
+    git('checkout', initial, '--', 'skills/sample/SKILL.md');
+    mkdirSync(join(source, 'skills/new'), { recursive: true });
+    mkdirSync(join(port, 'skills/new'), { recursive: true });
+    writeFileSync(join(source, 'skills/new/SKILL.md'), '# New source\n');
+    writeFileSync(join(port, 'skills/new/SKILL.md'), '# Existing local skill\n');
+    git('add', '.'); git('commit', '-m', 'new upstream skill');
+    const collision = run('propose');
+    assert.equal(collision.status, 1);
+    assert.match(collision.stderr, /new upstream path collides/);
+  } finally {
+    assert.equal(resolve(dirname(dir)), resolve(tmpdir()));
+    rmSync(dir, { recursive: true, force: true });
+  }
+});

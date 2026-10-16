@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Setup p3
 
+Read [the T3 runtime contract](../p3-mode/references/t3-runtime.md) before configuring models. `auto` and `inherit-parent` both inherit the parent target. Configured effort is passed through supported `target.options`, never by changing a model ID. Recommend `large` on a fresh setup unless the user chooses another budget.
+
 Write `p3-models.md`, a file that sets p3-stack's model per role. Default location is the current project root. Offer `~/.agents/p3-models.md` as the global option, and ask which one. A project file wins over the global one.
 
 ## Steps
@@ -22,7 +24,7 @@ The roles are the labels shown in step 5. If `p3-models.md` already exists at th
 
 **(a) Ask for a budget.** Ask plainly in the thread. Offer these four options with these exact labels, and name the current budget when the file records one.
 
-- `unlimited — keep max`
+- `unlimited — max reasoning`
 - `large — xhigh reasoning`
 - `medium — high reasoning`
 - `small — medium reasoning`
@@ -44,7 +46,7 @@ Write `p3-models.md` with a `# budget` line with the chosen label and its target
 ```
 # p3 model configuration. One line per role. Delete a line to fall back to the skill default.
 # `inherit-parent` as a value: the role runs on the parent thread's model (omit the delegate_task model). Entries in a panel list still count toward its fan-out.
-# budget: unlimited (max)
+# budget: large (xhigh)
 feature, refactoring: <providerInstanceId>/<model> (<effort>)
 bug-fix: <providerInstanceId>/<model> (<effort>)
 perf-issue: <providerInstanceId>/<model> (<effort>)
@@ -66,7 +68,7 @@ interrogate reviewers: <entry>, <entry>, <entry>
 
 ### 6. Confirm
 
-Tell the user the file was written, where, and that it applies to new sessions. Re-running this skill updates it.
+Tell the user which file was written. T3 skills read project-root `p3-models.md`, then `~/.agents/p3-models.md`, at task start. Re-running this skill updates it.
 
 ### 7. Offer a verification skill (optional)
 

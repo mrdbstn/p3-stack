@@ -1,0 +1,11 @@
+{
+  "name": "p3-stack",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:tools": "bun test --cwd skills/p3-mode/scripts --timeout 30000",
+    "typecheck": "bun run --cwd skills/p3-mode/scripts typecheck"
+  }
+}

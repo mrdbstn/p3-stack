@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 # Swarm
 
+Before using T3 tools, read [the runtime contract](../p3-mode/references/t3-runtime.md).
+
 Fan out N parallel workers. They may cover separate slices, race the same brief, or mix both. The parent waits, aggregates, and returns one report.
 
 ## Start
@@ -27,9 +29,11 @@ Open a todolist with one entry per phase before launching anything.
 
 ## Phase B: Fan out
 
-Spawn all N workers in one turn with `delegate_task`, `mode: "async"`, and the step 4 target, left unset for `auto` or `inherit`. Use `t3_thread_launch` with a `workspaceStrategy` only when a worker needs its own thread, worktree, or branch. One writer per worktree.
+Spawn all N workers in one turn with `delegate_task`, `mode: "async"`, and the step 4 target, left unset for `auto` or `inherit`. Writing workers use `isolation: "worktree"`. Ordinary top-level threads require an explicit user request and use `t3_thread_launch` with its current workspace schema. One writer per worktree.
 
-Every brief stands alone. Child agents get only the brief, never the parent's context. Include the goal, scope, exact slice or race arm, how to verify, and what to report. Reports use `PASS`, `ISSUES`, or `BLOCKED` with evidence. A worker that can prove a defect reports `ISSUES` and lists every issue it can prove, not only the first.
+When a worker must start from a non-default pushed branch, pass `cloud_base_branch`.
+
+Every brief stands alone. Include the goal, scope, exact slice or race arm, how to verify, and what to report. Reports use `PASS`, `ISSUES`, or `BLOCKED` with evidence. A worker that can prove a defect reports `ISSUES` and lists every issue it can prove, not only the first.
 
 If a worker drops out, proceed with N-1 and note it.
 
