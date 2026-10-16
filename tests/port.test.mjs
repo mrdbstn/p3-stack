@@ -31,6 +31,11 @@ test('installs every skill outside the checkout, preserves real directories, and
     const proof = spawnSync(process.execPath, [join(target, 'p3-mode/scripts/check-plan.mjs')], { cwd: dir, encoding: 'utf8' });
     assert.equal(proof.status, 2);
     assert.match(proof.stderr, /Usage: node check-plan/);
+    if (process.platform !== 'win32') {
+      const direct = spawnSync(join(target, 'p3-mode/scripts/check-plan.mjs'), [], { cwd: dir, encoding: 'utf8' });
+      assert.equal(direct.status, 2, direct.stderr);
+      assert.match(direct.stderr, /Usage: node check-plan/);
+    }
   }
 }));
 
