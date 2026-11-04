@@ -954,8 +954,8 @@
       "source": "skills/statechart/scripts/run.ts",
       "target": "skills/statechart/scripts/run.ts",
       "upstreamSha256": "f330e0a3b0a9f8181c2e52252c4a47db3f0a64f79a7cca5490263e33a5f13c72",
-      "portSha256": "f330e0a3b0a9f8181c2e52252c4a47db3f0a64f79a7cca5490263e33a5f13c72",
-      "kind": "exact"
+      "portSha256": "08ec38a441d0ae14ff368398b9910ee2b099e100fa8bec04fc3a4c870b5f4920",
+      "kind": "adapted"
     },
     {
       "source": "skills/statechart/scripts/statechart",
@@ -1010,8 +1010,8 @@
       "source": "skills/statechart/scripts/test/cli.test.ts",
       "target": "skills/statechart/scripts/test/cli.test.ts",
       "upstreamSha256": "8a3b028dafe2065029a66242f7a3832d18058e772a0dfc1b2c170511ffee8e07",
-      "portSha256": "8a3b028dafe2065029a66242f7a3832d18058e772a0dfc1b2c170511ffee8e07",
-      "kind": "exact"
+      "portSha256": "33dd268cb6f53211b102b2ce40e5718777b72f578b12aad7e60b0f7cd5ca882c",
+      "kind": "adapted"
     },
     {
       "source": "skills/statechart/scripts/test/config-fuzz.test.ts",
