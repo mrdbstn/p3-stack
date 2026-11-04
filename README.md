@@ -2,13 +2,15 @@
 
 A maintained T3 Code adaptation of [Lauren Tan's pstack](https://github.com/backnotprop/pstack), forked from [uzairansaruzi/p3-stack](https://github.com/uzairansaruzi/p3-stack).
 
-The reviewed baseline is pstack **0.15.25**, commit `6f131f137de64fdaf928278c0fd9ecec520ccbee`. All **54 skills**, **24 principles**, and **23 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
+The reviewed baseline is pstack **0.15.36**, commit `ecec42adbe4f240e4ae19d296768445f0dfbd38e`. All **58 skills**, **24 principles**, and **23 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
 
 pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
+Compatibility tracks **stable T3 Code v0.1.7**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination.
+
 ## Install in WSL or Linux
 
-Requires Node.js 22 or newer. The executable helper tooling also requires Bun 1.4.3 or newer and Git. GitHub workflows use `gh`.
+Requires Node.js 22.18+ on the 22.x line, or Node.js 24+. The executable helper tooling also requires Bun 1.4.3 or newer and Git. GitHub workflows use `gh`.
 
 ```sh
 mkdir -p ~/src
@@ -33,14 +35,13 @@ T3 must expose the orchestration tools used by the chosen workflow. Models and o
 
 ## Proof tooling
 
-The original executable plan checker and orchestration CLI are bundled:
+The executable plan checker remains bundled:
 
 ```sh
 node skills/p3-mode/scripts/check-plan.mjs /path/to/plan.md
-bun skills/p3-mode/scripts/orch/orch.ts --store /path/to/project/orchestrate/run init
 ```
 
-Installed skills resolve these paths from their own location. The store retains atomic writes, locking, current-head verification verdicts, inboxes, and derived status. Native T3 links and schedules complement that store.
+Installed skills resolve paths from their own location. Following upstream, Orchestrate now uses native delegation, PR watches, and project-local notes, and the orchestration CLI is removed. `/interrogate` keeps findings reproduced against the real code. New skills include `/statechart`, `/create-formal-verification-skill`, `/maintain-formal-verification-skill`, and `/ketchup-video`. Statechart bootstraps TLC and Java with mise on first use and needs network access.
 
 ## Verify and maintain
 
@@ -52,7 +53,9 @@ bun test --cwd skills/p3-mode/scripts
 bun run --cwd skills/p3-mode/scripts typecheck
 ```
 
-CI runs the same checks on Linux and Windows. [UPSTREAM.md](UPSTREAM.md) explains the read-only upstream status, three-way proposal, review, and lock-recording process. New source revisions require review; nothing automatically overwrites the T3 adaptations.
+CI checks the port and helper tooling on Linux and Windows, and the statechart suite and typecheck on Linux. In `skills/statechart/scripts`, run `npm install --no-save --package-lock=false --ignore-scripts` and `npm test` for its recorded TLC corpus. Live TLC differential tests also need Java and `TLA2TOOLS`; otherwise they report skips.
+
+[UPSTREAM.md](UPSTREAM.md) covers ongoing maintenance. A daily GitHub workflow detects pstack and stable T3 drift even when Codex is offline. A daily Codex maintenance task performs reviewed updates through branches, PRs, and passing CI. New source revisions never blindly overwrite T3 adaptations.
 
 These checks establish source coverage and tool behavior. A live T3 model-behavior smoke run is still required to validate an installed app/provider combination.
 

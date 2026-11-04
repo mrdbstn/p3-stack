@@ -10,7 +10,7 @@ Before using T3 tools, read [the runtime contract](../p3-mode/references/t3-runt
 
 Investigate the motivation and intent behind code. The companion `how` skill answers what the code does and how it works. `why` answers what forces led to its shape.
 
-Every spawn uses `delegate_task` with `mode: "async"` and a self-contained brief. Resolve its role in `p3-models.md` against `orchestrator_capabilities`; aliases inherit the parent. Apply effort and speed per the T3 runtime contract. Async completion wakes the parent; read `task_status` only when the result is needed mid-turn.
+Every spawn uses `delegate_task` with `mode: "async"` and a self-contained brief. Resolve its role in `p3-models.md` against `orchestrator_capabilities`; aliases inherit the parent. Apply effort and speed per the T3 runtime contract. Async completion wakes the parent; consume its completed result with `task_status` only after that wakeup.
 
 Investigators and the synthesizer are read-only by instruction and need their evidence tools. Preserve permitted MCP access; do not escalate runtime permissions or perform writes.
 

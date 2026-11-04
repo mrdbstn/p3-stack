@@ -16,7 +16,7 @@ Every candidate gets the same prompt, so the prompt is the contract.
 
 1. State the artifact each candidate is producing.
 2. Derive the rubric. State what success looks like for *this* task, then turn it into 3-6 concrete gradeable criteria. The rubric is the picker's tool in Phase D. Candidates only see the task.
-3. Pick the runners. Use the `arena runners` line in `p3-models.md`, resolved against `orchestrator_capabilities`. If the file or that line is missing, run `setup-p3` or pick one model per available provider from `orchestrator_capabilities`. An `auto` or `inherit-parent` entry in this line or the cross-judge line means the parent model, so omit `model` for it. If `delegate_task` rejects a configured entry, run that seat on the closest valid model of the same provider from its error message and say so. Spawn more when the arena covers multiple design directions. Same model N times when the work is generation-bound rather than judgment-sensitive.
+3. Pick the runners from `arena runners` in `p3-models.md`, resolved against `orchestrator_capabilities`. Missing configuration inherits the parent target; use `/setup-p3` to configure diversity. `auto` and `inherit-parent` omit `target`. On a rejected entry, use an available model of the same family, or drop the seat and say so when none exists. Never retry a rejected target. Restore dropped seats until there are two runners, or one when the configured line has one entry, using a remaining runner's model or the inherited parent when none remain. Say which fallback ran. Spawn more runners for distinct design directions; repeat a model for generation-bound work. Adjust supported effort and speed per p3-mode.
 4. Assign output paths. Each candidate writes to its own location (a git worktree where possible, otherwise `/tmp/arena-<slug>/candidate-<n>/`), per the **separate-before-serializing-shared-state** principle skill. A writing candidate gets `delegate_task` with `isolation: "worktree"`. Read-only candidates may share the checkout. One writer per worktree.
 
 ## Phase B: Fan out
@@ -25,15 +25,15 @@ Spawn all N candidates in one turn with `delegate_task`, one per runner entry, e
 
 Each rationale names the alternatives the candidate considered and what it rejected.
 
-Drain the candidates with `task_status`. If a candidate fails to produce output, proceed with N-1 and note the dropout in the synthesis record.
+Let completions wake the parent, then consume each result with `task_status`; do not poll running tasks. If a candidate fails to produce output, proceed with N-1 and note the dropout in the synthesis record.
 
 ## Phase C: Cross-judge
 
-After all Phase B candidates complete, choose one model from the `arena cross-judge pool` line in `p3-models.md`. Prefer a different model family from the parent's, including on the same provider; prefer another provider when that also preserves family diversity. Spawn one judge with `delegate_task` on that model. The brief says read-only: inspect only, no writes. It sees the rubric and the candidates by path label, scores each criterion, and recommends a base with rationale. It runs in parallel with the parent's reading in Phase D, not with the candidates themselves. Don't spawn the judge while candidates are still writing.
+After all Phase B candidates complete, choose one model from `arena cross-judge pool` in `p3-models.md`, in pool order. The judge must be from a different model family than the parent, including when both use one provider. `auto` and `inherit-parent` never judge. Resolve entries through the live catalog; on rejection use a valid variant of the same model at the closest effort and speed, or continue to the next entry. If the pool has no usable different-family entry, try other detected different-family models. If none runs, skip the judge, pick the base alone in Phase D, and say so. If the parent model is unknown, try real entries in pool order and report that the family check did not run. Spawn one read-only `delegate_task` with `mode: "async"` and `isolation: "shared"`. It sees the rubric and candidates by path label, scores each criterion, and recommends a base with rationale. It runs alongside your reading in Phase D, after all candidates stop writing.
 
 ## Phase D: Pick a base
 
-Read every candidate end to end before picking. Score each against the rubric criterion by criterion, not on holistic feel, and compare with the cross-judge. Agreement on the base confirms the pick. Disagreement means one of you is biased or the rubric was ambiguous. Read both rationales before deciding.
+Read every candidate end to end before picking. Score each against the rubric criterion by criterion, not on holistic feel, and compare with the cross-judge when Phase C ran one. Agreement on the base confirms the pick. Disagreement means one of you is biased or the rubric was ambiguous. Read both rationales before deciding.
 
 Pick the base a future maintainer can extend most easily without breaking invariants. When two feel tied, prefer the cleaner boundary or smaller API, per the Laziness Protocol.
 
@@ -49,4 +49,4 @@ Verify the synthesized artifact like any other output, per the **prove-it-works*
 
 ## Outputs
 
-One synthesized artifact, with a short synthesis note alongside naming the base and why, the cross-judge's verdict, each graft with its source candidate, what was rejected and why, any convergence or dropouts, and the verification result.
+One synthesized artifact, with a short synthesis note alongside naming the base and why, the cross-judge's verdict or that Phase C skipped the judge, each graft with its source candidate, what was rejected and why, any convergence or dropouts, and the verification result.

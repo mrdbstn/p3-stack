@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: '1.4.3'
@@ -27,3 +27,36 @@ jobs:
         working-directory: skills/p3-mode/scripts
       - run: bun run typecheck
         working-directory: skills/p3-mode/scripts
+  statechart:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install --no-save --package-lock=false --ignore-scripts
+        working-directory: skills/statechart/scripts
+      - run: npm test
+        working-directory: skills/statechart/scripts
+      - run: npm install --no-save --package-lock=false --ignore-scripts typescript@5.9.3 @types/node@24
+        working-directory: skills/statechart/scripts
+      - run: npx --no-install tsc --project tsconfig.json
+        working-directory: skills/statechart/scripts
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Prove passing and failing models with real TLC
+        env:
+          TLA2TOOLS: ${{ runner.temp }}/tla2tools-1.7.4.jar
+        run: |
+          curl -fsSL --retry 2 https://github.com/tlaplus/tlaplus/releases/download/v1.7.4/tla2tools.jar -o "$TLA2TOOLS"
+          echo "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88  $TLA2TOOLS" | sha256sum -c
+          skill=skills/statechart/scripts
+          "$skill/statechart" "$skill/test/corpus/Counter/Counter.tla" --out "$RUNNER_TEMP/statechart-pass"
+          diff -u "$skill/test/corpus/Counter/report.md" "$RUNNER_TEMP/statechart-pass/report.md"
+          diff -u "$skill/test/corpus/Counter/chart.mmd" "$RUNNER_TEMP/statechart-pass/chart.mmd"
+          if "$skill/statechart" "$skill/test/corpus/CounterDeadlock/CounterDeadlock.tla" --out "$RUNNER_TEMP/statechart-fail"; then code=0; else code=$?; fi
+          test "$code" -eq 1
+          diff -u "$skill/test/corpus/CounterDeadlock/report.md" "$RUNNER_TEMP/statechart-fail/report.md"
+          diff -u "$skill/test/corpus/CounterDeadlock/chart.mmd" "$RUNNER_TEMP/statechart-fail/chart.mmd"

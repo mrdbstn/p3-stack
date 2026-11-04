@@ -1,0 +1,40 @@
+name: Upstream maintenance watch
+on:
+  schedule:
+    - cron: '20 7 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: upstream-maintenance-watch
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Compare pstack and stable T3 baselines
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/maintenance.mjs check > "$RUNNER_TEMP/p3-maintenance.json"
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('node:fs');
+            const report = JSON.parse(fs.readFileSync(`${process.env.RUNNER_TEMP}/p3-maintenance.json`, 'utf8'));
+            const title = '[maintenance] Upstream compatibility update';
+            const issues = await github.paginate(github.rest.issues.listForRepo, { ...context.repo, state: 'open', creator: 'github-actions[bot]', per_page: 100 });
+            const existing = issues.find(issue => !issue.pull_request && issue.title === title);
+            if (!report.needsUpdate) {
+              if (existing) await github.rest.issues.update({ ...context.repo, issue_number: existing.number, state: 'closed', state_reason: 'completed' });
+              core.info('Reviewed baselines are current.');
+              return;
+            }
+            const body = 'The scheduled check found upstream drift. Follow UPSTREAM.md, preserve T3 adaptations, review the latest stable T3 schemas, and run every required check before merging. Nightly releases are optional.\n\n```json\n' + JSON.stringify(report, null, 2) + '\n```';
+            if (existing) {
+              if (existing.body !== body) await github.rest.issues.update({ ...context.repo, issue_number: existing.number, body });
+            } else await github.rest.issues.create({ ...context.repo, title, body });

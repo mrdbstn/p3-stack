@@ -1,6 +1,6 @@
 # T3 runtime contract
 
-This adapts pstack's mechanics to T3. Preserve its design, verification, ownership, and operator gates. Tool availability is a runtime fact. Check the actual tool schema and `orchestrator_capabilities` before using a capability. An unavailable tool is a reported limitation, never permission to skip proof.
+This adapts pstack's mechanics to T3. Preserve its design, verification, ownership, and operator gates. The reviewed compatibility baseline is stable T3 Code v0.1.7, pinned in `t3-runtime.lock.json`. Nightly builds are optional and must not add requirements absent from stable. Tool availability is a runtime fact. Check the actual tool schema and `orchestrator_capabilities` before using a capability. An unavailable tool is a reported limitation, never permission to skip proof.
 
 ## Paths and installation
 
@@ -14,7 +14,7 @@ Read project-root `p3-models.md` at task start. If absent, read `~/.agents/p3-mo
 
 ## Models and effort
 
-Each configured entry names a provider instance, model, and optional effort. Resolve these against the live catalog. Pass `target: {providerInstanceId, model, options}` using only option keys and values actually advertised for that model. Never invent a model slug or attach a reasoning suffix to a model ID. Omit the target for `auto` or `inherit-parent`.
+Each configured entry names a provider instance, model, and optional effort. Resolve these against the live catalog. `orchestrator_capabilities` returns a short list; use its `search` input for configured or other catalog models absent from that list. Pass `target: {providerInstanceId, model, options}` using only option keys and values actually advertised for that model. Never invent a model slug or attach a reasoning suffix to a model ID. Omit the target for `auto` or `inherit-parent`. A rejected entry is not retried; use the calling skill's valid same-family fallback, or inherit only when that skill allows it, and report the change. Never replace Arena's different-family judge with the parent family.
 
 The configured budget is the starting effort. Raise effort one supported step for the hardest work, lower it one step for ordinary judgment and two for routine mechanics. Keep the configured provider and model family, so a diverse panel stays diverse. Select a fast option only when urgent, such as red CI or a blocked person. Verification keeps the configured swarm model and speed. When the catalog exposes no effort or speed option, omit it and report that limit. Do not retry invented options after rejection. Use the configured supported target and say what changed.
 
@@ -24,9 +24,9 @@ Use `delegate_task` with `mode: "async"` and a complete brief. Children receive 
 
 Code writers, competing implementations, and live verifiers use `isolation: "worktree"` when this field is supported. T3 creates the checkout from the parent's current local commit, runs project setup, and binds the child before execution. Uncommitted changes are not copied. Commit required inputs first. Name a child-owned branch before it writes or pushes. Read-only investigators may use `isolation: "shared"`. Never run concurrent writers in the same checkout, even on disjoint files if they can change shared refs or run Git commands.
 
-If isolated delegation is unavailable, serialize writers in the owned checkout or report the limitation. Do not silently turn an internal subtask into a separate conversation. `t3_thread_launch` and `create_threads` require an explicit user request for ordinary top-level threads. When authorized, bind the requested workspace before starting and follow those tools' current schemas.
+If isolated delegation is unavailable, serialize writers in the owned checkout or report the limitation. Do not silently turn an internal subtask into a separate conversation. `create_threads` require an explicit user request for ordinary top-level threads. When authorized, bind the requested workspace before starting and follow those tools' current schemas.
 
-Async completion wakes the parent. End the turn when waiting; do not poll or spawn a watcher. Use `task_status` only to consume a result needed mid-turn or reconcile durable state after interruption. A timeout does not cancel work. Check pending questions with the pending-request tools. Fresh review rounds and fix rounds use fresh tasks with consolidated context and distinct retry keys. Never use a completed task's original result as evidence for a later round.
+Async completion wakes the parent. End the turn when waiting; do not poll or spawn a watcher. Call `task_status` only after the task completion wakeup, to consume its final result. Stable T3 forbids polling a running task. Reconcile pending work from durable evidence and scoped thread activity after interruption. A timeout does not cancel work. Check pending questions with the pending-request tools. Fresh review rounds and fix rounds use fresh tasks with consolidated context and distinct retry keys. Never use a completed task's original result as evidence for a later round.
 
 ## Pull requests and wakeups
 
@@ -40,8 +40,8 @@ Use `schedule_task` with a structured schedule object for an authorized autonomo
 
 Drive the actual surface with available `preview_*` browser tools, `device_*` simulator tools, a repository control skill, PTY tooling for CLIs, or HTTP for services. Capture actions, resulting state, and side effects. Do not substitute compilation for behavioral proof. Missing tooling stays a verification gap.
 
-Read history with `t3_thread_read` and `t3_thread_search`, restricted to the current project and the explicitly requested threads. Use activity view when checking tool calls. Verify that the tool output actually exposes the evidence needed; a summary does not prove a file was read. Never mine unrelated projects' session folders.
+List only the active project's threads with `t3_thread_list` (`allProjects: false`), optionally using `titleContains`, then read relevant content with paginated `t3_thread_read` (`afterPosition` and `itemId`/`textOffset` for cut-off text). Search the returned text locally; stable T3 has no full-text thread-search tool. Keep reads restricted to the current project and the explicitly requested threads. Use activity view when checking tool calls. Verify that the tool output actually exposes the evidence needed; a summary does not prove a file was read. Never mine unrelated projects' session folders.
 
 ## Durable orchestration
 
-Use the bundled plan checker and `scripts/orch/orch.ts`, resolved from p3-mode's absolute directory. Keep the store outside disposable child worktrees. Use the CLI for ledger, frontier, inbox, gates, and derived status. Its atomic writes and locking enforce bookkeeping invariants. T3 schedules and PR links complement this store; they do not replace its verification ledger. Reconcile live tasks, pushed refs, and current PR head SHAs after a restart.
+Use the executable plan checker for multi-PR plans. Orchestrate itself uses native T3 tools and a project-local `notes.md`, with a single coordinator writer, task IDs, PR links, current head SHAs, verdicts, evidence, and recovery decisions. Keep evidence outside disposable child worktrees. The upstream orchestration CLI was removed in pstack 0.15.36; do not recreate it or use handwritten state as proof. Reconcile the notes against live PR state and scoped thread activity after restart.

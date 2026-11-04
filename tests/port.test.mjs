@@ -23,11 +23,11 @@ test('installs every skill outside the checkout, preserves real directories, and
   for (let round = 0; round < 2; round++) {
     const result = run('install.mjs', ['--project', dir], dir);
     assert.equal(result.status, 0, result.stderr);
-    assert.match(result.stdout, /linked 53 skills.*skipped 1/);
+    assert.match(result.stdout, /linked 57 skills.*skipped 1/);
     assert.equal(readFileSync(join(target, 'bro/SKILL.md'), 'utf8'), 'my existing skill');
     assert.equal(realpathSync(join(target, 'p3-mode')), realpathSync(join(root, 'skills/p3-mode')));
     assert.match(readFileSync(join(target, 'no-comments/references/comment-sicko.md'), 'utf8'), /comment/i);
-    for (const name of ['sharpen', 'in-your-own-words', 'ketchup']) assert.match(readFileSync(join(target, name, 'SKILL.md'), 'utf8'), new RegExp(`name: ${name}`));
+    for (const name of ['sharpen', 'in-your-own-words', 'ketchup', 'ketchup-video', 'statechart', 'create-formal-verification-skill', 'maintain-formal-verification-skill']) assert.match(readFileSync(join(target, name, 'SKILL.md'), 'utf8'), new RegExp(`name: ${name}`));
     const proof = spawnSync(process.execPath, [join(target, 'p3-mode/scripts/check-plan.mjs')], { cwd: dir, encoding: 'utf8' });
     assert.equal(proof.status, 2);
     assert.match(proof.stderr, /Usage: node check-plan/);
