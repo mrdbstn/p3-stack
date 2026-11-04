@@ -8,7 +8,7 @@ The baseline is in `upstream.lock.json`. Keep a full local checkout of backnotpr
 4. Review the source delta and the proposed adaptation against PORTING.md and the T3 runtime contract. Apply the proposal with Codex's built-in apply_patch tool. Resolve conflicts using that same tool. Preserve the new source meaning, including changes that remove unnecessary ceremony. A clean textual merge does not establish semantic fidelity.
 5. Re-read T3's current tool definitions when an orchestration adaptation changes. Run the installer tests, plan checker tests, full helper tests, typecheck, and a representative live T3 task where available. A failed or unavailable check stays explicit.
 6. Only after that review, run `node scripts/upstream.mjs record --source ../pstack --ref <candidate>`. Apply its lock-file proposal. This records every reviewed local adaptation and will fail if an imported file is missing. Never record merely to silence a changed hash.
-7. Run `node scripts/check.mjs`, review the final diff, and open a PR in this fork. The PR names the source commit/version, substantive source changes, T3 exceptions, and verification evidence.
+7. Run `node scripts/check.mjs`, review the final diff, record a dated row in `SYNC-LOG.md`, and open a PR in this fork. The PR names the source commit/version, substantive source changes, T3 exceptions, and verification evidence.
 
 Normal fork edits also update the recorded port hashes after review using `record` at the existing pinned commit. All 24 principles must remain exact. Their parity is enforced separately from the recorded local hash, so recording a changed principle does not bless it.
 
