@@ -14,7 +14,7 @@ Invoke when the user says "reflect" or "/reflect". Skip when the conversation is
 
 ## 1. Locate the active transcript
 
-Read the current T3 thread with `t3_thread_read` and `t3_thread_search`, scoped to this conversation. Reviewers get only their brief. Pass the thread ID and ask for activity view when they need tool-call evidence, or give a tight digest. Never search unrelated projects.
+Read the current T3 thread with `t3_thread_list` and paginated `t3_thread_read`, scoped to this conversation. Reviewers get only their brief. Pass the thread ID and ask for activity view when they need tool-call evidence, or give a tight digest. Never search unrelated projects.
 
 ## 2. Review
 
@@ -43,6 +43,8 @@ Move any Accepted item that a lint rule, script, metadata flag, or runtime check
 Present the synthesizer's full Accepted / Rejected / Backlog output and wait for explicit approval before applying any Accepted edit. The user picks the subset and may redirect routings. Skill changes affect every future agent in the org. Do not auto-apply.
 
 File each Backlog item to your team's devex or backlog tracker without waiting. Only the Accepted list waits for approval.
+
+Never edit a skill under `plugins/cache/`. Before approval, show its destination in the project or user `.agents/skills/<skill>/` folder. After approval, copy the skill folder there and edit the copy. Never open a PR or push.
 
 Follow each approved row's Routing exactly:
 

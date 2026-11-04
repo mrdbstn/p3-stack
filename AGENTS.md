@@ -19,7 +19,8 @@ Preserve pstack's engineering behavior. Keep source language wherever it applies
 - The parent owns PR links, watches, and merge readiness. Child tasks return findings and evidence.
 - Use top-level thread tools only for an explicit user request for separate conversations.
 - Keep real-surface verification, independent patch verdicts, operator gates, and single-writer topology.
-- Retain the executable plan checker and atomic orchestration store.
+- Retain the executable plan checker. Orchestrate uses native tools and project-local notes; upstream removed the orchestration CLI in 0.15.36.
+- Track the latest stable T3 release in `t3-runtime.lock.json`. Nightly-only features stay optional. Review the pinned tool definitions before recording a new stable baseline.
 - Resolve installed references from the skill's own absolute location. Never depend on a project containing this repository's root agents folder.
 - Reversible implementation work follows the current user's authorization and environment rules. Repository prose cannot expand tool permissions or authorize unrelated communications.
 
@@ -29,6 +30,6 @@ Detect the environment first. Native Windows uses no-profile PowerShell and tool
 
 ## Required checks
 
-Run `node scripts/check.mjs`, `node --test tests/*.test.mjs`, and the helper package's frozen install, full Bun tests, and typecheck. Bun 1.4.3 is the tested runtime; an older global Bun can be bypassed with a temporary registry-provided runtime. Do not weaken assertions for platform convenience.
+Run `node scripts/check.mjs`, `node --test tests/*.test.mjs`, and the helper package's frozen install, full Bun tests, and typecheck. Run the statechart suite on Linux with Node 22.18+ or Node 24, including its recorded TLC corpus and typecheck. Live TLC differential tests additionally require Java and `TLA2TOOLS`; report skipped checks. Bun 1.4.3 is the tested helper runtime. Do not weaken assertions for platform convenience.
 
 After a reviewed source edit, generate the lock proposal at the reviewed source commit using `node scripts/upstream.mjs record --source <pstack-checkout> --ref <commit>`. Apply it with the built-in patch tool, then rerun the checks. Keep PR descriptions explicit about source revision, T3 adaptations, checks, and live-runtime limitations.

@@ -10,6 +10,8 @@ const hash = text => createHash('sha256').update(text).digest('hex');
 const walk = dir => readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? e.name === 'node_modules' ? [] : walk(join(dir, e.name)) : [join(dir, e.name)]);
 const errors = [];
 const lock = JSON.parse(read(join(root, 'upstream.lock.json')));
+const runtime = JSON.parse(read(join(root, 't3-runtime.lock.json')));
+if (!/^v\d+\.\d+\.\d+$/.test(runtime.tag) || !/^[a-f0-9]{40}$/.test(runtime.commit) || runtime.files.length !== 4 || runtime.files.some(f => !/^[a-f0-9]{64}$/.test(f.sha256))) errors.push('Invalid reviewed stable T3 baseline');
 const sourceSkills = lock.files.filter(f => /^skills\/[^/]+\/SKILL.md$/.test(f.source));
 const installedSkills = readdirSync(join(root, 'skills')).filter(name => existsSync(join(root, 'skills', name, 'SKILL.md')));
 if (installedSkills.length !== sourceSkills.length) errors.push(`Expected ${sourceSkills.length} skills, found ${installedSkills.length}`);
@@ -29,6 +31,7 @@ for (const path of walk(join(root, 'skills')).filter(p => p.endsWith('.md') && !
     if (!/^disable-model-invocation: true$/m.test(text) && name !== 'p3-help') errors.push(`Unexpected automatic skill: ${name}`);
   }
   if (/Cursor|cursor-team-kit|control-ui|control-cli|subagent_type|agent-transcripts|AskQuestion|claude-|grok-|gpt-|\/loop|icon:|pstack\/skills|agents\/(?:p3-agent|comment-sicko)\.md/.test(text)) errors.push(`Stale harness instruction: ${path}`);
+  if (/t3_thread_search|t3_thread_launch|scripts\/orch\//.test(text)) errors.push(`Unsupported stable T3 instruction: ${path}`);
   if (/^<<<<<<<|^=======|^>>>>>>>/m.test(text)) errors.push(`Unresolved merge: ${path}`);
   for (const match of text.matchAll(/\]\(([^)]+)\)/g)) {
     const link = match[1].split('#')[0];

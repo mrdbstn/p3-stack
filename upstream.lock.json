@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "repository": "https://github.com/backnotprop/pstack",
-  "commit": "6f131f137de64fdaf928278c0fd9ecec520ccbee",
-  "version": "0.15.25",
+  "commit": "ecec42adbe4f240e4ae19d296768445f0dfbd38e",
+  "version": "0.15.36",
   "scope": "All skills and bundled support files. Harness-neutral principles stay exact. See PORTING.md for reviewed T3 adaptations.",
   "files": [
     {
       "source": "skills/architect/SKILL.md",
       "target": "skills/architect/SKILL.md",
-      "upstreamSha256": "1a1c56ec1fe352ddb832e8eaf9fe6c282ce2b0428d65fb4ebb4a9e4128cbb438",
+      "upstreamSha256": "8b06915a5e728c4f78b6a685fec0213b5cb1a89b9476fae680d4cc3f67d4e79e",
       "portSha256": "13c0eecf5e9c56b6ad1e5f5aca7f965ca90295d7bef06d3b154721dc5d7f2b45",
       "kind": "adapted"
     },
@@ -36,15 +36,15 @@
     {
       "source": "skills/arena/SKILL.md",
       "target": "skills/arena/SKILL.md",
-      "upstreamSha256": "d5f2b79c43cc8264c18d67751ea4eb20e609a54183c61570c811fdffb9c71a37",
-      "portSha256": "3fcb1e1eb42acfc7c2fd6470a8aaa91f8eb8128ab6dbd3851e9919c0fa36e57a",
+      "upstreamSha256": "deb07db603c0a278fdb079c3d8b63cf34101658e860e504ca5b1e72dfc5d5e5c",
+      "portSha256": "739f6662621926317db7cb9fb51806c5c80d23253192eecded0825c98dd8fd1f",
       "kind": "adapted"
     },
     {
       "source": "skills/automate-me/SKILL.md",
       "target": "skills/automate-me/SKILL.md",
       "upstreamSha256": "7dc4307277047b71ca726cdb16c1a04bcfa5e1a8ebb8f31ce42628d21dae99a9",
-      "portSha256": "e14210bed711355bc58055747558e7e6d946c0ded861eaa97fae77ecd0150d02",
+      "portSha256": "7e6f1164a433c2a2f3aab58761edc2f092acfac3708f7c95574033e4db2cd5c8",
       "kind": "adapted"
     },
     {
@@ -73,6 +73,13 @@
       "target": "skills/correct/SKILL.md",
       "upstreamSha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba",
       "portSha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/create-formal-verification-skill/SKILL.md",
+      "target": "skills/create-formal-verification-skill/SKILL.md",
+      "upstreamSha256": "30ef0ac27612ecd16fdc081112113221d673053cef3f8603db11932193861211",
+      "portSha256": "30ef0ac27612ecd16fdc081112113221d673053cef3f8603db11932193861211",
       "kind": "exact"
     },
     {
@@ -113,7 +120,7 @@
     {
       "source": "skills/how/SKILL.md",
       "target": "skills/how/SKILL.md",
-      "upstreamSha256": "94ba668417b8ab08b35376fb26d296ace697cc027a42bd9de600ddaa1a98af59",
+      "upstreamSha256": "3793ab76b3ae85d8f574bc55b8084b6408098389f973829f0df36807387b817d",
       "portSha256": "29fea0cb9a9cb6a1b88ea8af6cd6906c85ecb37c8d139849b6bd470f2108e0b8",
       "kind": "adapted"
     },
@@ -141,44 +148,30 @@
     {
       "source": "skills/interrogate/SKILL.md",
       "target": "skills/interrogate/SKILL.md",
-      "upstreamSha256": "01051893d176c1844042bace3a0bacb5cdab591e0931d32c0a04647d14e356f3",
-      "portSha256": "d2804835329f5cedc008afddc2d8f98440c5544b2e093edcc2177f1172f7b2b5",
+      "upstreamSha256": "ce9d4c1390657924f58daa8174abdc605d07cd134a736cd86e392a0309a405fb",
+      "portSha256": "85c4ad654e6d1c1117315862514edef7a2b3acf19e19f075b42175356fd10cf9",
       "kind": "adapted"
     },
     {
-      "source": "skills/interrogate/references/code-quality-review.md",
-      "target": "skills/interrogate/references/code-quality-review.md",
-      "upstreamSha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
-      "portSha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/interrogate/references/lead-judgment.md",
-      "target": "skills/interrogate/references/lead-judgment.md",
-      "upstreamSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
-      "portSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/interrogate/references/reviewer-prompt.md",
-      "target": "skills/interrogate/references/reviewer-prompt.md",
-      "upstreamSha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
-      "portSha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/interrogate/references/rubric.md",
-      "target": "skills/interrogate/references/rubric.md",
-      "upstreamSha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
-      "portSha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
+      "source": "skills/ketchup-video/SKILL.md",
+      "target": "skills/ketchup-video/SKILL.md",
+      "upstreamSha256": "027aed9a01adf208aeac3a134f47d12f7c1e42d6fea03095aedc2bae58cdcfd1",
+      "portSha256": "027aed9a01adf208aeac3a134f47d12f7c1e42d6fea03095aedc2bae58cdcfd1",
       "kind": "exact"
     },
     {
       "source": "skills/ketchup/SKILL.md",
       "target": "skills/ketchup/SKILL.md",
-      "upstreamSha256": "b5aa507627d2da9550adeead7d61f27d8e522d557981ffc8a3e5ef65ba942f73",
-      "portSha256": "3b73e385e28c1359fd777e1eb89344de8109ad0bfb1689c8496e1d51d4ea77c0",
+      "upstreamSha256": "94d04bd4f4dd5d77229f2a349796b1863143edac7551a6c2068e1d80f73228b9",
+      "portSha256": "99bcb6c8b41a03da78dcf7dadc4c04a7dba57f6ac006bd3980bbbb7cfd1c72ff",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/maintain-formal-verification-skill/SKILL.md",
+      "target": "skills/maintain-formal-verification-skill/SKILL.md",
+      "upstreamSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c",
+      "portSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c",
+      "kind": "exact"
     },
     {
       "source": "skills/maintain-verification-skill/SKILL.md",
@@ -197,22 +190,22 @@
     {
       "source": "skills/no-comments/SKILL.md",
       "target": "skills/no-comments/SKILL.md",
-      "upstreamSha256": "de826c3e68ff9a862beda103d18301b4e4d98f22be4cfde0c74963a4d761822f",
-      "portSha256": "acf38c02a0c21392cfa944795d271d885c9291dc9774c5cbc7cc57a2c4173fa0",
+      "upstreamSha256": "951b7b700d1a52fa7c181d86167e674e5bb63929a9f4dab1dcd49a81867c6143",
+      "portSha256": "f8af9bae16f782b6cbca5f2448051b05be88ad205b01df483e86688c3423cbf8",
       "kind": "adapted"
     },
     {
       "source": "skills/no-comments/references/comment-sicko.md",
       "target": "skills/no-comments/references/comment-sicko.md",
-      "upstreamSha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
-      "portSha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
+      "upstreamSha256": "73c0bcb8c258981131c00f09c2c56e300c7225803bd4e1093ef41362e0073d98",
+      "portSha256": "73c0bcb8c258981131c00f09c2c56e300c7225803bd4e1093ef41362e0073d98",
       "kind": "exact"
     },
     {
       "source": "skills/poteto-help/SKILL.md",
       "target": "skills/p3-help/SKILL.md",
-      "upstreamSha256": "e318f80523a8b39cedde617ec8fa439ea93697bebc133fc54458c9013b2b1c90",
-      "portSha256": "a39d8fbf73acc0d4fcaabc5841256d7807967b84d617a9c929e9d465e97c1be4",
+      "upstreamSha256": "40fb18402463efe7335cfa8479bab9aa1e03bbc849a81843bf6c12b7a9d70147",
+      "portSha256": "0a106b1a82ed596c5dbbd097479b504cfac9d90f432d791fd875cbe0e6c4a7eb",
       "kind": "adapted"
     },
     {
@@ -225,15 +218,15 @@
     {
       "source": "skills/poteto-help/references/recipes.md",
       "target": "skills/p3-help/references/recipes.md",
-      "upstreamSha256": "acfa6405b72e2c2f9c53fbc35bd69d59c0192c79ecf9a83067f74ad45114d404",
-      "portSha256": "7fd648ae70b5eee20ca80efa508b14e021e5ad2d0980a9126026011a91d0a677",
+      "upstreamSha256": "7ebe6af22f28954ca7357c5e8238ef832d8391b3c75e9cc011bf140f1fa3db56",
+      "portSha256": "c5f2a4df80974b5725db08fe20b4f828bd7b0be49e08abd3605c7b92f2551a8b",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/SKILL.md",
       "target": "skills/p3-mode/SKILL.md",
-      "upstreamSha256": "a8dd0c1894a84a39438781814324b4362bbca94d234b68de012b8c59716d17fc",
-      "portSha256": "0ef0070c8f01414431347b2259c698a9089d839859af92d8c08bbc880b336717",
+      "upstreamSha256": "10da2769e8553365b282f78316df419214e8e329707607259abb31b7e3c47789",
+      "portSha256": "e828c305cdf17cbc1618a5c67b8dd30d62e08922e6e77a6b4396f55c7be1c476",
       "kind": "adapted"
     },
     {
@@ -246,29 +239,29 @@
     {
       "source": "skills/poteto-mode/playbooks/autonomous-run.md",
       "target": "skills/p3-mode/playbooks/autonomous-run.md",
-      "upstreamSha256": "83be3db0bef9e72f8b728767f78ca5ca8a50e7aeb961838fc45ea7ba7f0dff4b",
-      "portSha256": "9c04e281929339fba031b3f86f042a13fc0e712bf6d57ecebb8daca3734315ce",
+      "upstreamSha256": "fc633847a6f772272ce1f3c676f2eecdd466bc261aab036aecc867b320b5f31d",
+      "portSha256": "d53ede10016a6f62a1a80f0ed81fe1ebb1eb0e3cf07bd522e019306d4d307dd1",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/autopilot-full.md",
       "target": "skills/p3-mode/playbooks/autopilot-full.md",
-      "upstreamSha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
-      "portSha256": "a596722231af9f38f8eea0e5d2bcf8b1ad32c2f023b41fb3af9767d31d4d1797",
+      "upstreamSha256": "2da35982565c6cf1dbe25f7a05ccae28f7729389aefc6dbb3e010eb883abdd19",
+      "portSha256": "ec1e47f63efd187dce8e6525e47bfc98092af1bd1208b7b6e483e63b5f8f5f62",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/autopilot-stack.md",
       "target": "skills/p3-mode/playbooks/autopilot-stack.md",
-      "upstreamSha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
-      "portSha256": "209e88babcb78004bfa8295249473708afd61f800153d70a4ca21f0b7b6b6f12",
+      "upstreamSha256": "34de4bb101dd56524d8067c73bba5988ead6f93d3ab8f96ac13a6adcb43696cb",
+      "portSha256": "e288c4d1469316ec5e3e060b342b4ca274a36e2246876e9ff32bfec65f8e9fa1",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/babysit.md",
       "target": "skills/p3-mode/playbooks/babysit.md",
-      "upstreamSha256": "e261c1ff5581e0f8fc6c686f34de4b535f87473e77beabea7dd8323021214610",
-      "portSha256": "d49c23940bfce05063ffbe2db147ee5b335271887ebba9ad3d740e76ef1c3c30",
+      "upstreamSha256": "d546a937ed800abe1d29aae8a689fb57212280fdde62fae1fc1dc7f2efd9d904",
+      "portSha256": "9f92043b052c071f884fc43d5562ec5ab61e5acef707b355ce7ac200c0eb6abb",
       "kind": "adapted"
     },
     {
@@ -282,7 +275,7 @@
       "source": "skills/poteto-mode/playbooks/eval.md",
       "target": "skills/p3-mode/playbooks/eval.md",
       "upstreamSha256": "d6b9c717471416f54fe3d5dc71ed5e417531f44835f984c7da9e32695f792238",
-      "portSha256": "af8f44c67f402b671b91095121ecba3d644fef9c46e773d78d3e1f6f01003dde",
+      "portSha256": "3d7fc5632c43d85ba7e7aa3c1ecb3cbd354c5d7a036c87eb7c7f657517689d79",
       "kind": "adapted"
     },
     {
@@ -296,7 +289,7 @@
       "source": "skills/poteto-mode/playbooks/hillclimb.md",
       "target": "skills/p3-mode/playbooks/hillclimb.md",
       "upstreamSha256": "942c1565b75ad02a2cb6230dd7c1ebd87e19f59a00319ebac2b6616007bf018f",
-      "portSha256": "40bff516d45ecdf9ade08c9f09ec4c86cf8a765b6100e6a6851bbb6acc22a80f",
+      "portSha256": "84417467b58eb456ea7f714c3454cb9ea63a4cc5aa2cddc895dce3d86b44bfb6",
       "kind": "adapted"
     },
     {
@@ -309,22 +302,22 @@
     {
       "source": "skills/poteto-mode/playbooks/multi-phase-plan.md",
       "target": "skills/p3-mode/playbooks/multi-phase-plan.md",
-      "upstreamSha256": "1e2b14ea184d40bfe2a46f7937a8cdb9a9a513defd80fe106665e00acb841167",
-      "portSha256": "c61bba193469de8bea69c4db7439860d6bd3300bccddc85d982bf2fc194ff52c",
+      "upstreamSha256": "cd38c30b95a84117253c6e24beba78e44740bf46edde5cc2b19ca6f1c4c51594",
+      "portSha256": "4241d835fc1d85c79c6242667ae9ced4ad8f97c25e6ed291f1dd6904afaf0a7d",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/opening-a-pr.md",
       "target": "skills/p3-mode/playbooks/opening-a-pr.md",
-      "upstreamSha256": "a945c4f02b08b7575fa1727ef8c67ded4b3f1ed1301b9569c3918075f724b9e3",
-      "portSha256": "51776809c106a205d424307588c290bfd9a6f00879b18d177ca6a947b8caed03",
+      "upstreamSha256": "ad048fc56091d4dd5b53ffacf7674778660e166d714b6de5a9622d089689378f",
+      "portSha256": "30a03574a2a69871c55a57589dfb27243abf126490e2ad7aff6a8da72bdddcae",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/orchestrate.md",
       "target": "skills/p3-mode/playbooks/orchestrate.md",
-      "upstreamSha256": "08dce6c9e7be1d13bc6944ab9b51665f935c531437f5e088bc53d2a62099ef05",
-      "portSha256": "2c88dbc408978098de345f4fbed23176eddf0691128d30aca9574bacb0e8fb65",
+      "upstreamSha256": "043bfce47fe11dd7d8af7c5221c0f038569b5b9b6b2722c5f005a2a21ca74a12",
+      "portSha256": "bf36db25b63346cf104f2ca9b8ce9c05a2cfaa791a58c8379ebf2acb2352c376",
       "kind": "adapted"
     },
     {
@@ -366,7 +359,7 @@
       "source": "skills/poteto-mode/playbooks/session-pickup.md",
       "target": "skills/p3-mode/playbooks/session-pickup.md",
       "upstreamSha256": "33c825a68c1279c3a2e25c53648b11fce5117d49145bdff7f9f0476bbed7b329",
-      "portSha256": "2dea20f12055d616e11d5c8481b3da65e5eecd3ff8c24e6cba72f03c3215008a",
+      "portSha256": "8b1947443a368aa3bc04403a09e17ea2c540dc0b1e2b39d5589b20a64dcf6324",
       "kind": "adapted"
     },
     {
@@ -394,7 +387,7 @@
       "source": "skills/poteto-mode/playbooks/worktree-cleanup.md",
       "target": "skills/p3-mode/playbooks/worktree-cleanup.md",
       "upstreamSha256": "be04ae0afe19d4a4da5bcc4e94455f68dbebd1cda6eb0f456ca0d358ecf76c00",
-      "portSha256": "188ceed9c50216f37d58613b5d77f8c5c52a40485f85e1803cce18cb5ba5f046",
+      "portSha256": "a59a222538b43b02d234ca4afff5fea0f377f624a12e49d7b5c01dcd4e5b4dbb",
       "kind": "adapted"
     },
     {
@@ -421,43 +414,22 @@
     {
       "source": "skills/poteto-mode/scripts/check-plan.mjs",
       "target": "skills/p3-mode/scripts/check-plan.mjs",
-      "upstreamSha256": "e58c3d871b09d477be00628d69dd23ffa6c2e3a1728f5b867a841baa8e90278b",
-      "portSha256": "47401bef43fb16995c382731c64ece651308e94180075d355741e4323b9a6125",
+      "upstreamSha256": "e3d4e9ca638c6fb4a2b52c434c17c7af30da4fdd44605ccfe9906f82fe37b555",
+      "portSha256": "543f7e9bc4894b9bdcf96aa4085c64f0efc16abc8eafe359bc8b2f36038d5351",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/scripts/check-plan.test.ts",
       "target": "skills/p3-mode/scripts/check-plan.test.ts",
-      "upstreamSha256": "c80f3ea043b81f219b92c4c8a3af6bdd4f8d32ea596ec15b5b9e0252645f2ae8",
-      "portSha256": "e31de1c4f845e89fb3003e2801728c496636e37e7fc4d25b24de1eea83484c95",
+      "upstreamSha256": "848d321f2b76299d1b2d7bb46c929dbaebef08ca4ba8669dbe09d1d5c86f96e2",
+      "portSha256": "ff3b70c80ae3cc39c4eb6fba1046f4696d106e8b1f8a89df27493214a93a3dd1",
       "kind": "adapted"
-    },
-    {
-      "source": "skills/poteto-mode/scripts/orch/orch.test.ts",
-      "target": "skills/p3-mode/scripts/orch/orch.test.ts",
-      "upstreamSha256": "5e80b416bdcd68e4067690ce857345852fd2e0db3dcf3e25607999cd55b963d2",
-      "portSha256": "445d9185119080534532b070c74d0ab8df385546ea98fa6d93519fb226942a80",
-      "kind": "adapted"
-    },
-    {
-      "source": "skills/poteto-mode/scripts/orch/orch.ts",
-      "target": "skills/p3-mode/scripts/orch/orch.ts",
-      "upstreamSha256": "47c92c57e8276616d8de94665a126bd832e748036afa8d0ffdbacb7946decb5c",
-      "portSha256": "47c92c57e8276616d8de94665a126bd832e748036afa8d0ffdbacb7946decb5c",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/poteto-mode/scripts/orch/store.ts",
-      "target": "skills/p3-mode/scripts/orch/store.ts",
-      "upstreamSha256": "558cfda533e1ebe7c8d7842604f07e0be7618759cf129b4c2397a8e29516ecea",
-      "portSha256": "558cfda533e1ebe7c8d7842604f07e0be7618759cf129b4c2397a8e29516ecea",
-      "kind": "exact"
     },
     {
       "source": "skills/poteto-mode/scripts/package.json",
       "target": "skills/p3-mode/scripts/package.json",
-      "upstreamSha256": "ef21de978a0aa8e83191d4d69bf9427eb92408e45e28aed1d5a38e0361769fd4",
-      "portSha256": "6ab84b8370e6d2d20379fd11cdc9d3fb1582784712056beaf167c83d344b3b76",
+      "upstreamSha256": "c18575bd76d0014c3f9978a9702176c4a4ab2906e2a92b4aab7c1d4468cced9e",
+      "portSha256": "5a60ea0577784b392f2a037d5f1df92c5a4b0631688be41da726a624532971a8",
       "kind": "adapted"
     },
     {
@@ -484,29 +456,29 @@
     {
       "source": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
       "target": "skills/p3-mode/scripts/watch-pr/github.test.ts",
-      "upstreamSha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
-      "portSha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
-      "kind": "exact"
+      "upstreamSha256": "9d9f644388f3516364d47f5eb96c1f977dd6f560bd6005b660d90d3b367cf4b9",
+      "portSha256": "c0b56767a038d6b355738230c5070b03caf6b27cbcceefd45826bab444d3b30b",
+      "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/scripts/watch-pr/github.ts",
       "target": "skills/p3-mode/scripts/watch-pr/github.ts",
-      "upstreamSha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
-      "portSha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
+      "upstreamSha256": "7ba193190d488c8ce0982c85234ebea026e9a595703e99a3c3df0fcd640ddd18",
+      "portSha256": "7ba193190d488c8ce0982c85234ebea026e9a595703e99a3c3df0fcd640ddd18",
       "kind": "exact"
     },
     {
       "source": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
       "target": "skills/p3-mode/scripts/watch-pr/policy.test.ts",
-      "upstreamSha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
-      "portSha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
+      "upstreamSha256": "7ee38c20ed605f4a255f1f78e5a4be56b3563fcd8d3d65cfeea58d44c3f58d53",
+      "portSha256": "7ee38c20ed605f4a255f1f78e5a4be56b3563fcd8d3d65cfeea58d44c3f58d53",
       "kind": "exact"
     },
     {
       "source": "skills/poteto-mode/scripts/watch-pr/policy.ts",
       "target": "skills/p3-mode/scripts/watch-pr/policy.ts",
-      "upstreamSha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
-      "portSha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
+      "upstreamSha256": "2d4823aeea788acab258ec60eb52e7b9e3a23a6649850af128d6ada5c33d7778",
+      "portSha256": "2d4823aeea788acab258ec60eb52e7b9e3a23a6649850af128d6ada5c33d7778",
       "kind": "exact"
     },
     {
@@ -533,8 +505,8 @@
     {
       "source": "skills/poteto-mode/scripts/watch-pr/types.ts",
       "target": "skills/p3-mode/scripts/watch-pr/types.ts",
-      "upstreamSha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
-      "portSha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
+      "upstreamSha256": "daa66c56220bae084c18cc6d3b0a2c66c0e72206d298e40973b44ee085ce16d2",
+      "portSha256": "daa66c56220bae084c18cc6d3b0a2c66c0e72206d298e40973b44ee085ce16d2",
       "kind": "exact"
     },
     {
@@ -547,8 +519,8 @@
     {
       "source": "skills/poteto-mode/scripts/worktree-audit.sh",
       "target": "skills/p3-mode/scripts/worktree-audit.sh",
-      "upstreamSha256": "61b6357a6bccca4316014e5579173c0a7cab26435c1988f38ffdf79eb984f2c3",
-      "portSha256": "61b6357a6bccca4316014e5579173c0a7cab26435c1988f38ffdf79eb984f2c3",
+      "upstreamSha256": "ff61f1c71b5575997c0627825a994c96ca3db8672bf8bc1a165e36d5d900f7dc",
+      "portSha256": "ff61f1c71b5575997c0627825a994c96ca3db8672bf8bc1a165e36d5d900f7dc",
       "kind": "exact"
     },
     {
@@ -596,8 +568,8 @@
     {
       "source": "skills/principle-explain-the-number/SKILL.md",
       "target": "skills/principle-explain-the-number/SKILL.md",
-      "upstreamSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
-      "portSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
+      "upstreamSha256": "3c84fbf9a7d9842abcfcd134010782b32092ac3d3fb4aaf9ed5732dca83aa58c",
+      "portSha256": "3c84fbf9a7d9842abcfcd134010782b32092ac3d3fb4aaf9ed5732dca83aa58c",
       "kind": "exact"
     },
     {
@@ -638,8 +610,8 @@
     {
       "source": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
       "target": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-      "upstreamSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
-      "portSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+      "upstreamSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
+      "portSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
       "kind": "exact"
     },
     {
@@ -715,22 +687,22 @@
     {
       "source": "skills/principle-type-system-discipline/SKILL.md",
       "target": "skills/principle-type-system-discipline/SKILL.md",
-      "upstreamSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
-      "portSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
+      "upstreamSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+      "portSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
       "kind": "exact"
     },
     {
       "source": "skills/recall/SKILL.md",
       "target": "skills/recall/SKILL.md",
       "upstreamSha256": "ad080bb4dae38773ea2ab9062ee652a30b5c38a4fd4ef2468e4904467b04d5e4",
-      "portSha256": "260b0581534c130e63ce43c060b50cbfa4ea55355b4d3ed3e0281190a4b576ca",
+      "portSha256": "56be8e6ae4a94825c7dd83519b535aff39219c62dfcd0b5b9b2a73a9e0504c1b",
       "kind": "adapted"
     },
     {
       "source": "skills/reflect/SKILL.md",
       "target": "skills/reflect/SKILL.md",
-      "upstreamSha256": "1eeaa4f503a38a636ebd74d51966d2aca15dd28a298cea0f6a179fe5b6e635d5",
-      "portSha256": "23c4f2e09b1fac6b86c9a62ace7c67c4e14c5bcfd78d9e172e5c2d0624ccadc4",
+      "upstreamSha256": "50f522723a1ba455cbc0a6298ce7fa959dce698f0d4840762f67118b84c45d4e",
+      "portSha256": "f0a9d7b85f8772cf9755cb07d422bb33ed91a505f3dfef1a77226b099933e870",
       "kind": "adapted"
     },
     {
@@ -764,22 +736,22 @@
     {
       "source": "skills/setup-pstack/SKILL.md",
       "target": "skills/setup-p3/SKILL.md",
-      "upstreamSha256": "2b37f4cfa4d9ed52b36706d1445e525a1e16212035ea1eafcb766e01f4d86d69",
-      "portSha256": "bc04313e109b64cdb6eb61b77d64c45b4e857cfa9b85c4454a07c1059d7afc81",
+      "upstreamSha256": "f611064e7c938328d20b36c482cf798369ef2b8e61583a36b28288e39d4ef97a",
+      "portSha256": "ef861d4becc90d80f06408522279d447698507db563743aa35866fa4dece8a99",
       "kind": "adapted"
     },
     {
       "source": "skills/sharpen/SKILL.md",
       "target": "skills/sharpen/SKILL.md",
-      "upstreamSha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
-      "portSha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
+      "upstreamSha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+      "portSha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
       "kind": "exact"
     },
     {
       "source": "skills/show-me-your-work/SKILL.md",
       "target": "skills/show-me-your-work/SKILL.md",
       "upstreamSha256": "45b68e44528bf8e8546b2851aa2a8cbe20641d9d891f16083592322dcc586070",
-      "portSha256": "3f78074caf2eae74754480357747136b2f479d0c0aac3658241d7b5f512b28a6",
+      "portSha256": "b56a01c4e532f4cff4c0230ca1034479b47c85b9da54acef003a8b6a507f9f7f",
       "kind": "adapted"
     },
     {
@@ -797,10 +769,2859 @@
       "kind": "exact"
     },
     {
+      "source": "skills/statechart/SKILL.md",
+      "target": "skills/statechart/SKILL.md",
+      "upstreamSha256": "010b7b4532406739b1c3a426d1a45f02bb618a42561fc96b3976e064a7f8384d",
+      "portSha256": "010b7b4532406739b1c3a426d1a45f02bb618a42561fc96b3976e064a7f8384d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/references/render.md",
+      "target": "skills/statechart/references/render.md",
+      "upstreamSha256": "8cca446eb0c8f87f2ef7b97c4b149f59aacdc153134b4217c4bcde09b10ac3c4",
+      "portSha256": "8cca446eb0c8f87f2ef7b97c4b149f59aacdc153134b4217c4bcde09b10ac3c4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/backends/cfg.ts",
+      "target": "skills/statechart/scripts/backends/cfg.ts",
+      "upstreamSha256": "aea4d8766d214e7fa08f4881f1037319655e75eb56652e1b6d5d4f13a162e3e1",
+      "portSha256": "aea4d8766d214e7fa08f4881f1037319655e75eb56652e1b6d5d4f13a162e3e1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/backends/mermaid.ts",
+      "target": "skills/statechart/scripts/backends/mermaid.ts",
+      "upstreamSha256": "75704b2704a9399a39479ff704a580d5b9a1d0fede01fe771df28bf799b434b6",
+      "portSha256": "75704b2704a9399a39479ff704a580d5b9a1d0fede01fe771df28bf799b434b6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/backends/plain-text.ts",
+      "target": "skills/statechart/scripts/backends/plain-text.ts",
+      "upstreamSha256": "e2bedb855eb3806ec3fe7a7bfa49baa309fb4cf0da425b5fe1e0686268ce255a",
+      "portSha256": "e2bedb855eb3806ec3fe7a7bfa49baa309fb4cf0da425b5fe1e0686268ce255a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/backends/report.ts",
+      "target": "skills/statechart/scripts/backends/report.ts",
+      "upstreamSha256": "730b4048578ab0468e1581f16fec60b246e321161effb68e481efb373f0f2501",
+      "portSha256": "730b4048578ab0468e1581f16fec60b246e321161effb68e481efb373f0f2501",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/config.ts",
+      "target": "skills/statechart/scripts/frontends/config.ts",
+      "upstreamSha256": "5eeab1e755f20a2c83b408c6503fdc9c6b10c971d8dedad3f912bd15f9763daf",
+      "portSha256": "5eeab1e755f20a2c83b408c6503fdc9c6b10c971d8dedad3f912bd15f9763daf",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/dot.ts",
+      "target": "skills/statechart/scripts/frontends/dot.ts",
+      "upstreamSha256": "4eef9ec848557dcd01ca8dbbec75b71c0653c1b73583108bafbb6f559f6d677b",
+      "portSha256": "4eef9ec848557dcd01ca8dbbec75b71c0653c1b73583108bafbb6f559f6d677b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/marks.ts",
+      "target": "skills/statechart/scripts/frontends/marks.ts",
+      "upstreamSha256": "eb0120e61a4004a435c7b7c46916da9dc8b2fa8696ed0d3eb64dc953fed3ab11",
+      "portSha256": "eb0120e61a4004a435c7b7c46916da9dc8b2fa8696ed0d3eb64dc953fed3ab11",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/messages.ts",
+      "target": "skills/statechart/scripts/frontends/messages.ts",
+      "upstreamSha256": "36bfc6fb3ffa86897661efb2aa67bd95b55a4da9a3e952831f6e0668826b4b92",
+      "portSha256": "36bfc6fb3ffa86897661efb2aa67bd95b55a4da9a3e952831f6e0668826b4b92",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/spec.ts",
+      "target": "skills/statechart/scripts/frontends/spec.ts",
+      "upstreamSha256": "450cdfc8d0577a96818ca3697efebbbf70b530a4ba7e3eee03cf1ba8d3f1a0fd",
+      "portSha256": "450cdfc8d0577a96818ca3697efebbbf70b530a4ba7e3eee03cf1ba8d3f1a0fd",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/trace.ts",
+      "target": "skills/statechart/scripts/frontends/trace.ts",
+      "upstreamSha256": "7d083cf89b81c41556fc3fd5f07019886e0f6783c632475e7181ac4b81887367",
+      "portSha256": "7d083cf89b81c41556fc3fd5f07019886e0f6783c632475e7181ac4b81887367",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/value.ts",
+      "target": "skills/statechart/scripts/frontends/value.ts",
+      "upstreamSha256": "7c54be394b7a10f60591858a0f08fb1e8dc0941df1f38ede07fbe7719ff56da0",
+      "portSha256": "7c54be394b7a10f60591858a0f08fb1e8dc0941df1f38ede07fbe7719ff56da0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/verdict.ts",
+      "target": "skills/statechart/scripts/frontends/verdict.ts",
+      "upstreamSha256": "0d0a9d6b6d6da5a7c48851b86d9d041f22982404dda6288795a1715138d7008b",
+      "portSha256": "0d0a9d6b6d6da5a7c48851b86d9d041f22982404dda6288795a1715138d7008b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/frontends/view.ts",
+      "target": "skills/statechart/scripts/frontends/view.ts",
+      "upstreamSha256": "2c0af8939321c5aaed4b6ecac8ce6a98d0e6774d8bd15d4b02fe4f406b8c9620",
+      "portSha256": "2c0af8939321c5aaed4b6ecac8ce6a98d0e6774d8bd15d4b02fe4f406b8c9620",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/ir.ts",
+      "target": "skills/statechart/scripts/ir.ts",
+      "upstreamSha256": "5602beca4e4ac08421cfa07e4da989f0e75439f1d136cc923226909e771dc7ff",
+      "portSha256": "5602beca4e4ac08421cfa07e4da989f0e75439f1d136cc923226909e771dc7ff",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/package.json",
+      "target": "skills/statechart/scripts/package.json",
+      "upstreamSha256": "2c36842f391275b0f343a38947560adee155fab4a744eacef1e595e9f07c4e3d",
+      "portSha256": "2c36842f391275b0f343a38947560adee155fab4a744eacef1e595e9f07c4e3d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/annotate.ts",
+      "target": "skills/statechart/scripts/passes/annotate.ts",
+      "upstreamSha256": "dc8eeee09c3a9a0c060f32fb1d554e01bd80e5265751cdeb041ef3e19561b92a",
+      "portSha256": "dc8eeee09c3a9a0c060f32fb1d554e01bd80e5265751cdeb041ef3e19561b92a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/label.ts",
+      "target": "skills/statechart/scripts/passes/label.ts",
+      "upstreamSha256": "b5ef402369c5e7846be1fd39165e95cbfe715fc36eb9331a0401b26523c539c9",
+      "portSha256": "b5ef402369c5e7846be1fd39165e95cbfe715fc36eb9331a0401b26523c539c9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/lift.ts",
+      "target": "skills/statechart/scripts/passes/lift.ts",
+      "upstreamSha256": "8977dddc6c93bb2e3914d5b50760eb66876107ba51e2b8cf9e18611b4c40c89c",
+      "portSha256": "8977dddc6c93bb2e3914d5b50760eb66876107ba51e2b8cf9e18611b4c40c89c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/loop-check.ts",
+      "target": "skills/statechart/scripts/passes/loop-check.ts",
+      "upstreamSha256": "07d459385849aa35834040bf34e279c39baba68244ec9da17c57703a6ee8e2d4",
+      "portSha256": "07d459385849aa35834040bf34e279c39baba68244ec9da17c57703a6ee8e2d4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/paths.ts",
+      "target": "skills/statechart/scripts/passes/paths.ts",
+      "upstreamSha256": "9af1066b007ef86cb05c5e278eef09f090f1e46eb91d356e5146edbd4fee4ec7",
+      "portSha256": "9af1066b007ef86cb05c5e278eef09f090f1e46eb91d356e5146edbd4fee4ec7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/reach.ts",
+      "target": "skills/statechart/scripts/passes/reach.ts",
+      "upstreamSha256": "b52b38f926814937b733221b40bd31075a69a2fb91ecbce2164752a8684bc5d6",
+      "portSha256": "b52b38f926814937b733221b40bd31075a69a2fb91ecbce2164752a8684bc5d6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/region-check.ts",
+      "target": "skills/statechart/scripts/passes/region-check.ts",
+      "upstreamSha256": "8a6e0618740a14bb7048f6563b4324958177f4685d4d6d90364cc6245b1498b4",
+      "portSha256": "8a6e0618740a14bb7048f6563b4324958177f4685d4d6d90364cc6245b1498b4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/passes/regions.ts",
+      "target": "skills/statechart/scripts/passes/regions.ts",
+      "upstreamSha256": "d740ebfdbb5ec7b4984412a635a596b43af7a77b8bcb49a1463c8afa75299f72",
+      "portSha256": "d740ebfdbb5ec7b4984412a635a596b43af7a77b8bcb49a1463c8afa75299f72",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/pipeline.ts",
+      "target": "skills/statechart/scripts/pipeline.ts",
+      "upstreamSha256": "8aa8d9295ab6762f7f2ffae91a0aee98b1a1314747c875edba4598fdab8ed543",
+      "portSha256": "8aa8d9295ab6762f7f2ffae91a0aee98b1a1314747c875edba4598fdab8ed543",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/run.ts",
+      "target": "skills/statechart/scripts/run.ts",
+      "upstreamSha256": "f330e0a3b0a9f8181c2e52252c4a47db3f0a64f79a7cca5490263e33a5f13c72",
+      "portSha256": "f330e0a3b0a9f8181c2e52252c4a47db3f0a64f79a7cca5490263e33a5f13c72",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/statechart",
+      "target": "skills/statechart/scripts/statechart",
+      "upstreamSha256": "aeffb7077850fd4c225e3d18049ca6ed7b988cf48e88cd8463526a7feaa74d13",
+      "portSha256": "aeffb7077850fd4c225e3d18049ca6ed7b988cf48e88cd8463526a7feaa74d13",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/statechart.ts",
+      "target": "skills/statechart/scripts/statechart.ts",
+      "upstreamSha256": "1c653f05d0cd0f3298455701f36e3d7d1f837f93e6e642f7c20afb5d613c2d12",
+      "portSha256": "1c653f05d0cd0f3298455701f36e3d7d1f837f93e6e642f7c20afb5d613c2d12",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/ConfigOracle.java",
+      "target": "skills/statechart/scripts/test/ConfigOracle.java",
+      "upstreamSha256": "4f3367314f0fc34e39777d40dd31f96451985b77834fd0e925716aa3b169a021",
+      "portSha256": "4f3367314f0fc34e39777d40dd31f96451985b77834fd0e925716aa3b169a021",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/chart.test.ts",
+      "target": "skills/statechart/scripts/test/chart.test.ts",
+      "upstreamSha256": "3f9022fcc981d17f58b5e7a9302e766241f81a477bda70c3e621d7a1d95f19c1",
+      "portSha256": "3f9022fcc981d17f58b5e7a9302e766241f81a477bda70c3e621d7a1d95f19c1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/charts/Braces.mmd",
+      "target": "skills/statechart/scripts/test/charts/Braces.mmd",
+      "upstreamSha256": "dad412ccff506f4ace1b40617bcc2f103ad0372ddc0135ab26535fc488fef8d3",
+      "portSha256": "dad412ccff506f4ace1b40617bcc2f103ad0372ddc0135ab26535fc488fef8d3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/charts/Escapes.mmd",
+      "target": "skills/statechart/scripts/test/charts/Escapes.mmd",
+      "upstreamSha256": "211adde39edbb349e2d8acc2f95762bfb7da1fb030e5dc815a8982775e1cd372",
+      "portSha256": "211adde39edbb349e2d8acc2f95762bfb7da1fb030e5dc815a8982775e1cd372",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/charts/Phases.mmd",
+      "target": "skills/statechart/scripts/test/charts/Phases.mmd",
+      "upstreamSha256": "bf6062f6a0ee7b8d487882a1810d17951606fd536b2ee370aecc3d3914da0339",
+      "portSha256": "bf6062f6a0ee7b8d487882a1810d17951606fd536b2ee370aecc3d3914da0339",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/cli.test.ts",
+      "target": "skills/statechart/scripts/test/cli.test.ts",
+      "upstreamSha256": "8a3b028dafe2065029a66242f7a3832d18058e772a0dfc1b2c170511ffee8e07",
+      "portSha256": "8a3b028dafe2065029a66242f7a3832d18058e772a0dfc1b2c170511ffee8e07",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/config-fuzz.test.ts",
+      "target": "skills/statechart/scripts/test/config-fuzz.test.ts",
+      "upstreamSha256": "a258744d47529418d32de0fd47aa2d013298581b73064f7ba4d628e4d5471321",
+      "portSha256": "a258744d47529418d32de0fd47aa2d013298581b73064f7ba4d628e4d5471321",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus.test.ts",
+      "target": "skills/statechart/scripts/test/corpus.test.ts",
+      "upstreamSha256": "5686aa487dfec3e0a06b3c15390dbc3ab5953ced532c5eee7d5c5e2f54f492c7",
+      "portSha256": "5686aa487dfec3e0a06b3c15390dbc3ab5953ced532c5eee7d5c5e2f54f492c7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/Counter/ChartRun.out",
+      "upstreamSha256": "05cf40936af6590878a1bbe8290b9fdebe7d33503331105be352b1901584200e",
+      "portSha256": "05cf40936af6590878a1bbe8290b9fdebe7d33503331105be352b1901584200e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/Counter.cfg",
+      "target": "skills/statechart/scripts/test/corpus/Counter/Counter.cfg",
+      "upstreamSha256": "ee4c110b174a3bd2cc54226420ba2c979682be57c7964273b8a30d6395dc2c3f",
+      "portSha256": "ee4c110b174a3bd2cc54226420ba2c979682be57c7964273b8a30d6395dc2c3f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/Counter.tla",
+      "target": "skills/statechart/scripts/test/corpus/Counter/Counter.tla",
+      "upstreamSha256": "a277dd9ba29b50b21d87d5ebbbaff3ed87949e427ce563ddb37ede7ba728da05",
+      "portSha256": "a277dd9ba29b50b21d87d5ebbbaff3ed87949e427ce563ddb37ede7ba728da05",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/Counter/chart.mmd",
+      "upstreamSha256": "bcdc46dccfa6172fa9e36c3236fb1cb9221d0648534499d5fe0c51ebd13d22b0",
+      "portSha256": "bcdc46dccfa6172fa9e36c3236fb1cb9221d0648534499d5fe0c51ebd13d22b0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/Counter/graph.dot",
+      "upstreamSha256": "4c12b6f39274a6227df5837a066430cc2ce5b928d0c8cf63269bd428367c7026",
+      "portSha256": "5b32f87b92dc10f63004cb53dc912c5df5fd0cc57124ba145f718932ab0c3a3f",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/report.md",
+      "target": "skills/statechart/scripts/test/corpus/Counter/report.md",
+      "upstreamSha256": "e52a2affff3ca2d85c6ee87a4543ca99024fa0db8a3d48070a6752520121a413",
+      "portSha256": "e52a2affff3ca2d85c6ee87a4543ca99024fa0db8a3d48070a6752520121a413",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/Counter/sany.out",
+      "upstreamSha256": "9041a7726d3e497fb10c5d67293d76f3318d448ce08c371a90454c43c65722c1",
+      "portSha256": "9041a7726d3e497fb10c5d67293d76f3318d448ce08c371a90454c43c65722c1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Counter/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/Counter/verdict-1.out",
+      "upstreamSha256": "ce981c26c48bba282ebc9794a473575f3981909c4ec47bd9df9327316eae71e4",
+      "portSha256": "ce981c26c48bba282ebc9794a473575f3981909c4ec47bd9df9327316eae71e4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/ChartRun.out",
+      "upstreamSha256": "ea9ceacfd5ea703bf19893d82f7e790f3b39441b3588c7248286710cf472495d",
+      "portSha256": "ea9ceacfd5ea703bf19893d82f7e790f3b39441b3588c7248286710cf472495d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/CounterAction.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/CounterAction.cfg",
+      "upstreamSha256": "4666d0659cf69047aa41e64a48f307cff103a6b0815d85ead5bd4c0386a0f5b7",
+      "portSha256": "4666d0659cf69047aa41e64a48f307cff103a6b0815d85ead5bd4c0386a0f5b7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/CounterAction.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/CounterAction.tla",
+      "upstreamSha256": "895ed84802b88a6deb9653e7baf36b1eb67b848592c91d168d84db03b73c74f5",
+      "portSha256": "895ed84802b88a6deb9653e7baf36b1eb67b848592c91d168d84db03b73c74f5",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/chart.mmd",
+      "upstreamSha256": "d35190a320e1b9e5cb35ae583b8367d2d10bf4cc17b1f7e94e4edf0613d01730",
+      "portSha256": "d35190a320e1b9e5cb35ae583b8367d2d10bf4cc17b1f7e94e4edf0613d01730",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/graph.dot",
+      "upstreamSha256": "906fdbce95c4d0628441a231d9d9124d506d34f95ba08f653f3db084d13c5c1d",
+      "portSha256": "7b691d30e07591b6f6eb78157730409d3e954fcf44985eaceb3a9d0967769712",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/report.md",
+      "upstreamSha256": "36d49034aab3b675026e717c876ad5da5f74468338295b399da3fd4c3b0e8d6a",
+      "portSha256": "36d49034aab3b675026e717c876ad5da5f74468338295b399da3fd4c3b0e8d6a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/sany.out",
+      "upstreamSha256": "e529b1c17203bbc05da9d74a48adb9ac4f06cff3f33df94ba215daa8b315dc9a",
+      "portSha256": "e529b1c17203bbc05da9d74a48adb9ac4f06cff3f33df94ba215daa8b315dc9a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/verdict-1.out",
+      "upstreamSha256": "a5e7c90e12c0f9b3b7420db90c06a8277369a4757c7b20ece83689ac577129ce",
+      "portSha256": "a5e7c90e12c0f9b3b7420db90c06a8277369a4757c7b20ece83689ac577129ce",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/verdict-2.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/verdict-2.out",
+      "upstreamSha256": "ad46743f4fbbd0557be8cdbec10e127bd90e3fd9c88c50f3338f95118d9d5b49",
+      "portSha256": "ad46743f4fbbd0557be8cdbec10e127bd90e3fd9c88c50f3338f95118d9d5b49",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterAction/verdict-3.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterAction/verdict-3.out",
+      "upstreamSha256": "9b6d49a17a5371709ee942785acf8c8742fdddaed7723d1cb3ade58686732301",
+      "portSha256": "9b6d49a17a5371709ee942785acf8c8742fdddaed7723d1cb3ade58686732301",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/ChartRun.out",
+      "upstreamSha256": "c3ac24eafc6f680c59b976e6ddd4ec6272623e1a3641fe43707abbf208c9d9d3",
+      "portSha256": "c3ac24eafc6f680c59b976e6ddd4ec6272623e1a3641fe43707abbf208c9d9d3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/CounterDeadlock.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/CounterDeadlock.cfg",
+      "upstreamSha256": "394991fa4d162ed8ea74e6e5b5473af8c246ec3db12da3737fce046c41e78692",
+      "portSha256": "394991fa4d162ed8ea74e6e5b5473af8c246ec3db12da3737fce046c41e78692",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/CounterDeadlock.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/CounterDeadlock.tla",
+      "upstreamSha256": "d6af2fc22ab5fbe8d64ae6202187ce807e53189a43eef1af860db55db933b132",
+      "portSha256": "d6af2fc22ab5fbe8d64ae6202187ce807e53189a43eef1af860db55db933b132",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/chart.mmd",
+      "upstreamSha256": "928b930e2d28f94e083183cc064f1dde292a5f65fcc0dfec013b04c234e6254b",
+      "portSha256": "928b930e2d28f94e083183cc064f1dde292a5f65fcc0dfec013b04c234e6254b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/graph.dot",
+      "upstreamSha256": "4c12b6f39274a6227df5837a066430cc2ce5b928d0c8cf63269bd428367c7026",
+      "portSha256": "5b32f87b92dc10f63004cb53dc912c5df5fd0cc57124ba145f718932ab0c3a3f",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/report.md",
+      "upstreamSha256": "b4e4365f95f4b34abea8ffb1fde1bd39b8e8eb6f30e839d75332c6c834460c25",
+      "portSha256": "b4e4365f95f4b34abea8ffb1fde1bd39b8e8eb6f30e839d75332c6c834460c25",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/sany.out",
+      "upstreamSha256": "7a8d40cbae42b10eaea8e6dc42f28ce31892e22c77d521e2cb8d8a6d3d0f0c33",
+      "portSha256": "7a8d40cbae42b10eaea8e6dc42f28ce31892e22c77d521e2cb8d8a6d3d0f0c33",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-1.out",
+      "upstreamSha256": "ae615936a1dde25fd76c7cd7a98891c2e8e8a363ea3457bf8e51b9412f0b050b",
+      "portSha256": "ae615936a1dde25fd76c7cd7a98891c2e8e8a363ea3457bf8e51b9412f0b050b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-2.exit",
+      "upstreamSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "portSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterDeadlock/verdict-2.out",
+      "upstreamSha256": "94f71505e927d30483f539ca838f6661df4488332075f1dfec5eabe188f3f855",
+      "portSha256": "94f71505e927d30483f539ca838f6661df4488332075f1dfec5eabe188f3f855",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/ChartRun.out",
+      "upstreamSha256": "819af259403aab9b4eb407b8a6f04e088d9a428d8fbf6fa871c2380d44de8d21",
+      "portSha256": "819af259403aab9b4eb407b8a6f04e088d9a428d8fbf6fa871c2380d44de8d21",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/CounterFan.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/CounterFan.cfg",
+      "upstreamSha256": "e2de6875a48efd06a1db4aae4d7cc5b86ff9a0b4698074049c7ee52bfb49d3f7",
+      "portSha256": "e2de6875a48efd06a1db4aae4d7cc5b86ff9a0b4698074049c7ee52bfb49d3f7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/CounterFan.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/CounterFan.tla",
+      "upstreamSha256": "1fddc670bda9ad7a900d29891aca1329a9e9f932d353ea944379f6f45bc50a5e",
+      "portSha256": "1fddc670bda9ad7a900d29891aca1329a9e9f932d353ea944379f6f45bc50a5e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/chart.mmd",
+      "upstreamSha256": "2f59dcc1236cc70d4e6609139237e07b7e6645f63129b8722ef6e1d44030b0fd",
+      "portSha256": "2f59dcc1236cc70d4e6609139237e07b7e6645f63129b8722ef6e1d44030b0fd",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/graph.dot",
+      "upstreamSha256": "ee3e20bd9b56b5dc2cc21b653719a588c9dbe08855e0493c262e3c673cea2805",
+      "portSha256": "48164961fca509a0e7bdf99233c5d58d40513bac46fd9dba0c286534c762aaa9",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/report.md",
+      "upstreamSha256": "016771561b9b5b0a45c0d8c805723a6b8bc39396281dba6d4f6c7b3f1e151612",
+      "portSha256": "016771561b9b5b0a45c0d8c805723a6b8bc39396281dba6d4f6c7b3f1e151612",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/sany.out",
+      "upstreamSha256": "5a58a05867b5cb952d4b1de562190e85b8dc1485a7201385e622a2af27519c96",
+      "portSha256": "5a58a05867b5cb952d4b1de562190e85b8dc1485a7201385e622a2af27519c96",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/verdict-1.out",
+      "upstreamSha256": "546e81530ae614ae7264ae857b00e677cb01211a0194cd88583b0d80794fc260",
+      "portSha256": "546e81530ae614ae7264ae857b00e677cb01211a0194cd88583b0d80794fc260",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterFan/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterFan/verdict-2.out",
+      "upstreamSha256": "8e6dc10d24a0ac3ddb86afd8674310c44a8d20488d38346dc8ee896807fc3320",
+      "portSha256": "8e6dc10d24a0ac3ddb86afd8674310c44a8d20488d38346dc8ee896807fc3320",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/ChartRun.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/ChartRun.exit",
+      "upstreamSha256": "84b9bb077be0d8a29d0d01ef350d718b77c2ec5f40c3ab90502b1b4b5016c550",
+      "portSha256": "84b9bb077be0d8a29d0d01ef350d718b77c2ec5f40c3ab90502b1b4b5016c550",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/ChartRun.out",
+      "upstreamSha256": "78a0d2a62cbb70c1f182a994f1661db2596115b5e53210a2f0125b1390129c29",
+      "portSha256": "78a0d2a62cbb70c1f182a994f1661db2596115b5e53210a2f0125b1390129c29",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/CounterGuard.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/CounterGuard.cfg",
+      "upstreamSha256": "3239ec0757c48dfbf02f914005fd2c9d114e9f2989d42e15184df887e322a301",
+      "portSha256": "3239ec0757c48dfbf02f914005fd2c9d114e9f2989d42e15184df887e322a301",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/CounterGuard.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/CounterGuard.tla",
+      "upstreamSha256": "c2d7ed7d7bd4b317764d590dbd9bb6cbe7819500c7e6707787fe3065460c99a7",
+      "portSha256": "c2d7ed7d7bd4b317764d590dbd9bb6cbe7819500c7e6707787fe3065460c99a7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/chart.mmd",
+      "upstreamSha256": "8baa9330755dd4217aadd731b77fde833f747d09998944ada660b2708cc7d313",
+      "portSha256": "8baa9330755dd4217aadd731b77fde833f747d09998944ada660b2708cc7d313",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/graph.dot",
+      "upstreamSha256": "7b0b58221d3980d6d64cb979c22523fbfe5796e465bae79e6d19fdd9c607e547",
+      "portSha256": "7e35dd1127f856fb804e64d1f9978fd76d9394487e5fdbd8a29ff3bb2fbd46b0",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/report.md",
+      "upstreamSha256": "454b4672f07c18e52827e9906fea37c6e701c5d87eea7ca3675163375c02b64f",
+      "portSha256": "454b4672f07c18e52827e9906fea37c6e701c5d87eea7ca3675163375c02b64f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/sany.out",
+      "upstreamSha256": "8d331316b1be40a834e166268f8abe94f884bfcfe35135b6492eacb1ee825788",
+      "portSha256": "8d331316b1be40a834e166268f8abe94f884bfcfe35135b6492eacb1ee825788",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-1.out",
+      "upstreamSha256": "580ce25bf18afc8bd1b9df54f4053b719acce5ca10c2794475a8fba249417eb6",
+      "portSha256": "580ce25bf18afc8bd1b9df54f4053b719acce5ca10c2794475a8fba249417eb6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-2.exit",
+      "upstreamSha256": "84b9bb077be0d8a29d0d01ef350d718b77c2ec5f40c3ab90502b1b4b5016c550",
+      "portSha256": "84b9bb077be0d8a29d0d01ef350d718b77c2ec5f40c3ab90502b1b4b5016c550",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterGuard/verdict-2.out",
+      "upstreamSha256": "3828a6b606057844dedf464e94374092293787b0f4be8b9950931de7d70946da",
+      "portSha256": "3828a6b606057844dedf464e94374092293787b0f4be8b9950931de7d70946da",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/ChartRun.out",
+      "upstreamSha256": "9323d9f012374d2392fd4f7fbe655e1ed6fce04160270c11ceada536c51ce677",
+      "portSha256": "9323d9f012374d2392fd4f7fbe655e1ed6fce04160270c11ceada536c51ce677",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/CounterInitPast.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/CounterInitPast.cfg",
+      "upstreamSha256": "f42b6456243b9a8f39599597bb630b68b02b0e66683e96896cb06d2b81af94d9",
+      "portSha256": "f42b6456243b9a8f39599597bb630b68b02b0e66683e96896cb06d2b81af94d9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/CounterInitPast.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/CounterInitPast.tla",
+      "upstreamSha256": "745a6e54d0b9c285d797481a09d4a531004f46b04fb5ef0b7c35194fa4d6a137",
+      "portSha256": "745a6e54d0b9c285d797481a09d4a531004f46b04fb5ef0b7c35194fa4d6a137",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/chart.mmd",
+      "upstreamSha256": "28797d6572aa78a9f49f04a3247b62a7047e660af586d8717877164f3bda73e2",
+      "portSha256": "28797d6572aa78a9f49f04a3247b62a7047e660af586d8717877164f3bda73e2",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/graph.dot",
+      "upstreamSha256": "372ed91b09c1602514668fe24101315737f060e607fb959af0b55dde9efc4ed1",
+      "portSha256": "9cc00172544fcfb22783f5f7747b86dca0748dd882f5a155d40a9f17333ab482",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/report.md",
+      "upstreamSha256": "757128a547d5de236c96e47780e5ce8852d1b5873912f31fd4a964222b986295",
+      "portSha256": "757128a547d5de236c96e47780e5ce8852d1b5873912f31fd4a964222b986295",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/sany.out",
+      "upstreamSha256": "74535350e20489c088c310d49ac2abab35c0bd3dcd7b9a500b351846da01f62f",
+      "portSha256": "74535350e20489c088c310d49ac2abab35c0bd3dcd7b9a500b351846da01f62f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/verdict-1.out",
+      "upstreamSha256": "a10d803555dbc95cdeae0850097f60e04ed20e467760270c8c58400b0629b6d8",
+      "portSha256": "a10d803555dbc95cdeae0850097f60e04ed20e467760270c8c58400b0629b6d8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPast/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPast/verdict-2.out",
+      "upstreamSha256": "9133f74a060cd7b2ff3364ca90bbcec4596c6fee035468e49e0ad1209260899c",
+      "portSha256": "9133f74a060cd7b2ff3364ca90bbcec4596c6fee035468e49e0ad1209260899c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/ChartRun.out",
+      "upstreamSha256": "a1bf4035560dba1b655bb1577caf63df9f3dd9444380e42c9cffc721c1f6e019",
+      "portSha256": "a1bf4035560dba1b655bb1577caf63df9f3dd9444380e42c9cffc721c1f6e019",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/CounterInitPastHolds.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/CounterInitPastHolds.cfg",
+      "upstreamSha256": "b1ca71d25dbb08c93b0ebaf628eb536ef6c98e3e599d8146e0a0c43f5eeb800d",
+      "portSha256": "b1ca71d25dbb08c93b0ebaf628eb536ef6c98e3e599d8146e0a0c43f5eeb800d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/CounterInitPastHolds.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/CounterInitPastHolds.tla",
+      "upstreamSha256": "97bafdcba8976d26069b89c31a549d3d7d992cf9cde10d654133d55f2ce604e7",
+      "portSha256": "97bafdcba8976d26069b89c31a549d3d7d992cf9cde10d654133d55f2ce604e7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/chart.mmd",
+      "upstreamSha256": "f74c6486f80c1e9820a901a730eecb3d6f9aa88076f704b87a60bb02b8b24d01",
+      "portSha256": "f74c6486f80c1e9820a901a730eecb3d6f9aa88076f704b87a60bb02b8b24d01",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/graph.dot",
+      "upstreamSha256": "372ed91b09c1602514668fe24101315737f060e607fb959af0b55dde9efc4ed1",
+      "portSha256": "9cc00172544fcfb22783f5f7747b86dca0748dd882f5a155d40a9f17333ab482",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/report.md",
+      "upstreamSha256": "60a12f6918ea21e77def19b66ff94ff47ce834f7ddbfef4c246570d02a0c6e78",
+      "portSha256": "60a12f6918ea21e77def19b66ff94ff47ce834f7ddbfef4c246570d02a0c6e78",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/sany.out",
+      "upstreamSha256": "91f7850c1fe9fd4507f457dea2a047abd4013182f56cda2e7aa587b7b4edaf77",
+      "portSha256": "91f7850c1fe9fd4507f457dea2a047abd4013182f56cda2e7aa587b7b4edaf77",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInitPastHolds/verdict-1.out",
+      "upstreamSha256": "ff6df0e311060e629b11d3f5939ef4e9efb23beafb3d8db9facca963a3a86acd",
+      "portSha256": "ff6df0e311060e629b11d3f5939ef4e9efb23beafb3d8db9facca963a3a86acd",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/ChartRun.out",
+      "upstreamSha256": "12e78945b0e37f41b86705b53c09c044a06427265e23613908052a0c7661c5f6",
+      "portSha256": "12e78945b0e37f41b86705b53c09c044a06427265e23613908052a0c7661c5f6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/CounterInstance.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/CounterInstance.cfg",
+      "upstreamSha256": "f0d016dfb57a8661eac65d738ca9b797242c486e4fe5a0d7379e9424c7de3cc8",
+      "portSha256": "f0d016dfb57a8661eac65d738ca9b797242c486e4fe5a0d7379e9424c7de3cc8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/CounterInstance.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/CounterInstance.tla",
+      "upstreamSha256": "cbee0c802f8984ef74bb2d85e7d75635522755540e0175c51ba1cb0a099a9345",
+      "portSha256": "cbee0c802f8984ef74bb2d85e7d75635522755540e0175c51ba1cb0a099a9345",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/CounterSteps.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/CounterSteps.tla",
+      "upstreamSha256": "ec27748a316d01d7384a402166ff3fe36c7364511fd1681797832f2a1777e8ac",
+      "portSha256": "ec27748a316d01d7384a402166ff3fe36c7364511fd1681797832f2a1777e8ac",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/chart.mmd",
+      "upstreamSha256": "649d905eb59e1a2972e56396f4aeaff6cafb40c6733c55b5829d36cb4986eb8e",
+      "portSha256": "649d905eb59e1a2972e56396f4aeaff6cafb40c6733c55b5829d36cb4986eb8e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/graph.dot",
+      "upstreamSha256": "ca06f91bdafb423be1fac388ab5b90d8f78ff96148c2120a61e085f0dc4c108b",
+      "portSha256": "91f387f0ed3b5778e00432ceb4df38261ea3f6c0dd2e1345305332a54088aa09",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/report.md",
+      "upstreamSha256": "2d6a8b73b1a6f4003bd5c3c669191ab08d04cb03fe441fad8f892b4e8d581569",
+      "portSha256": "2d6a8b73b1a6f4003bd5c3c669191ab08d04cb03fe441fad8f892b4e8d581569",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/sany.out",
+      "upstreamSha256": "5b8a514e26f02cf174138ba433a2a3d792c1822011e2c69907ef18f2ba5a27d8",
+      "portSha256": "5b8a514e26f02cf174138ba433a2a3d792c1822011e2c69907ef18f2ba5a27d8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/verdict-1.exit",
+      "upstreamSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "portSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterInstance/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterInstance/verdict-1.out",
+      "upstreamSha256": "79dd3301ed8763da38d13e871e333e1f739ef985b43d586f70c7e45c93a7157f",
+      "portSha256": "79dd3301ed8763da38d13e871e333e1f739ef985b43d586f70c7e45c93a7157f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/ChartRun.out",
+      "upstreamSha256": "e5a45da16ae7638b1bf30fd72cb482ed4b97183262ee130a73337a2fa4f28a0d",
+      "portSha256": "e5a45da16ae7638b1bf30fd72cb482ed4b97183262ee130a73337a2fa4f28a0d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/CounterJump.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/CounterJump.cfg",
+      "upstreamSha256": "a94be2a46d740142d19cf03c288547c03cb0fa7d8ab9590a78eb0de7b99ba235",
+      "portSha256": "a94be2a46d740142d19cf03c288547c03cb0fa7d8ab9590a78eb0de7b99ba235",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/CounterJump.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/CounterJump.tla",
+      "upstreamSha256": "62e09e72adfdc0bda81d4e4d26c3c8c56641589258b6308d4c3c0e62c882f035",
+      "portSha256": "62e09e72adfdc0bda81d4e4d26c3c8c56641589258b6308d4c3c0e62c882f035",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/chart.mmd",
+      "upstreamSha256": "b9829b90a85d056c88c8742e17caf5058941048dc411a48524115481a29be92f",
+      "portSha256": "b9829b90a85d056c88c8742e17caf5058941048dc411a48524115481a29be92f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/graph.dot",
+      "upstreamSha256": "f829d5cb1d9027aed499564e5574c8955d91a9b3decb32179000de757c9817a1",
+      "portSha256": "6df1467546bf943ca9ccc05312635b07ae2e3bf82d9ba83fc29d7029e1fbf434",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/report.md",
+      "upstreamSha256": "b459f42807ac3dc2d0ac0f26aa13b549525e0b946871e787ca07e58f6c8ade98",
+      "portSha256": "b459f42807ac3dc2d0ac0f26aa13b549525e0b946871e787ca07e58f6c8ade98",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/sany.out",
+      "upstreamSha256": "68b6e92c3232530a43b49e8292eb0a6e2e8e2c8e04a7e0932e59e7d38f8d4527",
+      "portSha256": "68b6e92c3232530a43b49e8292eb0a6e2e8e2c8e04a7e0932e59e7d38f8d4527",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/verdict-1.out",
+      "upstreamSha256": "9ceb7d389d7cd13f894db85dc00f0b1f0aaccfe7931804202ad6ab770e284461",
+      "portSha256": "9ceb7d389d7cd13f894db85dc00f0b1f0aaccfe7931804202ad6ab770e284461",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterJump/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterJump/verdict-2.out",
+      "upstreamSha256": "7e52bb5a6f8ddb55669eb03ea5dd360ba4bf7f5c3155a1078f1ba152805038d9",
+      "portSha256": "7e52bb5a6f8ddb55669eb03ea5dd360ba4bf7f5c3155a1078f1ba152805038d9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/ChartRun.out",
+      "upstreamSha256": "8e7aaaa8f605109e5dff38439ec5a9ff4d3b94d02612a4b1ce2763754a66cb54",
+      "portSha256": "8e7aaaa8f605109e5dff38439ec5a9ff4d3b94d02612a4b1ce2763754a66cb54",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/CounterLoop.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/CounterLoop.cfg",
+      "upstreamSha256": "f0d016dfb57a8661eac65d738ca9b797242c486e4fe5a0d7379e9424c7de3cc8",
+      "portSha256": "f0d016dfb57a8661eac65d738ca9b797242c486e4fe5a0d7379e9424c7de3cc8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/CounterLoop.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/CounterLoop.tla",
+      "upstreamSha256": "84449896e318fd129b82f574b644ea16a73c1f23e9331cdb9361d5a284e17cdc",
+      "portSha256": "84449896e318fd129b82f574b644ea16a73c1f23e9331cdb9361d5a284e17cdc",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/chart.mmd",
+      "upstreamSha256": "0157bf074e7aa642a0819cd6eb2352fc57c21866962f2944bf71e2c028c9bff9",
+      "portSha256": "0157bf074e7aa642a0819cd6eb2352fc57c21866962f2944bf71e2c028c9bff9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/graph.dot",
+      "upstreamSha256": "6558ade4931cfbe5c28ed713504072976d401072dad6acc4506c84afb3169b99",
+      "portSha256": "6d199cef74dc6193cb110853802ebfea1ef6413d1588a44eb15586f1d4bf6e8d",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/report.md",
+      "upstreamSha256": "fb9d5d76f6c1c00746f9fdc211ee26eb82c5649ed212c2fdf9e9810a4a33ab10",
+      "portSha256": "fb9d5d76f6c1c00746f9fdc211ee26eb82c5649ed212c2fdf9e9810a4a33ab10",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/sany.out",
+      "upstreamSha256": "2a3cb63115eaaf7e19557949fc97785d112b2dcfec55dcb00583daa8926d19f7",
+      "portSha256": "2a3cb63115eaaf7e19557949fc97785d112b2dcfec55dcb00583daa8926d19f7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/verdict-1.exit",
+      "upstreamSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "portSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterLoop/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterLoop/verdict-1.out",
+      "upstreamSha256": "33158ae03c65371f4b028818420652deaee879b77f4e6b8da688038079e98511",
+      "portSha256": "33158ae03c65371f4b028818420652deaee879b77f4e6b8da688038079e98511",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/ChartRun.out",
+      "upstreamSha256": "07e4fc2dca6afe0d621dd26603330c59a6052d1bebb19f395ff8e30c3772e667",
+      "portSha256": "07e4fc2dca6afe0d621dd26603330c59a6052d1bebb19f395ff8e30c3772e667",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/CounterOrder.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/CounterOrder.cfg",
+      "upstreamSha256": "6f321b62ecd415eda4363ce98e05b470d277f8b169dee8658a267668e7f3fb5b",
+      "portSha256": "6f321b62ecd415eda4363ce98e05b470d277f8b169dee8658a267668e7f3fb5b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/CounterOrder.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/CounterOrder.tla",
+      "upstreamSha256": "173e3ba50a4b662464e1188d31d5c306c0202a03385978a8aa841cf0c2f5e8a0",
+      "portSha256": "173e3ba50a4b662464e1188d31d5c306c0202a03385978a8aa841cf0c2f5e8a0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/chart.mmd",
+      "upstreamSha256": "8259183f842918dfaa6f70fb805db9db5a61f3db0af13c2cf09e9e131136d8d1",
+      "portSha256": "8259183f842918dfaa6f70fb805db9db5a61f3db0af13c2cf09e9e131136d8d1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/graph.dot",
+      "upstreamSha256": "7a5d0a1efcf36b579f640e283c38a2054c8740cf96bb2b332bb42e2aaff8481c",
+      "portSha256": "211723592b24a6d577f72bac27e983e94e4b56272c331bfad91af83b7ae4280d",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/report.md",
+      "upstreamSha256": "a37510137bc3d2c9bdf2be48a40aca3f36b44aa5b9be1f4f2f6cfbacfbbd2693",
+      "portSha256": "a37510137bc3d2c9bdf2be48a40aca3f36b44aa5b9be1f4f2f6cfbacfbbd2693",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/sany.out",
+      "upstreamSha256": "e4d8472643a723ed5b3cc8772af07d24d534edcc1a6d36b2690de2d395906ed5",
+      "portSha256": "e4d8472643a723ed5b3cc8772af07d24d534edcc1a6d36b2690de2d395906ed5",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-1.out",
+      "upstreamSha256": "a9d4f6b1b08b5ee7505e20d9a0f90a88cf533a1a4737fd71ae70a162e520af6c",
+      "portSha256": "a9d4f6b1b08b5ee7505e20d9a0f90a88cf533a1a4737fd71ae70a162e520af6c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-2.exit",
+      "upstreamSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "portSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterOrder/verdict-2.out",
+      "upstreamSha256": "57fba1d11f08153f7598c7a6843c557d4804d7ab57b59cf68eafd22116267de3",
+      "portSha256": "57fba1d11f08153f7598c7a6843c557d4804d7ab57b59cf68eafd22116267de3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/ChartRun.out",
+      "upstreamSha256": "c6a688529dfb153ca9206928f04563b2c0f2cb448bf1cf6cfabfeb94981f9d72",
+      "portSha256": "c6a688529dfb153ca9206928f04563b2c0f2cb448bf1cf6cfabfeb94981f9d72",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/CounterRules.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/CounterRules.cfg",
+      "upstreamSha256": "931efa110d01b684843f905cae87fb2308b70b324ca9f51ab1bb6617595047c2",
+      "portSha256": "931efa110d01b684843f905cae87fb2308b70b324ca9f51ab1bb6617595047c2",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/CounterRules.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/CounterRules.tla",
+      "upstreamSha256": "57f1be6cc35c3f8252aacc2916975045d1932fab868d961d9c461e23f666eb86",
+      "portSha256": "57f1be6cc35c3f8252aacc2916975045d1932fab868d961d9c461e23f666eb86",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/Moves.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/Moves.tla",
+      "upstreamSha256": "3c58aaa6098d94f727d427d7ce65ebbc79d684c5a6d7b8e18ccdf2b9222a0a56",
+      "portSha256": "3c58aaa6098d94f727d427d7ce65ebbc79d684c5a6d7b8e18ccdf2b9222a0a56",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/chart.mmd",
+      "upstreamSha256": "a8349b6203985b4cf3f10d581d7a15a312c19262ee7a8de8b73ba62311a817ea",
+      "portSha256": "a8349b6203985b4cf3f10d581d7a15a312c19262ee7a8de8b73ba62311a817ea",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/graph.dot",
+      "upstreamSha256": "80b70738200d8b16e52b598fd6ddffb607f672550168cc8756c8605180210fce",
+      "portSha256": "33f903520a437c0edcde54497622078a205b4e0f211305a0c9cca01c39760003",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/report.md",
+      "upstreamSha256": "6db41c347e7d680d126168093dcce483e5406c5ea4728b32149f3d8c104b1259",
+      "portSha256": "6db41c347e7d680d126168093dcce483e5406c5ea4728b32149f3d8c104b1259",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/sany.out",
+      "upstreamSha256": "6c96b7563f60ca3b1860627a5588093b401d30c13724ccb2c77cee6238c69667",
+      "portSha256": "6c96b7563f60ca3b1860627a5588093b401d30c13724ccb2c77cee6238c69667",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/verdict-1.out",
+      "upstreamSha256": "47b09992efa66d8a3ed65f24d25f5227dbfb48fe2b46b1803ef07ac461122073",
+      "portSha256": "47b09992efa66d8a3ed65f24d25f5227dbfb48fe2b46b1803ef07ac461122073",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/verdict-2.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/verdict-2.out",
+      "upstreamSha256": "fb0503db6628e034c70ee48dc402bc79514564a438ff2c61d02f7533faf7d64c",
+      "portSha256": "fb0503db6628e034c70ee48dc402bc79514564a438ff2c61d02f7533faf7d64c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/verdict-3.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/verdict-3.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/verdict-3.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/verdict-3.out",
+      "upstreamSha256": "8cd2712e7ec2f9f4941e1ae12c9476126f19c1a1a11d2a20291ec131e2f63819",
+      "portSha256": "8cd2712e7ec2f9f4941e1ae12c9476126f19c1a1a11d2a20291ec131e2f63819",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterRules/verdict-4.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterRules/verdict-4.out",
+      "upstreamSha256": "b776bfd4513942329b885fdd7fce1bde2d25c063ef81ec382eba7769555a53eb",
+      "portSha256": "b776bfd4513942329b885fdd7fce1bde2d25c063ef81ec382eba7769555a53eb",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/ChartRun.out",
+      "upstreamSha256": "0cc81c2f968b23b4c8c1fd8e1c2032991a8d2d6137ab267958aeb7aee478b240",
+      "portSha256": "0cc81c2f968b23b4c8c1fd8e1c2032991a8d2d6137ab267958aeb7aee478b240",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/CounterStart.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/CounterStart.cfg",
+      "upstreamSha256": "eff943bab49dc0cad0567a0d4456671724b778d7913a2ba38de16a12386b7a58",
+      "portSha256": "eff943bab49dc0cad0567a0d4456671724b778d7913a2ba38de16a12386b7a58",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/CounterStart.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/CounterStart.tla",
+      "upstreamSha256": "dbbb6c141d88a7bc4dc354c89d85ce9623871070b0dc93ca7ba6c0ece2043b28",
+      "portSha256": "dbbb6c141d88a7bc4dc354c89d85ce9623871070b0dc93ca7ba6c0ece2043b28",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/chart.mmd",
+      "upstreamSha256": "fca72ed62e89b903e63a7f2a646a29cee33f72b1b60a6c96793bbcc807e09f74",
+      "portSha256": "fca72ed62e89b903e63a7f2a646a29cee33f72b1b60a6c96793bbcc807e09f74",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/graph.dot",
+      "upstreamSha256": "1c259eb08cedb809a62f24d59232f229d2cc0df8f6bd97285946ce2d586daaef",
+      "portSha256": "87051d03e66b7ca3dd66e2d0189df2f11e3a3529c81a02f035cd7a5647070da2",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/report.md",
+      "upstreamSha256": "01444b757bca7435af323af5a6a31caff91388bb84ab48948b2660a80d78b8e4",
+      "portSha256": "01444b757bca7435af323af5a6a31caff91388bb84ab48948b2660a80d78b8e4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/sany.out",
+      "upstreamSha256": "61a0c605d5ab3806d5ea8779ac00d344e4b19a2c423288b48fb893037de63425",
+      "portSha256": "61a0c605d5ab3806d5ea8779ac00d344e4b19a2c423288b48fb893037de63425",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/verdict-1.out",
+      "upstreamSha256": "152cbd7654bbe39c550b3122009fecfa07dabed3e658ac4845b5f5f60dc309de",
+      "portSha256": "152cbd7654bbe39c550b3122009fecfa07dabed3e658ac4845b5f5f60dc309de",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStart/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterStart/verdict-2.out",
+      "upstreamSha256": "e4d43ce2f301d2ac1c03693981dc6a7b3c84c7af671f9b0d6bff1c4b287c6876",
+      "portSha256": "e4d43ce2f301d2ac1c03693981dc6a7b3c84c7af671f9b0d6bff1c4b287c6876",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/ChartRun.out",
+      "upstreamSha256": "11bcbb21c9a5b3c5491e436c8fc61d339a7c27593fced2199132ab6cf8e4d489",
+      "portSha256": "11bcbb21c9a5b3c5491e436c8fc61d339a7c27593fced2199132ab6cf8e4d489",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/CounterStop.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/CounterStop.cfg",
+      "upstreamSha256": "eff943bab49dc0cad0567a0d4456671724b778d7913a2ba38de16a12386b7a58",
+      "portSha256": "eff943bab49dc0cad0567a0d4456671724b778d7913a2ba38de16a12386b7a58",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/CounterStop.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/CounterStop.tla",
+      "upstreamSha256": "e4486923b563ac7fb028e8513e79e3caa5e0905579d423569e9c918938e0f12c",
+      "portSha256": "e4486923b563ac7fb028e8513e79e3caa5e0905579d423569e9c918938e0f12c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/chart.mmd",
+      "upstreamSha256": "0ddf7a93d1317fa0414c0c5b05dba856c268a2124c4e06caebc3f5b4ad6f393c",
+      "portSha256": "0ddf7a93d1317fa0414c0c5b05dba856c268a2124c4e06caebc3f5b4ad6f393c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/graph.dot",
+      "upstreamSha256": "1c259eb08cedb809a62f24d59232f229d2cc0df8f6bd97285946ce2d586daaef",
+      "portSha256": "87051d03e66b7ca3dd66e2d0189df2f11e3a3529c81a02f035cd7a5647070da2",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/report.md",
+      "upstreamSha256": "5d0e28ce1ceefb740ecc85076c8be6a5a5bf00d00a8bc3a0a00b5494dfbf025d",
+      "portSha256": "5d0e28ce1ceefb740ecc85076c8be6a5a5bf00d00a8bc3a0a00b5494dfbf025d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/sany.out",
+      "upstreamSha256": "933921ca1dcf5b7e089d2aca59ac79a50e521f22c60cebd5812be4e3e67ec58c",
+      "portSha256": "933921ca1dcf5b7e089d2aca59ac79a50e521f22c60cebd5812be4e3e67ec58c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterStop/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterStop/verdict-1.out",
+      "upstreamSha256": "9d4714340d24c6d5a1a22ed36b6bce0943c8eeff28fc32bd0b54fc1aba2b9331",
+      "portSha256": "9d4714340d24c6d5a1a22ed36b6bce0943c8eeff28fc32bd0b54fc1aba2b9331",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/ChartRun.out",
+      "upstreamSha256": "bce917da55d7f549b2902c3ebbf2a7bfc7da9d7de8e3e099a9dc6c7fa815fc37",
+      "portSha256": "bce917da55d7f549b2902c3ebbf2a7bfc7da9d7de8e3e099a9dc6c7fa815fc37",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/CounterTie.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/CounterTie.cfg",
+      "upstreamSha256": "b3d7d0ae1bba01c98903b54cefb4ba76afbb3ce07957431a03e53505ffe95510",
+      "portSha256": "b3d7d0ae1bba01c98903b54cefb4ba76afbb3ce07957431a03e53505ffe95510",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/CounterTie.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/CounterTie.tla",
+      "upstreamSha256": "e668ff93e2213651d6bb14e14255814cb37ab61062466384b953563b2d844daa",
+      "portSha256": "e668ff93e2213651d6bb14e14255814cb37ab61062466384b953563b2d844daa",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/chart.mmd",
+      "upstreamSha256": "0fcc808934cbf91f592eda060de978064e4854c704d1c861332f875cf7415543",
+      "portSha256": "0fcc808934cbf91f592eda060de978064e4854c704d1c861332f875cf7415543",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/graph.dot",
+      "upstreamSha256": "906fdbce95c4d0628441a231d9d9124d506d34f95ba08f653f3db084d13c5c1d",
+      "portSha256": "7b691d30e07591b6f6eb78157730409d3e954fcf44985eaceb3a9d0967769712",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/report.md",
+      "upstreamSha256": "9649f57adfbd71a5f4430bcde0d95234883b1daf80eff2d91a0dbd1ddf6d3739",
+      "portSha256": "9649f57adfbd71a5f4430bcde0d95234883b1daf80eff2d91a0dbd1ddf6d3739",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/sany.out",
+      "upstreamSha256": "4ce39c0150c1cc1c9d657b927f22103fc8ecf1d0f0678137970ac98fe2a8d355",
+      "portSha256": "4ce39c0150c1cc1c9d657b927f22103fc8ecf1d0f0678137970ac98fe2a8d355",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/verdict-1.out",
+      "upstreamSha256": "62f4153c4a5e690d868b0e623c83c272a1a15ea3b9fde47f5e4ebafb6f3766d7",
+      "portSha256": "62f4153c4a5e690d868b0e623c83c272a1a15ea3b9fde47f5e4ebafb6f3766d7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/verdict-2.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/verdict-2.out",
+      "upstreamSha256": "bccbbf5d54a039d540712a11047e6a8d4ae168c1294e15de4f78e12e678ac7cd",
+      "portSha256": "bccbbf5d54a039d540712a11047e6a8d4ae168c1294e15de4f78e12e678ac7cd",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/verdict-3.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/verdict-3.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/verdict-3.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/verdict-3.out",
+      "upstreamSha256": "f832750ac5552dbcc3515ec93ff959fd6f70e6462f590d7c1cd3493440f8c6f4",
+      "portSha256": "f832750ac5552dbcc3515ec93ff959fd6f70e6462f590d7c1cd3493440f8c6f4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTie/verdict-4.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTie/verdict-4.out",
+      "upstreamSha256": "7589bdcdaf666e3b8f1df98ddd47034fe44450e0f9c00ea552c749c7544465a6",
+      "portSha256": "7589bdcdaf666e3b8f1df98ddd47034fe44450e0f9c00ea552c749c7544465a6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/ChartRun.out",
+      "upstreamSha256": "4f0a042594b6b512195658761c84bf0054fa14fc6d52e72a78113a8230a28d93",
+      "portSha256": "4f0a042594b6b512195658761c84bf0054fa14fc6d52e72a78113a8230a28d93",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/CounterTieInGraph.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/CounterTieInGraph.cfg",
+      "upstreamSha256": "4a48e4418169113fdd2abb891981d4917fca6b76915e38f6bcddbc5596786195",
+      "portSha256": "4a48e4418169113fdd2abb891981d4917fca6b76915e38f6bcddbc5596786195",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/CounterTieInGraph.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/CounterTieInGraph.tla",
+      "upstreamSha256": "cf1818fc7d96bd4082f9260a42b7e792d5e6494ce7ae6c97730b63e8085e0ac0",
+      "portSha256": "cf1818fc7d96bd4082f9260a42b7e792d5e6494ce7ae6c97730b63e8085e0ac0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/chart.mmd",
+      "upstreamSha256": "2c3fb00ad851c1bab2516ce25838209c342cbc8c5d3d795a54bb6eac3ad5d0d0",
+      "portSha256": "2c3fb00ad851c1bab2516ce25838209c342cbc8c5d3d795a54bb6eac3ad5d0d0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/graph.dot",
+      "upstreamSha256": "ec76c05526f13d71d561cd67118da823cb0337af4f4d7b011d84f420aa8663ed",
+      "portSha256": "14cc4c8a46faf22e628ec13ce1b97d1fe236225f401261065124c55db44693a4",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/report.md",
+      "upstreamSha256": "efb16c681db5ffef7312d550393bc62e1b3682615b06d8f2991fea29ba3938a8",
+      "portSha256": "efb16c681db5ffef7312d550393bc62e1b3682615b06d8f2991fea29ba3938a8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/sany.out",
+      "upstreamSha256": "eb1991c5d584f35db0bcdb3ad4ab5444be5c84f324f177e51b95bb8b46f75324",
+      "portSha256": "eb1991c5d584f35db0bcdb3ad4ab5444be5c84f324f177e51b95bb8b46f75324",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/verdict-1.out",
+      "upstreamSha256": "2cdd96422ac6aff9f266db7c2b644b02c047ce23ca85486cd5c62cb7b4f9253b",
+      "portSha256": "2cdd96422ac6aff9f266db7c2b644b02c047ce23ca85486cd5c62cb7b4f9253b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterTieInGraph/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterTieInGraph/verdict-2.out",
+      "upstreamSha256": "cc159ae8b3034dea7f055fe6290c0becfc8da8d879459b7ba0421fd57b750e53",
+      "portSha256": "cc159ae8b3034dea7f055fe6290c0becfc8da8d879459b7ba0421fd57b750e53",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/ChartRun.out",
+      "upstreamSha256": "1763153dd2d92f64250e983f283e622a7c7519aa21b5357c07f5931225039314",
+      "portSha256": "1763153dd2d92f64250e983f283e622a7c7519aa21b5357c07f5931225039314",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/CounterView.cfg",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/CounterView.cfg",
+      "upstreamSha256": "f7f1939032d3fb09af0d2e38907b2f8e3da73cd6f90769a801638c4c50f9ccdc",
+      "portSha256": "f7f1939032d3fb09af0d2e38907b2f8e3da73cd6f90769a801638c4c50f9ccdc",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/CounterView.tla",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/CounterView.tla",
+      "upstreamSha256": "273e549d576351809a2220003ae1b3c8cd2e687499be05fb21b3ce461d1b5162",
+      "portSha256": "273e549d576351809a2220003ae1b3c8cd2e687499be05fb21b3ce461d1b5162",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/chart.mmd",
+      "upstreamSha256": "e6e0208a45a15a8af7be73b8e89ee665117414c3fc082679f35b250f2643cd05",
+      "portSha256": "e6e0208a45a15a8af7be73b8e89ee665117414c3fc082679f35b250f2643cd05",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/graph.dot",
+      "upstreamSha256": "906fdbce95c4d0628441a231d9d9124d506d34f95ba08f653f3db084d13c5c1d",
+      "portSha256": "7b691d30e07591b6f6eb78157730409d3e954fcf44985eaceb3a9d0967769712",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/report.md",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/report.md",
+      "upstreamSha256": "2a64bbb36844f44e97626e6c0579ba1aaa6fdaea99216b7322642ab07d1cbbb5",
+      "portSha256": "2a64bbb36844f44e97626e6c0579ba1aaa6fdaea99216b7322642ab07d1cbbb5",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/sany.out",
+      "upstreamSha256": "a1cd34d2d89ca38c44999e7376075047947927899d406c401c87308fd5ab203a",
+      "portSha256": "a1cd34d2d89ca38c44999e7376075047947927899d406c401c87308fd5ab203a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/verdict-1.out",
+      "upstreamSha256": "5981442a7a969e88a98934eb3244542f9c8ec99f73de9050280103f12cb0c4a2",
+      "portSha256": "5981442a7a969e88a98934eb3244542f9c8ec99f73de9050280103f12cb0c4a2",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/verdict-2.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/verdict-2.out",
+      "upstreamSha256": "6237dc3d67262ecfac29bd09515e9fd81eb4c7b0340cf944fb841864c50687f0",
+      "portSha256": "6237dc3d67262ecfac29bd09515e9fd81eb4c7b0340cf944fb841864c50687f0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/verdict-3.exit",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/verdict-3.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/verdict-3.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/verdict-3.out",
+      "upstreamSha256": "c72cdc09ad69e03d04f4ee840659aee046e0e6af39a9c839e6d8d20e3dd9762a",
+      "portSha256": "c72cdc09ad69e03d04f4ee840659aee046e0e6af39a9c839e6d8d20e3dd9762a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/verdict-4.out",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/verdict-4.out",
+      "upstreamSha256": "27f4981b9ba54df20bc33114fea2e521cd5a476173eb307a7cf5ff4c8b3f2c91",
+      "portSha256": "27f4981b9ba54df20bc33114fea2e521cd5a476173eb307a7cf5ff4c8b3f2c91",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/CounterView/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/CounterView/view.mjs",
+      "upstreamSha256": "5f6114fd8ca165604456048f2d7e2c29f667eb4537076647aaf3bb856f1c826e",
+      "portSha256": "5f6114fd8ca165604456048f2d7e2c29f667eb4537076647aaf3bb856f1c826e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/ChartRun.out",
+      "upstreamSha256": "dfd5fadfb9ea0030ecdf82c184268d09ce877336f19e3b9f2f3b95866099538a",
+      "portSha256": "dfd5fadfb9ea0030ecdf82c184268d09ce877336f19e3b9f2f3b95866099538a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/DieHard.cfg",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/DieHard.cfg",
+      "upstreamSha256": "d75cf14954dfc65a36abbbbde7b6d52b77c4df36a4fdf64974acd51adfdd13f8",
+      "portSha256": "d75cf14954dfc65a36abbbbde7b6d52b77c4df36a4fdf64974acd51adfdd13f8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/DieHard.tla",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/DieHard.tla",
+      "upstreamSha256": "8a63111dc1aea97f4b32cc6fb7f36112775ef65b5a8a8603fbd35c493eba306d",
+      "portSha256": "8a63111dc1aea97f4b32cc6fb7f36112775ef65b5a8a8603fbd35c493eba306d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/chart.mmd",
+      "upstreamSha256": "89057b576e59f437dd8c96a25edfd6891512d9b5788c5883e7d1affb6b5a9681",
+      "portSha256": "89057b576e59f437dd8c96a25edfd6891512d9b5788c5883e7d1affb6b5a9681",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/graph.dot",
+      "upstreamSha256": "6cf64ad56b08000c6a3f05aecd54331b71192aca1de3d737afe24b157a06ee84",
+      "portSha256": "fc017872fab65ea996ffb1dcd5fbfe560b60e0579999bed5407140792caa2a38",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/report.md",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/report.md",
+      "upstreamSha256": "044c2a2b41ffe7f522af78b33f1c0fa09f822b42ae0913560db355e88b9cdb4d",
+      "portSha256": "044c2a2b41ffe7f522af78b33f1c0fa09f822b42ae0913560db355e88b9cdb4d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/sany.out",
+      "upstreamSha256": "818c71c8a84a41a626740fcc61608ad77d45d8cea2175690163da289f1eda4bd",
+      "portSha256": "818c71c8a84a41a626740fcc61608ad77d45d8cea2175690163da289f1eda4bd",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/verdict-1.out",
+      "upstreamSha256": "24363932a41b49f302c1dd934c36d583e443850e3c34677a423aecf49fc9081e",
+      "portSha256": "24363932a41b49f302c1dd934c36d583e443850e3c34677a423aecf49fc9081e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/DieHard/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/DieHard/verdict-2.out",
+      "upstreamSha256": "86b8e78b53127ebbfc013ad1423d4ca66c92d118685508dbf57307076d7cf9b5",
+      "portSha256": "86b8e78b53127ebbfc013ad1423d4ca66c92d118685508dbf57307076d7cf9b5",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/ChartRun.out",
+      "upstreamSha256": "6514873d106dda3ed051e38f2e7df8932c597c3d27e68538899ee9c2f70a9405",
+      "portSha256": "6514873d106dda3ed051e38f2e7df8932c597c3d27e68538899ee9c2f70a9405",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/FirstRule.cfg",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/FirstRule.cfg",
+      "upstreamSha256": "422dbc8bd263458fb1706fdaa4888ca3375ca5db1394dcf6b5aaa6ad0645fede",
+      "portSha256": "422dbc8bd263458fb1706fdaa4888ca3375ca5db1394dcf6b5aaa6ad0645fede",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/FirstRule.tla",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/FirstRule.tla",
+      "upstreamSha256": "9f1b2ddb4a573c4612cee6657f728117656a2dd1ab9e8e800e171ee1f3cbb1f4",
+      "portSha256": "9f1b2ddb4a573c4612cee6657f728117656a2dd1ab9e8e800e171ee1f3cbb1f4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/chart.mmd",
+      "upstreamSha256": "60b3c9d31e74b633d5d97a2847aab3bd3fb4f63813e8e0d8a3a493ff5dde1bc3",
+      "portSha256": "60b3c9d31e74b633d5d97a2847aab3bd3fb4f63813e8e0d8a3a493ff5dde1bc3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/graph.dot",
+      "upstreamSha256": "a1b348348bf032ff81cfd796ae19f8cdcf491d5af18eab73ebfca3058a15691b",
+      "portSha256": "c7798bc905d9f5e7ff576c00277f16a8c1c31d2bbcc5d3d6cf78ab482279a191",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/report.md",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/report.md",
+      "upstreamSha256": "2323122a1509c6c554a18da72a549922e364d2e89f0e5d274f1fa4b89f14c6e1",
+      "portSha256": "2323122a1509c6c554a18da72a549922e364d2e89f0e5d274f1fa4b89f14c6e1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/sany.out",
+      "upstreamSha256": "94176927597f47550c6ca1cd91807367a1e2ce968c1eceae20256d96cfba1139",
+      "portSha256": "94176927597f47550c6ca1cd91807367a1e2ce968c1eceae20256d96cfba1139",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-1.out",
+      "upstreamSha256": "f444852a2c5f029b3d76a3d1365763435e8cfeaeedab4769bf0d580dfd8a5f70",
+      "portSha256": "f444852a2c5f029b3d76a3d1365763435e8cfeaeedab4769bf0d580dfd8a5f70",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-2.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-2.out",
+      "upstreamSha256": "1c7209d668eeb0afccaed1e7a7dff0b4d813d4dca12a440e657a1cbf895a90cc",
+      "portSha256": "1c7209d668eeb0afccaed1e7a7dff0b4d813d4dca12a440e657a1cbf895a90cc",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-3.exit",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-3.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-3.out",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-3.out",
+      "upstreamSha256": "3dd39a3d8eacf4e1770b22fd55bed88d03a01b44d7f592981e66279707bff3ee",
+      "portSha256": "3dd39a3d8eacf4e1770b22fd55bed88d03a01b44d7f592981e66279707bff3ee",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-4.exit",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-4.exit",
+      "upstreamSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "portSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/FirstRule/verdict-4.out",
+      "target": "skills/statechart/scripts/test/corpus/FirstRule/verdict-4.out",
+      "upstreamSha256": "6a6efbdf26c39e43588e2c4662cefea87a869d3700096347e2064ff9db439002",
+      "portSha256": "6a6efbdf26c39e43588e2c4662cefea87a869d3700096347e2064ff9db439002",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/ChartRun.out",
+      "upstreamSha256": "263a6666f3bd0a91020bdc2e674285889db6160e62aeeabf81d3fd6c80ad5898",
+      "portSha256": "263a6666f3bd0a91020bdc2e674285889db6160e62aeeabf81d3fd6c80ad5898",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/HiddenClock.cfg",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/HiddenClock.cfg",
+      "upstreamSha256": "1ff2a58417639cdb8fd7fe134d9acc49badc7ddefae309e8a49343550bb37dc7",
+      "portSha256": "1ff2a58417639cdb8fd7fe134d9acc49badc7ddefae309e8a49343550bb37dc7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/HiddenClock.tla",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/HiddenClock.tla",
+      "upstreamSha256": "1cdb3a20c553557f60fddc93d0c2a57dcd815f0028020a58110ff92ae5e6ef1b",
+      "portSha256": "1cdb3a20c553557f60fddc93d0c2a57dcd815f0028020a58110ff92ae5e6ef1b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/chart.mmd",
+      "upstreamSha256": "7d29b01c2bc123ec82c9ccf12a082b2bd700afa6ae5f5e4451c08fba553b317f",
+      "portSha256": "7d29b01c2bc123ec82c9ccf12a082b2bd700afa6ae5f5e4451c08fba553b317f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/graph.dot",
+      "upstreamSha256": "abfe48a392e3f5217684882942261deb1a117e63e3e3836f037a551019fff710",
+      "portSha256": "beabd82aa377140ab8ae3dbdf7c1ecc67df56ba4db63fcd88a074be984500bc7",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/report.md",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/report.md",
+      "upstreamSha256": "bb7e070ee6e8b332ab4a4166c33989a5aa38bc0e0ecf75a93c8935d0680c8b82",
+      "portSha256": "bb7e070ee6e8b332ab4a4166c33989a5aa38bc0e0ecf75a93c8935d0680c8b82",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/sany.out",
+      "upstreamSha256": "86bc954e5dffa1c9516ccb8064610f66668db25a34be69cc03bb4a5736c2a566",
+      "portSha256": "86bc954e5dffa1c9516ccb8064610f66668db25a34be69cc03bb4a5736c2a566",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/verdict-1.exit",
+      "upstreamSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "portSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/HiddenClock/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/HiddenClock/verdict-1.out",
+      "upstreamSha256": "3719bbe9a22627acc9684a503de82250dba80ed9ce0859b1fb09b6d30db2553e",
+      "portSha256": "3719bbe9a22627acc9684a503de82250dba80ed9ce0859b1fb09b6d30db2553e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/Login/ChartRun.out",
+      "upstreamSha256": "69e092decc546972f84ff731b24cb5d2f4d75eb373dbedde38b8aa136f2bfdb8",
+      "portSha256": "69e092decc546972f84ff731b24cb5d2f4d75eb373dbedde38b8aa136f2bfdb8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/Login.cfg",
+      "target": "skills/statechart/scripts/test/corpus/Login/Login.cfg",
+      "upstreamSha256": "97707bb4e8fb4a42465bade63b9be92dae0ebcc877530d588e5bdefb3687655e",
+      "portSha256": "97707bb4e8fb4a42465bade63b9be92dae0ebcc877530d588e5bdefb3687655e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/Login.tla",
+      "target": "skills/statechart/scripts/test/corpus/Login/Login.tla",
+      "upstreamSha256": "25aa3c50791c7f24fe96243baeef4cc4281d9fa37f29abb78533862bd6b6e9de",
+      "portSha256": "25aa3c50791c7f24fe96243baeef4cc4281d9fa37f29abb78533862bd6b6e9de",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/Login/chart.mmd",
+      "upstreamSha256": "6cfda25977c467c106f9fb7f5602960bdd40919ac9294994ccd3bb33346faf35",
+      "portSha256": "6cfda25977c467c106f9fb7f5602960bdd40919ac9294994ccd3bb33346faf35",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/Login/graph.dot",
+      "upstreamSha256": "f120b5583e931755578032d87cedf5bcadc4cb4c4ef497605b4290e1de704673",
+      "portSha256": "a462ea35cdea70196ec7f0b4b891dca08f9864b300eeba13f758852c873918eb",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/report.md",
+      "target": "skills/statechart/scripts/test/corpus/Login/report.md",
+      "upstreamSha256": "e0132cf83d5637c96747873fa6ecdea23961b6b3b818e6db65748013580fe87d",
+      "portSha256": "e0132cf83d5637c96747873fa6ecdea23961b6b3b818e6db65748013580fe87d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/Login/sany.out",
+      "upstreamSha256": "e102731bbbf16d04bce331007e37f29c9f90e0f1371eb5a9cc88f65bc7d56979",
+      "portSha256": "e102731bbbf16d04bce331007e37f29c9f90e0f1371eb5a9cc88f65bc7d56979",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/Login/verdict-1.out",
+      "upstreamSha256": "92ff242b55fc6763a13988a98481a54a1ab19eb3f0a4514d30efe3a48e45b581",
+      "portSha256": "92ff242b55fc6763a13988a98481a54a1ab19eb3f0a4514d30efe3a48e45b581",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Login/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/Login/view.mjs",
+      "upstreamSha256": "f59cef65025cb9aacade3fa5027c5cba15a44cabbfe64084f6dedcb173cf93e7",
+      "portSha256": "f59cef65025cb9aacade3fa5027c5cba15a44cabbfe64084f6dedcb173cf93e7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/ChartRun.out",
+      "upstreamSha256": "b9578b274bf3458ac3b721eca7638f48e97874a32765e0db95807cbb7f9609aa",
+      "portSha256": "b9578b274bf3458ac3b721eca7638f48e97874a32765e0db95807cbb7f9609aa",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/LoginGuarded.cfg",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/LoginGuarded.cfg",
+      "upstreamSha256": "7877ce4ca1c561150cf6a447f61f273742f4b7112ed84f10e827b38f032ec6cd",
+      "portSha256": "7877ce4ca1c561150cf6a447f61f273742f4b7112ed84f10e827b38f032ec6cd",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/LoginGuarded.tla",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/LoginGuarded.tla",
+      "upstreamSha256": "c62583af14b40df94a4276438edecfdf482d2b185eb6b302c3db2dfe71c129e1",
+      "portSha256": "c62583af14b40df94a4276438edecfdf482d2b185eb6b302c3db2dfe71c129e1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/chart.mmd",
+      "upstreamSha256": "298760e9f3334c9807f2c3698c1f487981e9cb67c2688e6d910a2904321383f8",
+      "portSha256": "298760e9f3334c9807f2c3698c1f487981e9cb67c2688e6d910a2904321383f8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/graph.dot",
+      "upstreamSha256": "3e2ffcda3ccb6fa266b13f6f19d18d81d819f9e0e9809e91868edf77d9663237",
+      "portSha256": "257a9fa12248bd5644e8e55a177ec69be8f70607fa520dd1b4cf3ec3a0bb2c9e",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/report.md",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/report.md",
+      "upstreamSha256": "6476c58f4938e059179774f90a7cd1829b2c7c38903223c81a193034ebae83db",
+      "portSha256": "6476c58f4938e059179774f90a7cd1829b2c7c38903223c81a193034ebae83db",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/sany.out",
+      "upstreamSha256": "e8e73f621775ea526e48dc565b3cc0010a22a90ca075e0fb0ca2f73c0522840f",
+      "portSha256": "e8e73f621775ea526e48dc565b3cc0010a22a90ca075e0fb0ca2f73c0522840f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/verdict-1.out",
+      "upstreamSha256": "46b5c3b2cdbf05571417d8aff407d103d0d4755e8e8c0ba46186391a611a6364",
+      "portSha256": "46b5c3b2cdbf05571417d8aff407d103d0d4755e8e8c0ba46186391a611a6364",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginGuarded/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/LoginGuarded/view.mjs",
+      "upstreamSha256": "9a45c5718c3eb1171b0a2271e79612e6af833038f13ab8e16b37f15947d53cca",
+      "portSha256": "9a45c5718c3eb1171b0a2271e79612e6af833038f13ab8e16b37f15947d53cca",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/ChartRun.out",
+      "upstreamSha256": "2dda75ca79ff432a8f74fa504c8876f01441f8196b274f4f834959c49576c87b",
+      "portSha256": "2dda75ca79ff432a8f74fa504c8876f01441f8196b274f4f834959c49576c87b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/LoginParallel.cfg",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/LoginParallel.cfg",
+      "upstreamSha256": "ab2bc033be4345d363d5845fb6bf573c4b79b477bdee965625e2a4af44fd9c44",
+      "portSha256": "ab2bc033be4345d363d5845fb6bf573c4b79b477bdee965625e2a4af44fd9c44",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/LoginParallel.tla",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/LoginParallel.tla",
+      "upstreamSha256": "8f93509fca05425c054e7ec518e9653097ac9464c98fbf426fee551f940b2e51",
+      "portSha256": "8f93509fca05425c054e7ec518e9653097ac9464c98fbf426fee551f940b2e51",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/chart.mmd",
+      "upstreamSha256": "d00f84c57486de54bde56ee75ad223e6936bd1b0334319cef60ebbee899a2480",
+      "portSha256": "d00f84c57486de54bde56ee75ad223e6936bd1b0334319cef60ebbee899a2480",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/graph.dot",
+      "upstreamSha256": "8f4d20009e23824b0bfbeddd2ca9d1c12e764599a7e179018c98d432d091ab86",
+      "portSha256": "8e4738a14f49169168dc98c916ff3adee1a13fd7334452197ddc9ec5e868c2ca",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/report.md",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/report.md",
+      "upstreamSha256": "ed54afd8a979fb2c7eedf28b0bbdd1bfc91b360d883eacd8254483f1db5155d0",
+      "portSha256": "ed54afd8a979fb2c7eedf28b0bbdd1bfc91b360d883eacd8254483f1db5155d0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/sany.out",
+      "upstreamSha256": "9906450ef11cc5c94325cef0b648736135708d37ee3a41841b55035f41e43309",
+      "portSha256": "9906450ef11cc5c94325cef0b648736135708d37ee3a41841b55035f41e43309",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/verdict-1.out",
+      "upstreamSha256": "dcfd62876aa6e62fd08d8dad9b38a5f54ec86725f92c48e8328ac0461dd4be67",
+      "portSha256": "dcfd62876aa6e62fd08d8dad9b38a5f54ec86725f92c48e8328ac0461dd4be67",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/verdict-2.out",
+      "upstreamSha256": "bad6cc9bf2bce357642aba04e7fd952800b718e7a518b9679764a4058465d1d0",
+      "portSha256": "bad6cc9bf2bce357642aba04e7fd952800b718e7a518b9679764a4058465d1d0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/LoginParallel/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/LoginParallel/view.mjs",
+      "upstreamSha256": "9a45c5718c3eb1171b0a2271e79612e6af833038f13ab8e16b37f15947d53cca",
+      "portSha256": "9a45c5718c3eb1171b0a2271e79612e6af833038f13ab8e16b37f15947d53cca",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/ChartRun.out",
+      "upstreamSha256": "2460f0f517117836b5a02e70e4ef2f9889061f1b2cb83ac4bf8fc41532fa2b1d",
+      "portSha256": "2460f0f517117836b5a02e70e4ef2f9889061f1b2cb83ac4bf8fc41532fa2b1d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.cfg",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.cfg",
+      "upstreamSha256": "0f1a86e105cf1c303cedc510b4fe080175fc77eb88fe98c1eba163d04436ffad",
+      "portSha256": "0f1a86e105cf1c303cedc510b4fe080175fc77eb88fe98c1eba163d04436ffad",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.tla",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/MediaPlayer.tla",
+      "upstreamSha256": "ace4961900ceb44281c94879c05550123a74c5427e9fcfaf3dfb134f51c38390",
+      "portSha256": "ace4961900ceb44281c94879c05550123a74c5427e9fcfaf3dfb134f51c38390",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/chart.mmd",
+      "upstreamSha256": "e3a6e6987bd8c6aa9fcc480a5f19e1c8c954804935f2d5f938279e6e7c2f6ceb",
+      "portSha256": "e3a6e6987bd8c6aa9fcc480a5f19e1c8c954804935f2d5f938279e6e7c2f6ceb",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/graph.dot",
+      "upstreamSha256": "881d999fa6e60ba7698ea8633f16a315be97a370aa300cdea885d04333028534",
+      "portSha256": "08cb93dd010f69f26450f43c2bfed1f73711cc6b1426236ae9bbf7bc0db49e71",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/report.md",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/report.md",
+      "upstreamSha256": "ef407dcd4e536034ec7512076364831c7f904912cba5ed6f53659db02e13d82a",
+      "portSha256": "ef407dcd4e536034ec7512076364831c7f904912cba5ed6f53659db02e13d82a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/sany.out",
+      "upstreamSha256": "6385013e3e792b0404acc8ae8c42718fba4a626ff83590bb680318c08d497e88",
+      "portSha256": "6385013e3e792b0404acc8ae8c42718fba4a626ff83590bb680318c08d497e88",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/verdict-1.out",
+      "upstreamSha256": "b6f6af48489b17cc9d21ccaf851a555ec8e51d29bc76486b11801b4ae1c11b86",
+      "portSha256": "b6f6af48489b17cc9d21ccaf851a555ec8e51d29bc76486b11801b4ae1c11b86",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/verdict-2.out",
+      "upstreamSha256": "d9eaa58bbc7364560b1365ef1fe74454ab97ca093cbf05a9bb14d530145165cf",
+      "portSha256": "d9eaa58bbc7364560b1365ef1fe74454ab97ca093cbf05a9bb14d530145165cf",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayer/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayer/view.mjs",
+      "upstreamSha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9",
+      "portSha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/ChartRun.out",
+      "upstreamSha256": "1050612e030b11a1f6e1942880bfcfb634913e0123fe04133e38554553cb79f6",
+      "portSha256": "1050612e030b11a1f6e1942880bfcfb634913e0123fe04133e38554553cb79f6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.cfg",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.cfg",
+      "upstreamSha256": "2d6715915152436fc1016313ef8dd55251c0f712417226c47345228527acff83",
+      "portSha256": "2d6715915152436fc1016313ef8dd55251c0f712417226c47345228527acff83",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.tla",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/MediaPlayerFixed.tla",
+      "upstreamSha256": "59c4c86bfa1f38e0a01e8675d9936558d9a3899c3de8243483e633674a6bccfc",
+      "portSha256": "59c4c86bfa1f38e0a01e8675d9936558d9a3899c3de8243483e633674a6bccfc",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/chart.mmd",
+      "upstreamSha256": "1a77aeca211f5469041f03c6d149beec17f300d6cb5e5386e5f73d6a214f73ae",
+      "portSha256": "1a77aeca211f5469041f03c6d149beec17f300d6cb5e5386e5f73d6a214f73ae",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/graph.dot",
+      "upstreamSha256": "cb6b2d85fb70cfa6aefe16e3fdcb686b60f6593ec755e04ed5c4ec15867766f7",
+      "portSha256": "ec160433ce9f702f9f6ff7abff522779a760e250e25360dc47867663b8c64843",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/report.md",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/report.md",
+      "upstreamSha256": "ea569763d18889ff07c5be90ac6fb74ca83f4a19f1ba79000fa151c692d38d54",
+      "portSha256": "ea569763d18889ff07c5be90ac6fb74ca83f4a19f1ba79000fa151c692d38d54",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/sany.out",
+      "upstreamSha256": "22f3486dbbfc11c5ae0f62e25aab9742b0875285c5de8e490f5cd84b1b948bf0",
+      "portSha256": "22f3486dbbfc11c5ae0f62e25aab9742b0875285c5de8e490f5cd84b1b948bf0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/verdict-1.out",
+      "upstreamSha256": "442c9923009f88f8f462a2bb4533987b6797495bdfee359a74c49b1a360fe386",
+      "portSha256": "442c9923009f88f8f462a2bb4533987b6797495bdfee359a74c49b1a360fe386",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerFixed/view.mjs",
+      "upstreamSha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9",
+      "portSha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/ChartRun.out",
+      "upstreamSha256": "4a67e04e5c801f92ce4a9fe7bf48fdc3a800abe6754d75c0df2ac0f7fa85af68",
+      "portSha256": "4a67e04e5c801f92ce4a9fe7bf48fdc3a800abe6754d75c0df2ac0f7fa85af68",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayer.tla",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayer.tla",
+      "upstreamSha256": "ace4961900ceb44281c94879c05550123a74c5427e9fcfaf3dfb134f51c38390",
+      "portSha256": "ace4961900ceb44281c94879c05550123a74c5427e9fcfaf3dfb134f51c38390",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.cfg",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.cfg",
+      "upstreamSha256": "d9995ff6b04506d0531f7264a85c932fe0e4ea2017608952d6908ef9ed31f828",
+      "portSha256": "d9995ff6b04506d0531f7264a85c932fe0e4ea2017608952d6908ef9ed31f828",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.tla",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/MediaPlayerProps.tla",
+      "upstreamSha256": "31f510c61062eaede29be56efd920aa0cfdb9851e09cdbb0c971468c48e54985",
+      "portSha256": "31f510c61062eaede29be56efd920aa0cfdb9851e09cdbb0c971468c48e54985",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/chart.mmd",
+      "upstreamSha256": "40e8330310aa4ec838ad4bf99b12e5eb0ddc7b6ec99bf21d764c05ab05217d9b",
+      "portSha256": "40e8330310aa4ec838ad4bf99b12e5eb0ddc7b6ec99bf21d764c05ab05217d9b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/graph.dot",
+      "upstreamSha256": "881d999fa6e60ba7698ea8633f16a315be97a370aa300cdea885d04333028534",
+      "portSha256": "08cb93dd010f69f26450f43c2bfed1f73711cc6b1426236ae9bbf7bc0db49e71",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/report.md",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/report.md",
+      "upstreamSha256": "5a68beff9cbd182489e784b065f588a48ec61c60f87ed70dafe80ee0fde56ef3",
+      "portSha256": "5a68beff9cbd182489e784b065f588a48ec61c60f87ed70dafe80ee0fde56ef3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/sany.out",
+      "upstreamSha256": "dc86d7c73175b68cf92d65d35758da6836a38e0ef3d5dba209c80b90df6a53d4",
+      "portSha256": "dc86d7c73175b68cf92d65d35758da6836a38e0ef3d5dba209c80b90df6a53d4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-1.out",
+      "upstreamSha256": "364c7dfbf9cabaea6f15e96811df209ee272800f5d5b671ce27532346dc3215d",
+      "portSha256": "364c7dfbf9cabaea6f15e96811df209ee272800f5d5b671ce27532346dc3215d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-2.out",
+      "upstreamSha256": "e01f79327c1e8a2978629ad8e5486baf95dfb0dd4ffd44152b159b8d35fb0bc9",
+      "portSha256": "e01f79327c1e8a2978629ad8e5486baf95dfb0dd4ffd44152b159b8d35fb0bc9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-3.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-3.out",
+      "upstreamSha256": "8f9d8deff62a9625782caff95aa89f03607aa50bd31f31b5d26f459c04757f09",
+      "portSha256": "8f9d8deff62a9625782caff95aa89f03607aa50bd31f31b5d26f459c04757f09",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.exit",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.exit",
+      "upstreamSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "portSha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-4.out",
+      "upstreamSha256": "04579153733514c4c7bb351a04764e1a9dc5f6815b7dc056fb51ee0dec5ef48a",
+      "portSha256": "04579153733514c4c7bb351a04764e1a9dc5f6815b7dc056fb51ee0dec5ef48a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.exit",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-5.out",
+      "upstreamSha256": "274b0b70a9e7cf8d6c140a968b8674be5fe8073252db78ec6b823cc7f40f7538",
+      "portSha256": "274b0b70a9e7cf8d6c140a968b8674be5fe8073252db78ec6b823cc7f40f7538",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-6.out",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/verdict-6.out",
+      "upstreamSha256": "8f03e3f3afb0378a13715c9f90a3b59c1f46a53f295f8eb74f1b61c62d832a43",
+      "portSha256": "8f03e3f3afb0378a13715c9f90a3b59c1f46a53f295f8eb74f1b61c62d832a43",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/MediaPlayerProps/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/MediaPlayerProps/view.mjs",
+      "upstreamSha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9",
+      "portSha256": "019383f6b4f753b5721485f3cff9b3762e046f4cea134f26a709e9ce4c43dde9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/ChartRun.out",
+      "upstreamSha256": "caeb61ac10b01bf2e6044cebd316b599793eb075fb0256aa81c696e4e5c7a7ce",
+      "portSha256": "caeb61ac10b01bf2e6044cebd316b599793eb075fb0256aa81c696e4e5c7a7ce",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/PickWorker.cfg",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/PickWorker.cfg",
+      "upstreamSha256": "0da0617d4459668020b0bf88a29b1eee01882c88f204728eb9a38493b60bd4b3",
+      "portSha256": "0da0617d4459668020b0bf88a29b1eee01882c88f204728eb9a38493b60bd4b3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/PickWorker.tla",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/PickWorker.tla",
+      "upstreamSha256": "8cd92057affd06b367a85c1d87c81b827cfdfd41a2bea10989ce911ed2fd3124",
+      "portSha256": "8cd92057affd06b367a85c1d87c81b827cfdfd41a2bea10989ce911ed2fd3124",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/chart.mmd",
+      "upstreamSha256": "5fff795e5d0da737cdf1fef95c993ea6ca45fd9f5fb61e163d2e292c40186a64",
+      "portSha256": "5fff795e5d0da737cdf1fef95c993ea6ca45fd9f5fb61e163d2e292c40186a64",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/graph.dot",
+      "upstreamSha256": "1d60f0497f939134c6cb91f5e869445aa7da04ba8caad5128f1509a28c31f245",
+      "portSha256": "700d2800e4ee013bc8f22bace302cff1bdb9cc475f8c29b35cfec58b620d54bb",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/report.md",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/report.md",
+      "upstreamSha256": "87546454dfa4b96d15c53dbdc6eef469e0390f14b4ff1eb370d4437508f90da8",
+      "portSha256": "87546454dfa4b96d15c53dbdc6eef469e0390f14b4ff1eb370d4437508f90da8",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/sany.out",
+      "upstreamSha256": "866b218db376118471b5635ad1b050c14552c1cc7df37d65f9a5ce5b4734dbaf",
+      "portSha256": "866b218db376118471b5635ad1b050c14552c1cc7df37d65f9a5ce5b4734dbaf",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/PickWorker/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/PickWorker/verdict-1.out",
+      "upstreamSha256": "e994e9457f86627fe3db72c80f63513931b75d192b3387b2ef6132c398780b55",
+      "portSha256": "e994e9457f86627fe3db72c80f63513931b75d192b3387b2ef6132c398780b55",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/ChartRun.out",
+      "upstreamSha256": "e01704359d955974f20afee7ea1d5f4f120a5319c219929d747c9e9bc2c9b36d",
+      "portSha256": "e01704359d955974f20afee7ea1d5f4f120a5319c219929d747c9e9bc2c9b36d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/Shadow.cfg",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/Shadow.cfg",
+      "upstreamSha256": "4f0262dfe7368f4c8df45c47e912fca78885a24053b31cd67c3b33f49e61f7a1",
+      "portSha256": "4f0262dfe7368f4c8df45c47e912fca78885a24053b31cd67c3b33f49e61f7a1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/Shadow.tla",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/Shadow.tla",
+      "upstreamSha256": "c7ed4c7ab82d7ed8515621d4ff88d349920cd1a4783a2ee47a71278af9dfe148",
+      "portSha256": "c7ed4c7ab82d7ed8515621d4ff88d349920cd1a4783a2ee47a71278af9dfe148",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/ShadowLib.tla",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/ShadowLib.tla",
+      "upstreamSha256": "3590a4185a432b4fbaa867d7d717482a0d57e2374711bf3bb65244cc936bc666",
+      "portSha256": "3590a4185a432b4fbaa867d7d717482a0d57e2374711bf3bb65244cc936bc666",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/ShadowSub.tla",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/ShadowSub.tla",
+      "upstreamSha256": "b84408d4b14dc56402b7cc8e0e11589f8b0f7bb3dc3f1408afcc7518f3fb7f1f",
+      "portSha256": "b84408d4b14dc56402b7cc8e0e11589f8b0f7bb3dc3f1408afcc7518f3fb7f1f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/chart.mmd",
+      "upstreamSha256": "386fbbc905c7c89c4457a3d48f4b76bdf42861093188dc7369c32aef7b48658c",
+      "portSha256": "386fbbc905c7c89c4457a3d48f4b76bdf42861093188dc7369c32aef7b48658c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/graph.dot",
+      "upstreamSha256": "a1b348348bf032ff81cfd796ae19f8cdcf491d5af18eab73ebfca3058a15691b",
+      "portSha256": "c7798bc905d9f5e7ff576c00277f16a8c1c31d2bbcc5d3d6cf78ab482279a191",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/report.md",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/report.md",
+      "upstreamSha256": "16788146e79b669a06152e69fbb0b3ef738bab2bd37c6c278137e7b96373dd97",
+      "portSha256": "16788146e79b669a06152e69fbb0b3ef738bab2bd37c6c278137e7b96373dd97",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/sany.out",
+      "upstreamSha256": "e7396792c0a425651e9765498b6922a95fa63c37d3fa9927137b3c35596eb310",
+      "portSha256": "e7396792c0a425651e9765498b6922a95fa63c37d3fa9927137b3c35596eb310",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/Shadow/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/Shadow/verdict-1.out",
+      "upstreamSha256": "b6df6a9904d6b1fbe9fb20ae1d7f2e52aded6a7884e6e2514db4e984d6d2c4b9",
+      "portSha256": "b6df6a9904d6b1fbe9fb20ae1d7f2e52aded6a7884e6e2514db4e984d6d2c4b9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/ChartRun.out",
+      "upstreamSha256": "68bb08c06e2c22ec57dd84e595c2895f01bf6c7be3cadb8ae3a942c662888f0c",
+      "portSha256": "68bb08c06e2c22ec57dd84e595c2895f01bf6c7be3cadb8ae3a942c662888f0c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/SpacedNames.cfg",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/SpacedNames.cfg",
+      "upstreamSha256": "e32044a2d32c9e2c9c9459b257ff062bd33028914d392b0ec1d25815772dfbfa",
+      "portSha256": "e32044a2d32c9e2c9c9459b257ff062bd33028914d392b0ec1d25815772dfbfa",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/SpacedNames.tla",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/SpacedNames.tla",
+      "upstreamSha256": "0685a3f78ae2d30bc883201b3c9fc16f9f590b15d02a62295da3cc48566d777b",
+      "portSha256": "0685a3f78ae2d30bc883201b3c9fc16f9f590b15d02a62295da3cc48566d777b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/chart.mmd",
+      "upstreamSha256": "de161c72bdfa1feff2ccbebbc39db5fee3bd4b1d789945802b310838875a2bf1",
+      "portSha256": "de161c72bdfa1feff2ccbebbc39db5fee3bd4b1d789945802b310838875a2bf1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/graph.dot",
+      "upstreamSha256": "1f9e6cbdfd8b30ca4ec376261e8fb6114a7efe4ef1a5ec01ebeeaaddcabce211",
+      "portSha256": "90d1a48e36d4f1ec24acca13c2a4062078f6b65d3befdd4157bef444aea8b120",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/report.md",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/report.md",
+      "upstreamSha256": "62126c7b8928173a53952a5372c703b6c6af5155331f6b8547b21e957319540d",
+      "portSha256": "62126c7b8928173a53952a5372c703b6c6af5155331f6b8547b21e957319540d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/sany.out",
+      "upstreamSha256": "415faa44484371020747737d57b69bec28640dce60adf5cbeac26d0a79f89953",
+      "portSha256": "415faa44484371020747737d57b69bec28640dce60adf5cbeac26d0a79f89953",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-1.out",
+      "upstreamSha256": "05335eac8e0ae5eeda209c59bf7b000c411592022f9afd452847b1d6688319d6",
+      "portSha256": "05335eac8e0ae5eeda209c59bf7b000c411592022f9afd452847b1d6688319d6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-2.exit",
+      "upstreamSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "portSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/SpacedNames/verdict-2.out",
+      "upstreamSha256": "abf2a12c671af7ef26fb4a0a0f59accff35b36251c278bdde7067f00558f7e5c",
+      "portSha256": "abf2a12c671af7ef26fb4a0a0f59accff35b36251c278bdde7067f00558f7e5c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/ChartRun.out",
+      "upstreamSha256": "aed20dee26285d007a0529727c67ff86d52c1eaa3e1ea4c56472df4f2c5b1b92",
+      "portSha256": "aed20dee26285d007a0529727c67ff86d52c1eaa3e1ea4c56472df4f2c5b1b92",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/TwoPhase.cfg",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/TwoPhase.cfg",
+      "upstreamSha256": "a4e4546592e8e5d361ccbeb4808338e15fb61338fdbc84c358e9b0a41a58a704",
+      "portSha256": "a4e4546592e8e5d361ccbeb4808338e15fb61338fdbc84c358e9b0a41a58a704",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/TwoPhase.tla",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/TwoPhase.tla",
+      "upstreamSha256": "c27868893c2f4de82a0c561af6fc65d2abe233e840d9a2d830920d1487ab793d",
+      "portSha256": "c27868893c2f4de82a0c561af6fc65d2abe233e840d9a2d830920d1487ab793d",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/chart.mmd",
+      "upstreamSha256": "e8761c527163b1d15d699da7f7e026337c939e51b2f82feea82a93ce1d67482c",
+      "portSha256": "e8761c527163b1d15d699da7f7e026337c939e51b2f82feea82a93ce1d67482c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/graph.dot",
+      "upstreamSha256": "0276d507b1457de02d25cacced67c19b3442764225bc183e90c8c6745ba5f680",
+      "portSha256": "eb6a6561ea7f499141562459b17b6f5497e3b950835c02b28e8bba5f1262013b",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/report.md",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/report.md",
+      "upstreamSha256": "6b847fe8dc3e043d17c1ec3df7b18c7d618a1b7a351eb8f1943fa5d70a1b640b",
+      "portSha256": "6b847fe8dc3e043d17c1ec3df7b18c7d618a1b7a351eb8f1943fa5d70a1b640b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/sany.out",
+      "upstreamSha256": "3944566b6d4e0b3457c9b30320041e19e97d45f40a01b9a868ddeb9d7ad6304e",
+      "portSha256": "3944566b6d4e0b3457c9b30320041e19e97d45f40a01b9a868ddeb9d7ad6304e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/verdict-1.out",
+      "upstreamSha256": "f22ad5c0f211bf7ad01aa04bd2f461c9e48ed394d1814a7445b990c0f91eec75",
+      "portSha256": "f22ad5c0f211bf7ad01aa04bd2f461c9e48ed394d1814a7445b990c0f91eec75",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/verdict-2.out",
+      "upstreamSha256": "bd8a217318a09cd985601e9483dcc061d502348cfc3e33a684ed35240b7cb5ba",
+      "portSha256": "bd8a217318a09cd985601e9483dcc061d502348cfc3e33a684ed35240b7cb5ba",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhase/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhase/view.mjs",
+      "upstreamSha256": "25bc78b0ee8c7ab24ed1f0dbe78ed60adce0f086579c03bf8c97d02c448c7f26",
+      "portSha256": "25bc78b0ee8c7ab24ed1f0dbe78ed60adce0f086579c03bf8c97d02c448c7f26",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/ChartRun.out",
+      "upstreamSha256": "73094c6a6b78588569eef707f88ce7d6f7da4505a4882a2ff0cc1dcffc72b0f0",
+      "portSha256": "73094c6a6b78588569eef707f88ce7d6f7da4505a4882a2ff0cc1dcffc72b0f0",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/TwoPhaseFixed.cfg",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/TwoPhaseFixed.cfg",
+      "upstreamSha256": "a4e4546592e8e5d361ccbeb4808338e15fb61338fdbc84c358e9b0a41a58a704",
+      "portSha256": "a4e4546592e8e5d361ccbeb4808338e15fb61338fdbc84c358e9b0a41a58a704",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/TwoPhaseFixed.tla",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/TwoPhaseFixed.tla",
+      "upstreamSha256": "9d9459496de208594596804e0a70faad6390286c7b3fc2b9ae173e61d25ade57",
+      "portSha256": "9d9459496de208594596804e0a70faad6390286c7b3fc2b9ae173e61d25ade57",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/chart.mmd",
+      "upstreamSha256": "d7a0b12bfc62b60507334c045369ef53bbeba7e432f0c335a5c0a72e0b667fe7",
+      "portSha256": "d7a0b12bfc62b60507334c045369ef53bbeba7e432f0c335a5c0a72e0b667fe7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/graph.dot",
+      "upstreamSha256": "2a9a55c417ecf703035dce21c7ba347ad6cb3dc50a0a634a6b60f4bfb727a773",
+      "portSha256": "0c83842513144dbe80531e3b57b4d4c7555336c44b0830533ceb6cc3060c5e11",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/report.md",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/report.md",
+      "upstreamSha256": "598a1594b7768b770d1c4df3b304ac26c2890bbf5bc9610541c5dcbd26c12d9f",
+      "portSha256": "598a1594b7768b770d1c4df3b304ac26c2890bbf5bc9610541c5dcbd26c12d9f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/sany.out",
+      "upstreamSha256": "2eb698b9b60b3ec587f382e5a6398b32da62e08e9803e1121e627a697bfaf061",
+      "portSha256": "2eb698b9b60b3ec587f382e5a6398b32da62e08e9803e1121e627a697bfaf061",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/verdict-1.out",
+      "upstreamSha256": "a85d46fa117924eec003fe28749f71bee520016d65e3d4cad671768635157600",
+      "portSha256": "a85d46fa117924eec003fe28749f71bee520016d65e3d4cad671768635157600",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/view.mjs",
+      "target": "skills/statechart/scripts/test/corpus/TwoPhaseFixed/view.mjs",
+      "upstreamSha256": "25bc78b0ee8c7ab24ed1f0dbe78ed60adce0f086579c03bf8c97d02c448c7f26",
+      "portSha256": "25bc78b0ee8c7ab24ed1f0dbe78ed60adce0f086579c03bf8c97d02c448c7f26",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/ChartRun.exit",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/ChartRun.exit",
+      "upstreamSha256": "461144ccfd56ee3cf0f9a9d80e520c5b872166b23092d5fd838ecbdb46d64dab",
+      "portSha256": "461144ccfd56ee3cf0f9a9d80e520c5b872166b23092d5fd838ecbdb46d64dab",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/ChartRun.out",
+      "upstreamSha256": "d3a2f8df56c31c081e5c0b27da754180cdb5b2a62073467421a90fc8514c4a08",
+      "portSha256": "d3a2f8df56c31c081e5c0b27da754180cdb5b2a62073467421a90fc8514c4a08",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/TypeGuard.cfg",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/TypeGuard.cfg",
+      "upstreamSha256": "ddd3b43e9455ebfe7ed7c487867352b9466bf60fb35900b84ad5281fe6763766",
+      "portSha256": "ddd3b43e9455ebfe7ed7c487867352b9466bf60fb35900b84ad5281fe6763766",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/TypeGuard.tla",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/TypeGuard.tla",
+      "upstreamSha256": "ccda004cd0e3c40a7c39c200095a12eb3e0cc7c40f9ecabff24026c1cdfc53b4",
+      "portSha256": "ccda004cd0e3c40a7c39c200095a12eb3e0cc7c40f9ecabff24026c1cdfc53b4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/chart.mmd",
+      "upstreamSha256": "e180050487251de907e1a25c34a3acf28159d28a3166afd0786c7f8bd1bb52d5",
+      "portSha256": "e180050487251de907e1a25c34a3acf28159d28a3166afd0786c7f8bd1bb52d5",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/graph.dot",
+      "upstreamSha256": "a35107023f5a7a2e9833c3c0f67b69e163a7331038510b3dafcd4f4092db7251",
+      "portSha256": "d3e08f6a23cbcb93c3df4814724101851809d07ec53a74b96b2583952c16572d",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/report.md",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/report.md",
+      "upstreamSha256": "4c954c446383fcaad78deb5ac19f70fa74fc028f90b576f1d91b2c45e09e0108",
+      "portSha256": "4c954c446383fcaad78deb5ac19f70fa74fc028f90b576f1d91b2c45e09e0108",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/sany.out",
+      "upstreamSha256": "cf58712d31a0daab97eb960e7820c7b0c4326dfe785937eef9f7ed2476347ee3",
+      "portSha256": "cf58712d31a0daab97eb960e7820c7b0c4326dfe785937eef9f7ed2476347ee3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-1.out",
+      "upstreamSha256": "3e60feb2884f636dd1ea5cd1459fcef8a1db34e5f9f801ccfe6735203969ec84",
+      "portSha256": "3e60feb2884f636dd1ea5cd1459fcef8a1db34e5f9f801ccfe6735203969ec84",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-2.exit",
+      "upstreamSha256": "461144ccfd56ee3cf0f9a9d80e520c5b872166b23092d5fd838ecbdb46d64dab",
+      "portSha256": "461144ccfd56ee3cf0f9a9d80e520c5b872166b23092d5fd838ecbdb46d64dab",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/TypeGuard/verdict-2.out",
+      "upstreamSha256": "4ff80d714ae9e9ac57e54645b92aaac286ded5b5ce119b8d25c54ec53856bbc4",
+      "portSha256": "4ff80d714ae9e9ac57e54645b92aaac286ded5b5ce119b8d25c54ec53856bbc4",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/ChartRun.out",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/ChartRun.out",
+      "upstreamSha256": "acd62745ae91ce9250ed32bb84a084f7a7327232f0e96a599eb49ed4f74c2388",
+      "portSha256": "acd62745ae91ce9250ed32bb84a084f7a7327232f0e96a599eb49ed4f74c2388",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/UserNoDeadlock.cfg",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/UserNoDeadlock.cfg",
+      "upstreamSha256": "2cf30ce46c41f9d6978b8080f2e0cdd627e0b034e367f98b351882fb0277b748",
+      "portSha256": "2cf30ce46c41f9d6978b8080f2e0cdd627e0b034e367f98b351882fb0277b748",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/UserNoDeadlock.tla",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/UserNoDeadlock.tla",
+      "upstreamSha256": "b4ebd22cce4480f25812ea31f67447df520fb554ed9bd0114641c261f4e2b804",
+      "portSha256": "b4ebd22cce4480f25812ea31f67447df520fb554ed9bd0114641c261f4e2b804",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/chart.mmd",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/chart.mmd",
+      "upstreamSha256": "730f79185a86f0345440cfbbcd05eb4b6b9b6e4653e00073708432e341c5fea7",
+      "portSha256": "730f79185a86f0345440cfbbcd05eb4b6b9b6e4653e00073708432e341c5fea7",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/graph.dot",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/graph.dot",
+      "upstreamSha256": "a1b348348bf032ff81cfd796ae19f8cdcf491d5af18eab73ebfca3058a15691b",
+      "portSha256": "c7798bc905d9f5e7ff576c00277f16a8c1c31d2bbcc5d3d6cf78ab482279a191",
+      "kind": "adapted"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/report.md",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/report.md",
+      "upstreamSha256": "53433b379971530176a5e150a14c466c4452d07c523b3207e8b6c2b55c68b0cf",
+      "portSha256": "53433b379971530176a5e150a14c466c4452d07c523b3207e8b6c2b55c68b0cf",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/sany.out",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/sany.out",
+      "upstreamSha256": "b11bbc9d4985f64b11b09f48029c1c6a84089835cebf4211a56ee6e70e4c226c",
+      "portSha256": "b11bbc9d4985f64b11b09f48029c1c6a84089835cebf4211a56ee6e70e4c226c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-1.exit",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-1.exit",
+      "upstreamSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "portSha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-1.out",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-1.out",
+      "upstreamSha256": "f014279be781ee6e9daebaccdea137b13b21f563b1ca5107bd1172d29c3a0884",
+      "portSha256": "f014279be781ee6e9daebaccdea137b13b21f563b1ca5107bd1172d29c3a0884",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-2.exit",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-2.exit",
+      "upstreamSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "portSha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-2.out",
+      "target": "skills/statechart/scripts/test/corpus/UserNoDeadlock/verdict-2.out",
+      "upstreamSha256": "cd7c28af45d5bc12ba9e0f148e25b5234b781bbb21ddb0194d5cd1b661c7b800",
+      "portSha256": "cd7c28af45d5bc12ba9e0f148e25b5234b781bbb21ddb0194d5cd1b661c7b800",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/differential.test.ts",
+      "target": "skills/statechart/scripts/test/differential.test.ts",
+      "upstreamSha256": "d4d64a7d17b4630616e797f1b184848c2a8b7712777d9982cafee81dc6046a9f",
+      "portSha256": "d4d64a7d17b4630616e797f1b184848c2a8b7712777d9982cafee81dc6046a9f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/grid/Grid.cfg",
+      "target": "skills/statechart/scripts/test/grid/Grid.cfg",
+      "upstreamSha256": "41d15a4d5bef6385c00b30f2126204e74a779d835d37f1ea73669afcfb579ef5",
+      "portSha256": "41d15a4d5bef6385c00b30f2126204e74a779d835d37f1ea73669afcfb579ef5",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/grid/Grid.tla",
+      "target": "skills/statechart/scripts/test/grid/Grid.tla",
+      "upstreamSha256": "e52e75d6fccff01cfe385140cbac3339b5820faeb1e567c7edc1267fa99f989e",
+      "portSha256": "e52e75d6fccff01cfe385140cbac3339b5820faeb1e567c7edc1267fa99f989e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/grid/sany.out",
+      "target": "skills/statechart/scripts/test/grid/sany.out",
+      "upstreamSha256": "e42a575f90275de315767d9f46ab0881349ebc53206e191aee57501494a5aba9",
+      "portSha256": "e42a575f90275de315767d9f46ab0881349ebc53206e191aee57501494a5aba9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/java.ts",
+      "target": "skills/statechart/scripts/test/java.ts",
+      "upstreamSha256": "4fef906fe1dcfdb98dafbd3ecdae1e82589908529ffc11b6bbdcfb8aef505932",
+      "portSha256": "4fef906fe1dcfdb98dafbd3ecdae1e82589908529ffc11b6bbdcfb8aef505932",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/labels.ts",
+      "target": "skills/statechart/scripts/test/labels.ts",
+      "upstreamSha256": "5a884161428fc00229d9a0e896001df4b262b56a441b6b3d66d1b59b06050650",
+      "portSha256": "5a884161428fc00229d9a0e896001df4b262b56a441b6b3d66d1b59b06050650",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/messages.test.ts",
+      "target": "skills/statechart/scripts/test/messages.test.ts",
+      "upstreamSha256": "e7ca0ea446907074452df5388719598bb297d7f8ee50145b8b8f2a41c0c4c92f",
+      "portSha256": "e7ca0ea446907074452df5388719598bb297d7f8ee50145b8b8f2a41c0c4c92f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/pipeline.test.ts",
+      "target": "skills/statechart/scripts/test/pipeline.test.ts",
+      "upstreamSha256": "0f091c3e6e104fd545e113ad437df8d4856618a775073a37d41050ebf663e479",
+      "portSha256": "0f091c3e6e104fd545e113ad437df8d4856618a775073a37d41050ebf663e479",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/plain-tlc.test.ts",
+      "target": "skills/statechart/scripts/test/plain-tlc.test.ts",
+      "upstreamSha256": "f6b042300e66840809e26ba8fef0c7e2bc8bb6b59f3b910ea65dea176e97bf1c",
+      "portSha256": "f6b042300e66840809e26ba8fef0c7e2bc8bb6b59f3b910ea65dea176e97bf1c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/render.test.ts",
+      "target": "skills/statechart/scripts/test/render.test.ts",
+      "upstreamSha256": "9cb369e5f4c464ca540ccc3de4fdd76670b84e54f06955ccb46908826579ac23",
+      "portSha256": "9cb369e5f4c464ca540ccc3de4fdd76670b84e54f06955ccb46908826579ac23",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/tlc-out.test.ts",
+      "target": "skills/statechart/scripts/test/tlc-out.test.ts",
+      "upstreamSha256": "8a87d6cf32e7225aa0c8031e61b8a2912d8fbb3847a7ec2cd76e26c14e931478",
+      "portSha256": "8a87d6cf32e7225aa0c8031e61b8a2912d8fbb3847a7ec2cd76e26c14e931478",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/test/tlc.ts",
+      "target": "skills/statechart/scripts/test/tlc.ts",
+      "upstreamSha256": "73f5cf9dca5ca55aa65d5b342405e31f6eff858ed2bc2124c3e3fbb328259cca",
+      "portSha256": "73f5cf9dca5ca55aa65d5b342405e31f6eff858ed2bc2124c3e3fbb328259cca",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/tsconfig.json",
+      "target": "skills/statechart/scripts/tsconfig.json",
+      "upstreamSha256": "6bb2af53f7b251328e6117cd4fb761468dc4d4b96085d31a19304ccb73c32cc1",
+      "portSha256": "6bb2af53f7b251328e6117cd4fb761468dc4d4b96085d31a19304ccb73c32cc1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/scripts/worker.ts",
+      "target": "skills/statechart/scripts/worker.ts",
+      "upstreamSha256": "1f18ed5ef806982e05e8a40fc217e88257700b28b63cb4acbd647872f85f782b",
+      "portSha256": "1f18ed5ef806982e05e8a40fc217e88257700b28b63cb4acbd647872f85f782b",
+      "kind": "exact"
+    },
+    {
       "source": "skills/swarm/SKILL.md",
       "target": "skills/swarm/SKILL.md",
-      "upstreamSha256": "ae0d66a7e44a3f582701a29cba9dd20e71ec0c6227f43eaf1303cf25803f58ab",
-      "portSha256": "e6049aa3d5f23067d72fb3e5026f6d97dbf6453dc927b5e944f840d6649ac7c5",
+      "upstreamSha256": "e6fed0b2cee25c571fef57bb681ecbe6d40e6c9f5f815de0a04103ca2af1e3c9",
+      "portSha256": "d9a35725b1ec542274c7c2c1dd22f1a277b373876df53408fe5646c760987937",
       "kind": "adapted"
     },
     {
@@ -827,15 +3648,15 @@
     {
       "source": "skills/typescript-best-practices/SKILL.md",
       "target": "skills/typescript-best-practices/SKILL.md",
-      "upstreamSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
-      "portSha256": "a40da091ebac92080cf0ed142051d2bef35e56358084511d599f1097c58f5c73",
+      "upstreamSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
+      "portSha256": "827145b1bd795b2b03ba0d1ca6087fe20c37aacd1b367e6a37c87ce4a2b4a6bf",
       "kind": "adapted"
     },
     {
       "source": "skills/typescript-best-practices/references/patterns.md",
       "target": "skills/typescript-best-practices/references/patterns.md",
-      "upstreamSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
-      "portSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+      "upstreamSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
+      "portSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
       "kind": "exact"
     },
     {
@@ -848,8 +3669,8 @@
     {
       "source": "skills/why/SKILL.md",
       "target": "skills/why/SKILL.md",
-      "upstreamSha256": "c8b315ac7dfbac7d471da4caa0e37664e147f2d98a8061710559704af857d004",
-      "portSha256": "521648ab9a053787eb2b2a68996dcd44aae8e73b7771d09e66e959268565ba78",
+      "upstreamSha256": "4f729bed8b0dc5ca631f81ff47a12b403c6dad0820928d7922ad18e985950c4b",
+      "portSha256": "097cad6ebfa8001822165210732e030233d425bde8fa1322b846862e257c1348",
       "kind": "adapted"
     },
     {

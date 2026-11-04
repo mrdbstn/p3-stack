@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: '1.4.3'
@@ -27,3 +27,18 @@ jobs:
         working-directory: skills/p3-mode/scripts
       - run: bun run typecheck
         working-directory: skills/p3-mode/scripts
+  statechart:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install --no-save --package-lock=false --ignore-scripts
+        working-directory: skills/statechart/scripts
+      - run: npm test
+        working-directory: skills/statechart/scripts
+      - run: npm install --no-save --package-lock=false --ignore-scripts typescript@5.9.3 @types/node@24
+        working-directory: skills/statechart/scripts
+      - run: npx --no-install tsc --project tsconfig.json
+        working-directory: skills/statechart/scripts
