@@ -19,7 +19,7 @@ All 58 upstream skills and 23 playbooks are included. The 24 principle skills ar
 | Orchestration | Native delegated worktrees, parent-owned watches, coordinator-owned notes | Upstream 0.15.36 removes the orchestration CLI; current-head verdicts and independent proof remain |
 | Fixtures | Native Bun executables, platform PATH separator, and final newlines on imported DOT fixtures | Plan rejection and watcher behavior run on Linux and Windows; statechart corpus runs on Linux |
 | Statechart types | An explicit exit-code union and test callbacks that return void | Strict typechecking without casts or behavioral changes |
-| Statechart Windows support | Upstream's native process-tree cleanup and temp variables, with complete CRLF delimiters retained until line splitting | The same TLC reports and charts on Windows and Linux; a regression test covers the trailing CR left by upstream's chunk reader |
+| Statechart Windows support | Upstream's native process-tree cleanup, temp variables, and CRLF chunk handling | The same TLC reports and charts on Windows and Linux; our regression test remains after upstream shipped its own trailing-CR fix |
 | Forge | GitHub `gh` is the supported default | Verified bottom-up landing and one topology writer |
 
 The upstream watch-pr engine and worktree audit script remain bundled for provenance and their tests. T3 playbooks use the parent-owned native watch and T3 thread/worktree evidence. The shell worktree audit is not a Windows cleanup command. Cleanup always checks active ownership, dirty and unpushed state, and the resolved target before removal.

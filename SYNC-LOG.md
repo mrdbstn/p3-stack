@@ -2,6 +2,7 @@
 
 | Date | pstack | Stable T3 | Result |
 |---|---|---|---|
+| 2026-11-06 | 0.15.36, `e388616361ac78eeb2da66c148d882534aca4cb9` | v0.1.7, unchanged | Upstream shipped its own trailing-CR fix. Adopt that equivalent implementation and drop our local parser delta, retaining the regression and Windows/Linux TLC smoke coverage. T3 mechanics and the prior strict-type fixes stay unchanged. |
 | 2026-11-05 | 0.15.36, `4ae1636abe217c7215774bf6b2265916a5c5f648` | v0.1.7, unchanged | Import upstream Windows statechart support: native process-tree cleanup, Windows temp variables, and CRLF parsing. Correct the trailing CR at a chunk boundary, reproduced by the new regression test. Preserve the T3 adaptations and prior strict type fixes. Add native Windows TLC pass/fail smoke coverage to CI alongside the Linux suite. |
 | 2026-11-04 | 0.15.36, `ecec42adbe4f240e4ae19d296768445f0dfbd38e` | v0.1.7, `322f6544dfad0a3c8a0c8cbecf2c7f7874b14268` | 58 skills and 536 files; 24 exact principles. Adopt agentic Orchestrate, reproduced Interrogate findings, new statechart/formal-verification/video skills, and current stable T3 mechanics. Windows and WSL installer/helper checks pass. Recorded statechart suite passes; live TLC passing and failing models reproduce expected reports. Strict statechart types repaired without behavior changes. |
 | 2026-10-16 | 0.15.25, `6f131f137de64fdaf928278c0fd9ecec520ccbee` | Public source schemas reviewed | Initial faithful fork sync and Linux/Windows verification. |
