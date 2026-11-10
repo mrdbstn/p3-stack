@@ -37,7 +37,7 @@
       "source": "skills/arena/SKILL.md",
       "target": "skills/arena/SKILL.md",
       "upstreamSha256": "deb07db603c0a278fdb079c3d8b63cf34101658e860e504ca5b1e72dfc5d5e5c",
-      "portSha256": "5baa201a3a65310dcbd99fdffd69384d792050ad8845365bb23ec9b2ab4ceeba",
+      "portSha256": "960e443e725bb46b4acc743951c635c14ef4e7a988ac456c2ec5427004c3cd6b",
       "kind": "adapted"
     },
     {
