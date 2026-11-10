@@ -1,6 +1,6 @@
 # T3 runtime contract
 
-This adapts pstack's mechanics to T3. Preserve its design, verification, ownership, and operator gates. The reviewed compatibility baseline is stable T3 Code v0.1.7, pinned in `t3-runtime.lock.json`. Nightly builds are optional and must not add requirements absent from stable. Tool availability is a runtime fact. Check the actual tool schema and `orchestrator_capabilities` before using a capability. An unavailable tool is a reported limitation, never permission to skip proof.
+This adapts pstack's mechanics to T3. Preserve its design, verification, ownership, and operator gates. The reviewed compatibility baseline is stable T3 Code v0.1.8, pinned in `t3-runtime.lock.json`. Nightly builds are optional and must not add requirements absent from stable. Tool availability is a runtime fact. Check the actual tool schema and `orchestrator_capabilities` before using a capability. An unavailable tool is a reported limitation, never permission to skip proof.
 
 ## Paths and installation
 
@@ -18,6 +18,8 @@ Each configured entry names a provider instance, model, and optional effort. Res
 
 The configured budget is the starting effort. Raise effort one supported step for the hardest work, lower it one step for ordinary judgment and two for routine mechanics. Keep the configured provider and model family, so a diverse panel stays diverse. Select a fast option only when urgent, such as red CI or a blocked person. Verification keeps the configured swarm model and speed. When the catalog exposes no effort or speed option, omit it and report that limit. Do not retry invented options after rejection. Use the configured supported target and say what changed.
 
+Delegated results and thread runs can report `executedModel`, the model the provider says actually ran, separately from the requested `model`. Record both when they differ. Use the reported execution model when checking panel-family diversity. This field can be absent or null, especially on older linked environments; say when actual-model diversity could not be verified rather than inventing it. A judge reported to have run on the parent's family does not satisfy Arena's cross-judge rule.
+
 ## Delegation and isolation
 
 Use `delegate_task` with `mode: "async"` and a complete brief. Children receive only that brief, not parent conversation history. Include the outcome, exclusive scope, acceptance checks, absolute file pointers, standing orders, prior findings, and report shape. Do not launch a child merely to run the parent's entire playbook.
@@ -28,6 +30,12 @@ If isolated delegation is unavailable, serialize writers in the owned checkout o
 
 Async completion wakes the parent. End the turn when waiting; do not poll or spawn a watcher. Call `task_status` only after the task completion wakeup, to consume its final result. Stable T3 forbids polling a running task. Reconcile pending work from durable evidence and scoped thread activity after interruption. A timeout does not cancel work. Check pending questions with the pending-request tools. Fresh review rounds and fix rounds use fresh tasks with consolidated context and distinct retry keys. Never use a completed task's original result as evidence for a later round.
 
+`t3_thread_send` can start a new provider session in an existing thread with `freshContext: true`. It is not a clone of a worker's built state and never steers the current session. Use it only when a context reset is intended and the current tool schema permits it; keep fresh independent work on `delegate_task`.
+
+## Secrets needed by the task
+
+When authorized work needs a secret only the user can supply, use the available `request_secret` tool instead of asking them to paste it into chat. Request one value per private card; put a sign-in or setup link in `url`. Use a returned one-use `secretRef` only with a tool that accepts it, or request `delivery: "file"` and read the private file only inside the command that needs it. Never place secret text in `delegate_task.task`, reports, or logs. A secret pasted by the user in this thread can be handed to `request_secret` through its supported `value` field for a child or script; never retrieve one from an old thread. Respect a declined request and do not ask again. After cancellation or timeout, request again with a new retry key only if it is still needed. Missing secret-request tooling is a capability limitation, not permission to expose a credential.
+
 ## Pull requests and wakeups
 
 The parent owns PR links and watches. Link each PR with `link_pull_request` and inspect stack order with `list_thread_pull_requests`, cross-checking live `gh` state. A child returns its URL, branch, head SHA, evidence, and triage findings to the parent. A child cannot call `watch_pull_request`; neither fresh delegation nor worktree isolation changes that restriction.
@@ -35,6 +43,8 @@ The parent owns PR links and watches. Link each PR with `link_pull_request` and 
 The parent handles existing comments before arming `watch_pull_request`, then ends its turn. On a wake it re-reads the PR and checks readiness itself. Route code changes through the single owning writer. A wake does not authorize a merge. Use `unwatch_pull_request` before handing work back. Watches stop on merge, close, stop, or certain read failures; they are not a guaranteed merge-completion notification.
 
 Use `schedule_task` with a structured schedule object for an authorized autonomous run's audit or a merge-completion heartbeat. Bind it to the coordinator thread and include the done predicate, durable store, recovery checks, and stop condition. Keep unchanged audits quiet. Record the returned schedule ID and next run time. Delete the schedule on completion or an explicit stop. A PR watch is not a generic watcher for arbitrary refs or external events; those need an appropriate supported integration or a scheduled check.
+
+Stable T3 also supports `freshSession: true` on a scheduled task: runs use one thread but start a fresh provider session without earlier runs' context. Leave this off for a coordinator that depends on its ongoing conversation. Use it deliberately for independent repeatable runs only when their prompt and durable records carry everything needed. It is distinct from `bindToCurrentThread`; use the exposed MCP fields rather than the internal storage `threadMode` field. Do not change an existing task's context mode merely because a new release supports it.
 
 ## Proof and history
 
