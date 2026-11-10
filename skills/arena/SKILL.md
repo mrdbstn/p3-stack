@@ -33,6 +33,8 @@ After all Phase B candidates complete, choose one model from `arena cross-judge 
 
 ## Phase D: Pick a base
 
+Before relying on the judge's verdict, check `executedModel` when T3 reports it. If it belongs to the parent's family, discard that cross-judge verdict and try a fresh different-family judge under Phase C's fallback rules, or report that the judge was skipped. If the execution model is absent or null, report that actual-family diversity could not be verified; do not present requested-model diversity as observed execution.
+
 Read every candidate end to end before picking. Score each against the rubric criterion by criterion, not on holistic feel, and compare with the cross-judge when Phase C ran one. Agreement on the base confirms the pick. Disagreement means one of you is biased or the rubric was ambiguous. Read both rationales before deciding.
 
 Pick the base a future maintainer can extend most easily without breaking invariants. When two feel tied, prefer the cleaner boundary or smaller API, per the Laziness Protocol.

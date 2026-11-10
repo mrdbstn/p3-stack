@@ -6,7 +6,7 @@ The reviewed baseline is pstack **0.15.36**, commit `e388616361ac78eeb2da66c148d
 
 pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
-Compatibility tracks **stable T3 Code v0.1.7**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination.
+Compatibility tracks **stable T3 Code v0.1.8**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination. The runtime contract covers reported execution models, optional fresh-session scheduling, and private secret handoff.
 
 ## Install in WSL or Linux
 
