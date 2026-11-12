@@ -1,6 +1,6 @@
 # T3 runtime contract
 
-This adapts pstack's mechanics to T3. Preserve its design, verification, ownership, and operator gates. The reviewed compatibility baseline is stable T3 Code v0.1.8, pinned in `t3-runtime.lock.json`. Nightly builds are optional and must not add requirements absent from stable. Tool availability is a runtime fact. Check the actual tool schema and `orchestrator_capabilities` before using a capability. An unavailable tool is a reported limitation, never permission to skip proof.
+This adapts pstack's mechanics to T3. Preserve its design, verification, ownership, and operator gates. The reviewed compatibility baseline is stable T3 Code v0.1.9, pinned in `t3-runtime.lock.json`. Nightly builds are optional and must not add requirements absent from stable. Tool availability is a runtime fact. Check the actual tool schema and `orchestrator_capabilities` before using a capability. An unavailable tool is a reported limitation, never permission to skip proof.
 
 ## Paths and installation
 
@@ -19,6 +19,8 @@ Each configured entry names a provider instance, model, and optional effort. Res
 The configured budget is the starting effort. Raise effort one supported step for the hardest work, lower it one step for ordinary judgment and two for routine mechanics. Keep the configured provider and model family, so a diverse panel stays diverse. Select a fast option only when urgent, such as red CI or a blocked person. Verification keeps the configured swarm model and speed. When the catalog exposes no effort or speed option, omit it and report that limit. Do not retry invented options after rejection. Use the configured supported target and say what changed.
 
 Delegated results and thread runs can report `executedModel`, the model the provider says actually ran, separately from the requested `model`. Record both when they differ. Use the reported execution model when checking panel-family diversity. This field can be absent or null, especially on older linked environments; say when actual-model diversity could not be verified rather than inventing it. A judge reported to have run on the parent's family does not satisfy Arena's cross-judge rule.
+
+Group families by the model's prefix, independently of its provider instance. Preserve upstream's known grouping: `claude` is one family; `grok`, `cursor-grok`, and `composer` share one family. Every other distinct prefix is its own family, including `gpt`. For a namespaced catalog ID, classify the model component but pass the complete catalog ID unchanged in `target.model`. Unknown prefixes do not all belong to one fallback family. Different provider instances alone do not establish model diversity.
 
 ## Delegation and isolation
 

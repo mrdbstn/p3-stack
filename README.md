@@ -2,11 +2,11 @@
 
 A maintained T3 Code adaptation of [Lauren Tan's pstack](https://github.com/backnotprop/pstack), forked from [uzairansaruzi/p3-stack](https://github.com/uzairansaruzi/p3-stack).
 
-The reviewed baseline is pstack **0.15.36**, commit `e388616361ac78eeb2da66c148d882534aca4cb9`. All **58 skills**, **24 principles**, and **23 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
+The reviewed baseline is pstack **0.15.36**, commit `97de40dcca2fa396124c3e70a1d8cc28005f60a3`. All **58 skills**, **24 principles**, and **23 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
 
 pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
-Compatibility tracks **stable T3 Code v0.1.8**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination. The runtime contract covers reported execution models, optional fresh-session scheduling, and private secret handoff.
+Compatibility tracks **stable T3 Code v0.1.9**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination. The runtime contract covers reported execution models, model-family diversity, optional fresh-session scheduling, and private secret handoff.
 
 ## Install in WSL or Linux
 
