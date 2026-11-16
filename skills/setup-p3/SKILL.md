@@ -18,7 +18,9 @@ Call `orchestrator_capabilities`. It lists the providers and models you can pass
 
 ### 2. Load current state
 
-The roles are the labels shown in step 5. If `p3-models.md` already exists at the chosen location, read it and treat its `# budget` line and its role values as the current choices. Otherwise start from the defaults in step 3(b). A line whose role is not in step 5, such as `how critics`, is from a retired role. Drop it.
+The roles are the labels shown in step 5. If `p3-models.md` already exists at the chosen location, read it and treat its `# budget` line and its role values as the current choices. Otherwise start from the defaults in step 3(b). A line whose role is not in step 5, including the retired How explorer/explainer and Why investigator/synthesizer roles, is from a retired role. Drop it and list what was dropped.
+
+A file without `# defaults: 2` predates the current defaults. The older T3 setup selected models from a live catalog, so a matching model name alone cannot distinguish a generated default from a user choice. Preserve existing targets and aliases, show the new recommendations beside them, and let the existing step 3(c) review settle any migration. Never silently replace user choices. Tell the user which values changed.
 
 ### 3. Budget, map, and confirm
 
@@ -29,23 +31,28 @@ The roles are the labels shown in step 5. If `p3-models.md` already exists at th
 - `medium — high reasoning`
 - `small — medium reasoning`
 
-**(b) Apply it.** Build the working table. On a fresh run, give code roles (`feature, refactoring`, `bug-fix`, `perf-issue`, `hillclimb`) and the explorer, investigator, and swarm roles a strong coding model detected. Give `judgment and prose`, `hardest tasks`, the explainer, the synthesizers, and `reflect tooling` the most capable model detected. Fill each panel role with distinct model families, up to three, using multiple providers when available. Different families on one provider still provide diversity. If only one family is available, state that limitation instead of promising a diverse panel. On a re-run, keep any role the user changed. Speed follows the runtime contract; do not select fast mode merely because the role writes code.
+**(b) Apply it.** Build the working table from detected models. Prefer Opus 5.5 for code roles (`feature, refactoring`, `bug-fix`, `perf-issue`, `hillclimb`), judgment/prose, Reflect, and swarm workers; Fable 5.2 for hardest tasks; and one each of Fable 5.2, Opus 5.5, and Gemini 4 Carbon for the panel roles. Search the live catalog for preferences missing from its short initial list. These are model-name preferences, not target IDs. If unavailable, map regular code and swarm roles to a strong detected coding model and hardest work, prose, and judgment to the most capable detected model. Fill panels with distinct detected families, up to three. Use the runtime contract's longest-prefix family grouping and different-vendor judge rule. A shared provider can host different vendors, and multiple provider instances alone do not establish diversity. Report missing capabilities or diversity. On a re-run, preserve existing model choices and aliases unless the user changes them in step 3(c). Speed follows the runtime contract; verification keeps its configured worker speed, and unavailable speed options are omitted.
 
-When the catalog exposes reasoning options for a model, set each real entry's effort option from the budget: `unlimited` takes the highest option, and `large`, `medium`, and `small` take `xhigh`, `high`, or `medium`. The ladder is `max` > `xhigh` > `high` > `medium` > `low`. If the model does not expose the target, use the highest option at or below it, else mark the role as needing a choice. `inherit-parent` does not change. When the catalog exposes no reasoning options, map roles only and drop effort tokens; the budget label is still recorded.
+On a fresh setup, prefer a detected fast option for swarm workers, Reflect tooling, and the Opus panel entry when that model advertises one. Omit unavailable speed options. At invocation, the runtime contract uses standard speed unless urgent, with verification retaining the configured worker speed. Preserve existing speed choices on re-runs.
 
-**(c) Show the roles and confirm.** Show every role with its model, marking any entry not in the detected set as needing a choice. Also list each line step 2 dropped. Ask whether to accept as-is or change specific roles, offering the detected models plus `inherit-parent` (the role runs on the parent thread's model, so omit the model in `delegate_task`) as the options. For panel roles (arena runners, architect runners, interrogate reviewers) the value is a list, and one `delegate_task` runs per entry, `inherit-parent` entries included, so the list length sets the count. `arena cross-judge pool` is also a list, but Arena tries entries in order from a model family other than the parent's, even on the same provider. `auto` and `inherit-parent` never judge. If no different-family judge runs, Arena reports that it skipped the judge. `swarm workers` is the default model for every worker unless a race or comparison assigns another model per arm.
+Each role has its own starting effort. Ordinary code, judgment/prose, and Reflect judgment/divergent/synthesizer start at `xhigh`; hardest tasks start at `max`; swarm workers, Reflect tooling, and all panel roles start at `high`. `large` keeps that starting effort, `unlimited` raises it one step, `medium` lowers it one step, and `small` lowers it two, on the ladder `max` > `xhigh` > `high` > `medium` > `low`, clamped at either end. Derive the target from the role's starting effort each time, not its already-adjusted stored value, so re-running the same budget is idempotent. Apply the role's target to every panel entry without changing its model family.
+
+Pass effort only through advertised reasoning options. If a model does not expose the target, use its highest option at or below it, else mark the role as needing a choice. `auto` and `inherit-parent` do not change. When the catalog exposes no reasoning options, map roles only and omit effort tokens; the budget label is still recorded. Never construct an ID or assume source-harness option limits apply to T3's catalog.
+
+**(c) Show the roles and confirm.** Show every role with its model, marking any entry not in the detected set as needing a choice. Also list each line step 2 dropped. Ask whether to accept as-is or change specific roles, offering the detected models plus `inherit-parent` and `auto` (the role runs on the parent thread's model, so omit the target in `delegate_task`) as the options. For panel roles (arena runners, architect runners, interrogate reviewers) the value is a list, and one `delegate_task` runs per entry, aliases included, so the list length sets the count. `arena cross-judge pool` is also a list, but Arena tries entries in order from a model vendor other than the parent's, even on the same provider. Fable and other Claude models are one vendor. `auto` and `inherit-parent` never judge. If no different-vendor judge runs, Arena reports that it skipped the judge. `swarm workers` is the default model for every worker unless a race or comparison assigns another model per arm.
 
 ### 4. Validate
 
-Every real entry written must be in the `orchestrator_capabilities` result, under the provider instance it came from. `inherit-parent` always passes. If a chosen entry is not available, stop and ask again.
+Every real entry written must be in the `orchestrator_capabilities` result, under the provider instance it came from. `auto` and `inherit-parent` always pass. If a chosen entry is not available, stop and ask again.
 
 ### 5. Write the file
 
-Write `p3-models.md` with a `# budget` line with the chosen label and its target effort, and one line per role, using the same labels p3-mode uses. Write each entry as `<providerInstanceId>/<model>`, followed by its effort option in parentheses when step 3(b) set one. Overwrite the whole file so re-runs stay idempotent. Shape:
+Write `p3-models.md` with `# defaults: 2`, a `# budget` line with the chosen label and the effort that label names, and one line per role, using the same labels p3-mode uses. Write each entry as `<providerInstanceId>/<model>`, followed by its effort option in parentheses when step 3(b) set one. Keep the complete model ID, including its namespace, unchanged. Overwrite the whole file so re-runs stay idempotent. Shape:
 
 ```
 # p3 model configuration. One line per role. Delete a line to fall back to the skill default.
-# `inherit-parent` as a value: the role runs on the parent thread's model (omit the delegate_task model). Entries in a panel list still count toward its fan-out.
+# `inherit-parent` or `auto` as a value: the role runs on the parent thread's model (omit the delegate_task target). Entries in a panel list still count toward its fan-out.
+# defaults: 2
 # budget: large (xhigh)
 feature, refactoring: <providerInstanceId>/<model> (<effort>)
 bug-fix: <providerInstanceId>/<model> (<effort>)
@@ -53,10 +60,6 @@ perf-issue: <providerInstanceId>/<model> (<effort>)
 hillclimb: <providerInstanceId>/<model> (<effort>)
 judgment and prose: <providerInstanceId>/<model> (<effort>)
 hardest tasks: <providerInstanceId>/<model> (<effort>)
-how explorer: <providerInstanceId>/<model> (<effort>)
-how explainer: <providerInstanceId>/<model> (<effort>)
-why investigators: <providerInstanceId>/<model> (<effort>)
-why synthesizer: <providerInstanceId>/<model> (<effort>)
 reflect tooling: <providerInstanceId>/<model> (<effort>)
 reflect judgment, divergent, synthesizer: <providerInstanceId>/<model> (<effort>)
 arena runners: <entry>, <entry>, <entry>

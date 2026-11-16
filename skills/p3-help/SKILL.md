@@ -44,8 +44,8 @@ The default answer is `/p3-mode`, which runs most of the others when its steps n
 | The user wants to | Skill |
 |---|---|
 | Do any non-trivial task with rigor | [`/p3-mode`](../p3-mode/SKILL.md) |
-| Know how code works now, or where new code should live | [`/how`](../how/SKILL.md) |
-| Know why code is shaped this way, or where a number came from | [`/why`](../why/SKILL.md) |
+| Get one read-only worker's explanation of how code works now, or where new code should live | [`/how`](../how/SKILL.md) |
+| Get a cited answer from the historical record about why code is shaped this way, or where a number came from | [`/why`](../why/SKILL.md) |
 | Understand a change or subsystem, explained plainly | [`/teach`](../teach/SKILL.md) |
 | Catch up on their own recent work on a topic | [`/recall`](../recall/SKILL.md) |
 | Know what a small diff could break outside itself | [`/blast-radius`](../blast-radius/SKILL.md) |

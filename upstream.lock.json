@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "repository": "https://github.com/backnotprop/pstack",
-  "commit": "97de40dcca2fa396124c3e70a1d8cc28005f60a3",
-  "version": "0.15.36",
+  "commit": "74bcc61bd216687b1d6d480c28f109adfc9824ec",
+  "version": "0.15.42",
   "scope": "All skills and bundled support files. Harness-neutral principles stay exact. See PORTING.md for reviewed T3 adaptations.",
   "files": [
     {
       "source": "skills/architect/SKILL.md",
       "target": "skills/architect/SKILL.md",
-      "upstreamSha256": "8b06915a5e728c4f78b6a685fec0213b5cb1a89b9476fae680d4cc3f67d4e79e",
-      "portSha256": "13c0eecf5e9c56b6ad1e5f5aca7f965ca90295d7bef06d3b154721dc5d7f2b45",
+      "upstreamSha256": "cfd789d66b5d2f0f11025971d8764d85b52015f70685f30121a7afb457042994",
+      "portSha256": "bc81081b2b928d22d1d35c8e491482fd947b7db03ec6f5139388d131574b2ab4",
       "kind": "adapted"
     },
     {
@@ -36,8 +36,8 @@
     {
       "source": "skills/arena/SKILL.md",
       "target": "skills/arena/SKILL.md",
-      "upstreamSha256": "3ee7336c706d2114f2d10e6d733c24eaeeed55763a5b6ef146cf14a4303e3d15",
-      "portSha256": "ef78ec6c9e8df121a2ab9a344a30fa73e6d70d4c627d1bbda4c6cb1435e1cdc4",
+      "upstreamSha256": "830fe38193752de64653f75b1e2fd7857a98f9b1a19e83ee44eb0f8ab7787cc6",
+      "portSha256": "3c9b3b47fc0a8a71957b09484de43d66a5bf6d3cfb19821bfb4b32b11110eb10",
       "kind": "adapted"
     },
     {
@@ -57,8 +57,8 @@
     {
       "source": "skills/blast-radius/SKILL.md",
       "target": "skills/blast-radius/SKILL.md",
-      "upstreamSha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
-      "portSha256": "0d9823666086e9bde8e2c2abd547c1111bfa475af8fa384b53944426c0f8c5a5",
+      "upstreamSha256": "4248d03e22365207d2e5f90c9542720f80a88a6b42fd542ef88dde3cf9f9223f",
+      "portSha256": "6f6d16d1b716123c5a1f8aa8e4eb82cf473623602c269848408e6b43cada23ab",
       "kind": "adapted"
     },
     {
@@ -120,23 +120,9 @@
     {
       "source": "skills/how/SKILL.md",
       "target": "skills/how/SKILL.md",
-      "upstreamSha256": "3793ab76b3ae85d8f574bc55b8084b6408098389f973829f0df36807387b817d",
-      "portSha256": "29fea0cb9a9cb6a1b88ea8af6cd6906c85ecb37c8d139849b6bd470f2108e0b8",
+      "upstreamSha256": "b911c4eac292e458e6685e445562c3aed98155b2be80b43d6d1ed1aa2b13c154",
+      "portSha256": "e4b3f118402c5920671807eb1b95680c3f67e97d54bec26518d5a773b77e89ed",
       "kind": "adapted"
-    },
-    {
-      "source": "skills/how/references/explainer-prompt.md",
-      "target": "skills/how/references/explainer-prompt.md",
-      "upstreamSha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
-      "portSha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/how/references/explorer-prompt.md",
-      "target": "skills/how/references/explorer-prompt.md",
-      "upstreamSha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
-      "portSha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
-      "kind": "exact"
     },
     {
       "source": "skills/in-your-own-words/SKILL.md",
@@ -190,22 +176,22 @@
     {
       "source": "skills/no-comments/SKILL.md",
       "target": "skills/no-comments/SKILL.md",
-      "upstreamSha256": "951b7b700d1a52fa7c181d86167e674e5bb63929a9f4dab1dcd49a81867c6143",
-      "portSha256": "f8af9bae16f782b6cbca5f2448051b05be88ad205b01df483e86688c3423cbf8",
+      "upstreamSha256": "ec50a21afe4c4dd4e74ca765675e6d61429e4d21f4497859db5c89c3c5c214f1",
+      "portSha256": "2234d0438b381d600be606e2c77fd31f199315b4fa7f80209699e651b5029cb6",
       "kind": "adapted"
     },
     {
       "source": "skills/no-comments/references/comment-sicko.md",
       "target": "skills/no-comments/references/comment-sicko.md",
-      "upstreamSha256": "73c0bcb8c258981131c00f09c2c56e300c7225803bd4e1093ef41362e0073d98",
-      "portSha256": "73c0bcb8c258981131c00f09c2c56e300c7225803bd4e1093ef41362e0073d98",
+      "upstreamSha256": "185b755bd3217b3b4d17e865e085c39b4adc5e6f3897043d09c593bd6a8f7250",
+      "portSha256": "185b755bd3217b3b4d17e865e085c39b4adc5e6f3897043d09c593bd6a8f7250",
       "kind": "exact"
     },
     {
       "source": "skills/poteto-help/SKILL.md",
       "target": "skills/p3-help/SKILL.md",
-      "upstreamSha256": "40fb18402463efe7335cfa8479bab9aa1e03bbc849a81843bf6c12b7a9d70147",
-      "portSha256": "0a106b1a82ed596c5dbbd097479b504cfac9d90f432d791fd875cbe0e6c4a7eb",
+      "upstreamSha256": "19f109bbb44b39172ba2156baf2e1990a75f9cfa6e2c78b2f26923b08e72a3c3",
+      "portSha256": "15e597026563d4459c99cbe079342e4b5be090154ee6abf2fc8b3ae0444059c6",
       "kind": "adapted"
     },
     {
@@ -225,8 +211,8 @@
     {
       "source": "skills/poteto-mode/SKILL.md",
       "target": "skills/p3-mode/SKILL.md",
-      "upstreamSha256": "10da2769e8553365b282f78316df419214e8e329707607259abb31b7e3c47789",
-      "portSha256": "e828c305cdf17cbc1618a5c67b8dd30d62e08922e6e77a6b4396f55c7be1c476",
+      "upstreamSha256": "f69f356e5a9befc98cddc64565dcd9b0aa889fb05cd273688b73f56eebfdaeb1",
+      "portSha256": "910ccc30e9b9b341337a2914500f327bce420a7a728cfe7c7dbbdbd933bafd8c",
       "kind": "adapted"
     },
     {
@@ -267,43 +253,43 @@
     {
       "source": "skills/poteto-mode/playbooks/bug-fix.md",
       "target": "skills/p3-mode/playbooks/bug-fix.md",
-      "upstreamSha256": "66e26542dad131cfd7df80ac0cdf81ed4d85e7b5e3f0eb65b933888760c4831f",
-      "portSha256": "05512bdb654aec93c7930ea52ded1053ba3d3b73ffc2250880be14d24fa1bb3b",
+      "upstreamSha256": "e58b534e020e19629cd47c15e4210e594edfacea212af1e558a1d55bd311b5b3",
+      "portSha256": "b41caadae7b51f0823ad023ec312da1dee771afac44d9fbc239be850e8553cd6",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/eval.md",
       "target": "skills/p3-mode/playbooks/eval.md",
       "upstreamSha256": "d6b9c717471416f54fe3d5dc71ed5e417531f44835f984c7da9e32695f792238",
-      "portSha256": "3d7fc5632c43d85ba7e7aa3c1ecb3cbd354c5d7a036c87eb7c7f657517689d79",
+      "portSha256": "c6f56eaff2127bd745e14f42752ffc2099ef5360ff7bd7268a0cb25ef816cd4a",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/feature.md",
       "target": "skills/p3-mode/playbooks/feature.md",
-      "upstreamSha256": "af8ce700b99953741cb547e34308fde0cf6b98ce67e1652c800d0deedf53aba1",
-      "portSha256": "099a4c4a68658a5f2549f054179dac8a07f6ba9adc18b6b09fd64dd82ad8cfe1",
+      "upstreamSha256": "f52d323f38a1ac2e8ab21b35e34bb10ab315436badfb74aa84bc466ee2ca522b",
+      "portSha256": "1ef0b934a5256662e450e7f27889cecba294da9f163fa0d22f939be2796e5ebc",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/hillclimb.md",
       "target": "skills/p3-mode/playbooks/hillclimb.md",
-      "upstreamSha256": "942c1565b75ad02a2cb6230dd7c1ebd87e19f59a00319ebac2b6616007bf018f",
-      "portSha256": "84417467b58eb456ea7f714c3454cb9ea63a4cc5aa2cddc895dce3d86b44bfb6",
+      "upstreamSha256": "efa062bb4a02638fd3af64299eb398e6e4c5edc55d0a7c2bf42a0182b5cba959",
+      "portSha256": "8c283d88b7aa2cacdbe1c590d62155b13a57176b88a30f6a352559606f2601c7",
       "kind": "adapted"
     },
     {
       "source": "skills/poteto-mode/playbooks/investigation.md",
       "target": "skills/p3-mode/playbooks/investigation.md",
-      "upstreamSha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
-      "portSha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
+      "upstreamSha256": "1009fdb6596a9c06cb93e224ec86bfb60226f2c603474c968a4f2c2983e96a69",
+      "portSha256": "1009fdb6596a9c06cb93e224ec86bfb60226f2c603474c968a4f2c2983e96a69",
       "kind": "exact"
     },
     {
       "source": "skills/poteto-mode/playbooks/multi-phase-plan.md",
       "target": "skills/p3-mode/playbooks/multi-phase-plan.md",
-      "upstreamSha256": "cd38c30b95a84117253c6e24beba78e44740bf46edde5cc2b19ca6f1c4c51594",
-      "portSha256": "4241d835fc1d85c79c6242667ae9ced4ad8f97c25e6ed291f1dd6904afaf0a7d",
+      "upstreamSha256": "8e9add0d8217a322754f47f6d47bc599d2afd96628c27153de90a792b5880bc7",
+      "portSha256": "ae9d56c12a58a3c44ba4e9b52a6ace341b1f500a2b0dd0fc395d9a77517ab7f3",
       "kind": "adapted"
     },
     {
@@ -330,8 +316,8 @@
     {
       "source": "skills/poteto-mode/playbooks/perf-issue.md",
       "target": "skills/p3-mode/playbooks/perf-issue.md",
-      "upstreamSha256": "c12aa2f82de7651a11676a3d5fea168f539b7f0faaa3a501d279255dd2a469c8",
-      "portSha256": "fafb19fa3027a69dd888b869cea23cc5c829bd77dc1de22485e4b7434160900c",
+      "upstreamSha256": "bde825b47f11191ed396a5e3237a25e3b0a4d008ab1e09fbf4b74f5b0da198b1",
+      "portSha256": "3225754a4cef019ab68f446308abb51695de8df67ebac2218651e09dc21df34f",
       "kind": "adapted"
     },
     {
@@ -344,8 +330,8 @@
     {
       "source": "skills/poteto-mode/playbooks/refactoring.md",
       "target": "skills/p3-mode/playbooks/refactoring.md",
-      "upstreamSha256": "0f5dd38113379ea8cf61e2182eca0a7478eea9a869eb40c2dddab3335aeca197",
-      "portSha256": "b20737d443e99e544be26ff7ce79694d42a4432946d4382ece87ad3ee7de5236",
+      "upstreamSha256": "38a25e96ec0eabb86bdbfe53927d80bf26a786dac5f7f5bf505ae36f24802add",
+      "portSha256": "f7b79c02df46746b941117eb7a851c120cd265943d7315990557f6766fc8c16a",
       "kind": "adapted"
     },
     {
@@ -694,14 +680,14 @@
     {
       "source": "skills/recall/SKILL.md",
       "target": "skills/recall/SKILL.md",
-      "upstreamSha256": "ad080bb4dae38773ea2ab9062ee652a30b5c38a4fd4ef2468e4904467b04d5e4",
-      "portSha256": "56be8e6ae4a94825c7dd83519b535aff39219c62dfcd0b5b9b2a73a9e0504c1b",
+      "upstreamSha256": "d405a6335febcbfc6d4a9c47842399121c326260e4059a6290d0f458e09994f0",
+      "portSha256": "2791b6f89c1ee9f44233cbd0f6fa72413917e03b1f9d6cff458426109f8d9e94",
       "kind": "adapted"
     },
     {
       "source": "skills/reflect/SKILL.md",
       "target": "skills/reflect/SKILL.md",
-      "upstreamSha256": "50f522723a1ba455cbc0a6298ce7fa959dce698f0d4840762f67118b84c45d4e",
+      "upstreamSha256": "c88a155223e08bb58ef76884a19db2ba857e7f80aaf7db04f528c081a0c9433b",
       "portSha256": "f0a9d7b85f8772cf9755cb07d422bb33ed91a505f3dfef1a77226b099933e870",
       "kind": "adapted"
     },
@@ -722,9 +708,9 @@
     {
       "source": "skills/reflect/references/synthesizer.md",
       "target": "skills/reflect/references/synthesizer.md",
-      "upstreamSha256": "6af816963de74d1a1aef4070273c1ff533d2072732e488e159ddc0b299fec3cd",
-      "portSha256": "2711500893ac45ff7a523c3737a7716cb2f3356f184108a3c7601ba1019b2d1c",
-      "kind": "adapted"
+      "upstreamSha256": "07c81573f63f011df736d24ec8febf8b59d29db328cb1626ad67df7841c9ad77",
+      "portSha256": "07c81573f63f011df736d24ec8febf8b59d29db328cb1626ad67df7841c9ad77",
+      "kind": "exact"
     },
     {
       "source": "skills/reflect/references/tooling-reviewer.md",
@@ -736,15 +722,15 @@
     {
       "source": "skills/setup-pstack/SKILL.md",
       "target": "skills/setup-p3/SKILL.md",
-      "upstreamSha256": "f611064e7c938328d20b36c482cf798369ef2b8e61583a36b28288e39d4ef97a",
-      "portSha256": "ef861d4becc90d80f06408522279d447698507db563743aa35866fa4dece8a99",
+      "upstreamSha256": "5eb7b6b39e3a52159a802ce1717acc4138a4dd98df495a039c8b43c098af4a3b",
+      "portSha256": "3aa81ce9b4dda859c7e9809e6b6da8290811eb5430e7b0cc3509b6e4574c6aee",
       "kind": "adapted"
     },
     {
       "source": "skills/sharpen/SKILL.md",
       "target": "skills/sharpen/SKILL.md",
-      "upstreamSha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
-      "portSha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+      "upstreamSha256": "aac4f8e6a1ffd70e3763314db37d3c2eb0cfea08bc63e98907aca6dae0343031",
+      "portSha256": "aac4f8e6a1ffd70e3763314db37d3c2eb0cfea08bc63e98907aca6dae0343031",
       "kind": "exact"
     },
     {
@@ -792,8 +778,8 @@
     {
       "source": "skills/statechart/scripts/backends/mermaid.ts",
       "target": "skills/statechart/scripts/backends/mermaid.ts",
-      "upstreamSha256": "75704b2704a9399a39479ff704a580d5b9a1d0fede01fe771df28bf799b434b6",
-      "portSha256": "75704b2704a9399a39479ff704a580d5b9a1d0fede01fe771df28bf799b434b6",
+      "upstreamSha256": "ce293d34ce3928d93329bd6d1a889d5722620008dae4339add79ef226c3f9b88",
+      "portSha256": "ce293d34ce3928d93329bd6d1a889d5722620008dae4339add79ef226c3f9b88",
       "kind": "exact"
     },
     {
@@ -953,8 +939,8 @@
     {
       "source": "skills/statechart/scripts/run.ts",
       "target": "skills/statechart/scripts/run.ts",
-      "upstreamSha256": "baef0f2934a5f9a3cdd7a3a5c5ac409ee56b6e758c0f3edc5792169a18602518",
-      "portSha256": "b9145208e5e44c1ea19c93ae642354c86efd793d0a719380c8c9308ad1d8a420",
+      "upstreamSha256": "bd74a0ec572f90dfb2520adec7ffc83fa4f7ecb38f12635e8fca723bf6597cc8",
+      "portSha256": "d70f2f300fec7039987f234e69d64c2105451068a78861900cfbd82ead7f3725",
       "kind": "adapted"
     },
     {
@@ -981,8 +967,8 @@
     {
       "source": "skills/statechart/scripts/test/chart.test.ts",
       "target": "skills/statechart/scripts/test/chart.test.ts",
-      "upstreamSha256": "3f9022fcc981d17f58b5e7a9302e766241f81a477bda70c3e621d7a1d95f19c1",
-      "portSha256": "3f9022fcc981d17f58b5e7a9302e766241f81a477bda70c3e621d7a1d95f19c1",
+      "upstreamSha256": "e5c4bb0dcb9bcb570066d427ee768b2eb01aea87aa3bd9136c8e92459f513ae4",
+      "portSha256": "e5c4bb0dcb9bcb570066d427ee768b2eb01aea87aa3bd9136c8e92459f513ae4",
       "kind": "exact"
     },
     {
@@ -1009,8 +995,8 @@
     {
       "source": "skills/statechart/scripts/test/cli.test.ts",
       "target": "skills/statechart/scripts/test/cli.test.ts",
-      "upstreamSha256": "8a3b028dafe2065029a66242f7a3832d18058e772a0dfc1b2c170511ffee8e07",
-      "portSha256": "33dd268cb6f53211b102b2ce40e5718777b72f578b12aad7e60b0f7cd5ca882c",
+      "upstreamSha256": "fdd3154882a0c4505868973a9de133b3f5d2140f0ca9e0a9dcfd7b2cc55871df",
+      "portSha256": "af4847c8ad3a38220e53169fd39640f9f324615740a965768187bf49eb54194c",
       "kind": "adapted"
     },
     {
@@ -1023,8 +1009,8 @@
     {
       "source": "skills/statechart/scripts/test/corpus.test.ts",
       "target": "skills/statechart/scripts/test/corpus.test.ts",
-      "upstreamSha256": "5686aa487dfec3e0a06b3c15390dbc3ab5953ced532c5eee7d5c5e2f54f492c7",
-      "portSha256": "5686aa487dfec3e0a06b3c15390dbc3ab5953ced532c5eee7d5c5e2f54f492c7",
+      "upstreamSha256": "b280d27ca7c33bb9a8df2fbbd6d59c5b8c41e3ceaad0c7c73fba4ce9af85824b",
+      "portSha256": "b280d27ca7c33bb9a8df2fbbd6d59c5b8c41e3ceaad0c7c73fba4ce9af85824b",
       "kind": "exact"
     },
     {
@@ -2570,8 +2556,8 @@
     {
       "source": "skills/statechart/scripts/test/corpus/Login/chart.mmd",
       "target": "skills/statechart/scripts/test/corpus/Login/chart.mmd",
-      "upstreamSha256": "6cfda25977c467c106f9fb7f5602960bdd40919ac9294994ccd3bb33346faf35",
-      "portSha256": "6cfda25977c467c106f9fb7f5602960bdd40919ac9294994ccd3bb33346faf35",
+      "upstreamSha256": "2aba56af645f56e371a87c22908e110ab259bed055a979d348220209d89b9862",
+      "portSha256": "2aba56af645f56e371a87c22908e110ab259bed055a979d348220209d89b9862",
       "kind": "exact"
     },
     {
@@ -3527,6 +3513,13 @@
       "kind": "exact"
     },
     {
+      "source": "skills/statechart/scripts/test/drawn.ts",
+      "target": "skills/statechart/scripts/test/drawn.ts",
+      "upstreamSha256": "369ac67009b9ddfa19e080b9f99e2eeb59fc3616c2b374a92b5b1e653df55919",
+      "portSha256": "369ac67009b9ddfa19e080b9f99e2eeb59fc3616c2b374a92b5b1e653df55919",
+      "kind": "exact"
+    },
+    {
       "source": "skills/statechart/scripts/test/grid/Grid.cfg",
       "target": "skills/statechart/scripts/test/grid/Grid.cfg",
       "upstreamSha256": "41d15a4d5bef6385c00b30f2126204e74a779d835d37f1ea73669afcfb579ef5",
@@ -3557,8 +3550,8 @@
     {
       "source": "skills/statechart/scripts/test/labels.ts",
       "target": "skills/statechart/scripts/test/labels.ts",
-      "upstreamSha256": "5a884161428fc00229d9a0e896001df4b262b56a441b6b3d66d1b59b06050650",
-      "portSha256": "5a884161428fc00229d9a0e896001df4b262b56a441b6b3d66d1b59b06050650",
+      "upstreamSha256": "12c8403517b423ea7af0ed5c5d788ff872f9ba127ca11555ae128076a27a83ca",
+      "portSha256": "12c8403517b423ea7af0ed5c5d788ff872f9ba127ca11555ae128076a27a83ca",
       "kind": "exact"
     },
     {
@@ -3585,8 +3578,8 @@
     {
       "source": "skills/statechart/scripts/test/render.test.ts",
       "target": "skills/statechart/scripts/test/render.test.ts",
-      "upstreamSha256": "9cb369e5f4c464ca540ccc3de4fdd76670b84e54f06955ccb46908826579ac23",
-      "portSha256": "9cb369e5f4c464ca540ccc3de4fdd76670b84e54f06955ccb46908826579ac23",
+      "upstreamSha256": "717d36625f0ed5edb5086b9bf1993b79801700f9889b58aa7faa38e3fa0d50a2",
+      "portSha256": "717d36625f0ed5edb5086b9bf1993b79801700f9889b58aa7faa38e3fa0d50a2",
       "kind": "exact"
     },
     {
@@ -3620,7 +3613,7 @@
     {
       "source": "skills/swarm/SKILL.md",
       "target": "skills/swarm/SKILL.md",
-      "upstreamSha256": "e6fed0b2cee25c571fef57bb681ecbe6d40e6c9f5f815de0a04103ca2af1e3c9",
+      "upstreamSha256": "c4ca790fc9ed7e280b177eaeb19bbdf4a0c45b5845cafffa525b578a834f6295",
       "portSha256": "d9a35725b1ec542274c7c2c1dd22f1a277b373876df53408fe5646c760987937",
       "kind": "adapted"
     },
@@ -3634,8 +3627,8 @@
     {
       "source": "skills/teach/SKILL.md",
       "target": "skills/teach/SKILL.md",
-      "upstreamSha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
-      "portSha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+      "upstreamSha256": "2c17f3c0a79536ca2fa3c20983def027ffd8abb4063d9bb3c97778b77557600d",
+      "portSha256": "2c17f3c0a79536ca2fa3c20983def027ffd8abb4063d9bb3c97778b77557600d",
       "kind": "exact"
     },
     {
@@ -3669,92 +3662,8 @@
     {
       "source": "skills/why/SKILL.md",
       "target": "skills/why/SKILL.md",
-      "upstreamSha256": "4f729bed8b0dc5ca631f81ff47a12b403c6dad0820928d7922ad18e985950c4b",
-      "portSha256": "097cad6ebfa8001822165210732e030233d425bde8fa1322b846862e257c1348",
-      "kind": "adapted"
-    },
-    {
-      "source": "skills/why/references/epistemics.md",
-      "target": "skills/why/references/epistemics.md",
-      "upstreamSha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",
-      "portSha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/investigator-prompt.md",
-      "target": "skills/why/references/investigator-prompt.md",
-      "upstreamSha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3",
-      "portSha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/source-playbook.md",
-      "target": "skills/why/references/source-playbook.md",
-      "upstreamSha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
-      "portSha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/code-archaeology.md",
-      "target": "skills/why/references/sources/code-archaeology.md",
-      "upstreamSha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7",
-      "portSha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/databricks.md",
-      "target": "skills/why/references/sources/databricks.md",
-      "upstreamSha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
-      "portSha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/datadog.md",
-      "target": "skills/why/references/sources/datadog.md",
-      "upstreamSha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd",
-      "portSha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/incident-postmortem.md",
-      "target": "skills/why/references/sources/incident-postmortem.md",
-      "upstreamSha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839",
-      "portSha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/linear.md",
-      "target": "skills/why/references/sources/linear.md",
-      "upstreamSha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
-      "portSha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/notion.md",
-      "target": "skills/why/references/sources/notion.md",
-      "upstreamSha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
-      "portSha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/sentry.md",
-      "target": "skills/why/references/sources/sentry.md",
-      "upstreamSha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702",
-      "portSha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/sources/slack.md",
-      "target": "skills/why/references/sources/slack.md",
-      "upstreamSha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c",
-      "portSha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c",
-      "kind": "exact"
-    },
-    {
-      "source": "skills/why/references/synthesizer-prompt.md",
-      "target": "skills/why/references/synthesizer-prompt.md",
-      "upstreamSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb",
-      "portSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb",
+      "upstreamSha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd",
+      "portSha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd",
       "kind": "exact"
     }
   ]
