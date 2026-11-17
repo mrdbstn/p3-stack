@@ -170,7 +170,7 @@
       "source": "skills/make-bot-ui/SKILL.md",
       "target": "skills/make-bot-ui/SKILL.md",
       "upstreamSha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f",
-      "portSha256": "bbcb03541e03cdb383cc5c662e9c7ee356e6c14c26ad108260836a19bef93711",
+      "portSha256": "0c693b47e0995b0d704dabbe8051666b10dc696c4186e0b41d5525d54ff3d401",
       "kind": "adapted"
     },
     {
@@ -681,7 +681,7 @@
       "source": "skills/recall/SKILL.md",
       "target": "skills/recall/SKILL.md",
       "upstreamSha256": "d405a6335febcbfc6d4a9c47842399121c326260e4059a6290d0f458e09994f0",
-      "portSha256": "2791b6f89c1ee9f44233cbd0f6fa72413917e03b1f9d6cff458426109f8d9e94",
+      "portSha256": "08e8aca50ec339fd8b4bb89e5ca4192065420685456037b29bdd87e861544414",
       "kind": "adapted"
     },
     {
@@ -737,7 +737,7 @@
       "source": "skills/show-me-your-work/SKILL.md",
       "target": "skills/show-me-your-work/SKILL.md",
       "upstreamSha256": "45b68e44528bf8e8546b2851aa2a8cbe20641d9d891f16083592322dcc586070",
-      "portSha256": "b56a01c4e532f4cff4c0230ca1034479b47c85b9da54acef003a8b6a507f9f7f",
+      "portSha256": "1e5444d810d813438624d58ab41c1793593e9941f4ee240025307f4ad6331c4d",
       "kind": "adapted"
     },
     {

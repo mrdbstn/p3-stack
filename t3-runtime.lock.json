@@ -1,25 +1,33 @@
 {
   "repository": "https://github.com/pingdotgg/t3code",
-  "tag": "v0.1.9",
-  "commit": "24e77473ecf41bc1f7142529c7911c1c1aae1d76",
-  "reviewedAt": "2026-11-12",
-  "scope": "Reviewed stable orchestration, scheduling and PR-tool schemas; live provider behavior is not established by these hashes.",
+  "tag": "v0.1.10",
+  "commit": "7d32075e3757ded707914e2450c3e392a9665765",
+  "reviewedAt": "2026-11-17",
+  "scope": "Reviewed stable orchestration, scheduling, PR, thread and project-tool schemas; live provider behavior is not established by these hashes.",
   "files": [
     {
       "path": "packages/contracts/src/orchestratorMcp.ts",
-      "sha256": "0b4b47f12e2377da2146b716c73c3e51f97cb0ccf2f690b932dca10b9f3d417a"
+      "sha256": "f22c4459b6d1bdf0fee19c103be8f5603174db67f8ac6afb4ad9f1dfd999f875"
     },
     {
       "path": "packages/contracts/src/scheduledTask.ts",
-      "sha256": "9da228d2dd53572ef38ed6ce864b9b939db41fc5edf33a662f78c072ee5a14cf"
+      "sha256": "317b47d17d07cf88165815e5b3ca428320ca4f19fa01d1c434eda56b6461c63b"
     },
     {
       "path": "apps/server/src/mcp/toolkits/orchestrator/tools.ts",
-      "sha256": "c0323787632ba825753d5278a2b1e9a806b66cc8317d5c2d23fb74b492bc85bb"
+      "sha256": "5224ca9189218d639d67fc205d602e9301043bdf59aa94db4849bef89b0cde56"
     },
     {
       "path": "apps/server/src/mcp/toolkits/pullRequests/tools.ts",
-      "sha256": "a595d596e3a3c9d90dd7abff4ad24bae86226bd8b962021c83f42591f28ffe1b"
+      "sha256": "7241a2fcd7d9f0034dc16fc1d1566b0bdf0a71fed1a0d8a71c37df4018f64ed1"
+    },
+    {
+      "path": "apps/server/src/mcp/toolkits/thread/tools.ts",
+      "sha256": "62a1b5df0f6d10a45f6e8c9933a8cd4351fa4d50ad948d619d4fe0a17f8b0c67"
+    },
+    {
+      "path": "apps/server/src/mcp/toolkits/project/tools.ts",
+      "sha256": "47c5318ae4d7b0d40e4c0a6dd4a1266b427de40bbd1fff3751a04b930064229f"
     }
   ]
 }
