@@ -39,7 +39,7 @@ for (const path of walk(join(root, 'skills')).filter(p => p.endsWith('.md') && !
     if (!existsSync(resolve(dirname(path), link))) errors.push(`Broken bundled link: ${path} -> ${link}`);
   }
 }
-for (const name of ['autopilot-full', 'autopilot-stack', 'shipping', 'orchestrate']) {
+for (const name of ['autopilot-full', 'autopilot-stack', 'shipping']) {
   const text = read(join(root, 'skills/p3-mode/playbooks', `${name}.md`));
   const steps = [...text.matchAll(/^(\d+)\. /gm)].map(m => Number(m[1]));
   if (steps.some((n, i) => n !== i + 1)) errors.push(`Nonsequential steps in ${name}: ${steps}`);

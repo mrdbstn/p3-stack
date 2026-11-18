@@ -2,7 +2,7 @@
 
 A maintained T3 Code adaptation of [Lauren Tan's pstack](https://github.com/backnotprop/pstack), forked from [uzairansaruzi/p3-stack](https://github.com/uzairansaruzi/p3-stack).
 
-The reviewed baseline is pstack **0.15.42**, commit `74bcc61bd216687b1d6d480c28f109adfc9824ec`. All **58 skills**, **24 principles**, and **23 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
+The reviewed baseline is pstack **0.15.43**, commit `83a729a182a29b59a2a42fc3d7736b0c376b55d4`. All **58 skills**, **24 principles**, and **22 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
 
 pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
@@ -35,13 +35,7 @@ T3 must expose the orchestration tools used by the chosen workflow. Models and o
 
 ## Proof tooling
 
-The executable plan checker remains bundled:
-
-```sh
-node skills/p3-mode/scripts/check-plan.mjs /path/to/plan.md
-```
-
-Installed skills resolve paths from their own location. Following upstream, Orchestrate now uses native delegation, PR watches, and project-local notes, and the orchestration CLI is removed. `/interrogate` keeps findings reproduced against the real code. New skills include `/statechart`, `/create-formal-verification-skill`, `/maintain-formal-verification-skill`, and `/ketchup-video`. Statechart bootstraps TLC and Java with mise on first use and needs network access.
+Installed skills resolve paths from their own location. Upstream 0.15.43 removes Orchestrate and the plan checker; large or unattended work routes through `/figure-it-out`. Plans retain unit, live, and performance proof and operator review where required. Every delegated brief starts with the installed `worker.md` pointer. `/interrogate` keeps findings reproduced against real code. Statechart bootstraps TLC and Java with mise on first use and needs network access.
 
 ## Verify and maintain
 
