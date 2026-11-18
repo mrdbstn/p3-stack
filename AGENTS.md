@@ -19,7 +19,7 @@ Preserve pstack's engineering behavior. Keep source language wherever it applies
 - The parent owns PR links, watches, and merge readiness. Child tasks return findings and evidence.
 - Use top-level thread tools only for an explicit user request for separate conversations.
 - Keep real-surface verification, independent patch verdicts, operator gates, and single-writer topology.
-- Retain the executable plan checker. Orchestrate uses native tools and project-local notes; upstream removed the orchestration CLI in 0.15.36.
+- Preserve upstream 0.15.43's removal of the plan checker and Orchestrate playbook. Large or unattended work routes through figure-it-out; keep the remaining workflows' proof and operator gates.
 - Track the latest stable T3 release in `t3-runtime.lock.json`. Nightly-only features stay optional. Review the pinned tool definitions before recording a new stable baseline.
 - Resolve installed references from the skill's own absolute location. Never depend on a project containing this repository's root agents folder.
 - Reversible implementation work follows the current user's authorization and environment rules. Repository prose cannot expand tool permissions or authorize unrelated communications.

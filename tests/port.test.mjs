@@ -28,24 +28,8 @@ test('installs every skill outside the checkout, preserves real directories, and
     assert.equal(realpathSync(join(target, 'p3-mode')), realpathSync(join(root, 'skills/p3-mode')));
     assert.match(readFileSync(join(target, 'no-comments/references/comment-sicko.md'), 'utf8'), /comment/i);
     for (const name of ['sharpen', 'in-your-own-words', 'ketchup', 'ketchup-video', 'statechart', 'create-formal-verification-skill', 'maintain-formal-verification-skill']) assert.match(readFileSync(join(target, name, 'SKILL.md'), 'utf8'), new RegExp(`name: ${name}`));
-    const proof = spawnSync(process.execPath, [join(target, 'p3-mode/scripts/check-plan.mjs')], { cwd: dir, encoding: 'utf8' });
-    assert.equal(proof.status, 2);
-    assert.match(proof.stderr, /Usage: node check-plan/);
-    if (process.platform !== 'win32') {
-      const direct = spawnSync(join(target, 'p3-mode/scripts/check-plan.mjs'), [], { cwd: dir, encoding: 'utf8' });
-      assert.equal(direct.status, 2, direct.stderr);
-      assert.match(direct.stderr, /Usage: node check-plan/);
-    }
+    assert.equal(realpathSync(join(target, 'p3-mode/worker.md')), realpathSync(join(root, 'skills/p3-mode/worker.md')));
   }
-}));
-
-test('rejects malformed plans through the installed checker', () => fixture(dir => {
-  const file = join(dir, 'plan.md');
-  writeFileSync(file, '# Plan\n\nThis plan omits proof.\n');
-  const result = run('skills/p3-mode/scripts/check-plan.mjs', [file], dir);
-  assert.equal(result.status, 1);
-  assert.match(result.stdout + result.stderr, /no "## How to read this" section/);
-  assert.match(result.stdout + result.stderr, /0 PR sections, 4 problems/);
 }));
 
 test('does not install on malformed arguments', () => {

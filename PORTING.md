@@ -2,7 +2,7 @@
 
 This fork preserves pstack's engineering behavior and adapts its harness mechanics to T3 Code. The source is the standalone backnotprop/pstack mirror of Lauren Tan's cursor/plugins/pstack. `upstream.lock.json` records the reviewed source commit, version, every imported skill/support file, and hashes before and after adaptation.
 
-All 58 upstream skills and 23 playbooks are included. The 24 principle skills are byte-equivalent after newline normalization. The only entry-point renames are poteto-mode to p3-mode, poteto-help to p3-help, and setup-pstack to setup-p3. Do not shorten a source rule just to make the port smaller.
+All 58 upstream skills and 22 playbooks are included. The 24 principle skills are byte-equivalent after newline normalization, including the 14 bodies shortened by upstream in 0.15.43. The only entry-point renames are poteto-mode to p3-mode, poteto-help to p3-help, and setup-pstack to setup-p3. Do not shorten a source rule just to make the port smaller.
 
 ## Reviewed adaptations
 
@@ -15,13 +15,14 @@ All 58 upstream skills and 23 playbooks are included. The 24 principle skills ar
 | History | Scoped T3 thread reads and searches | Evidence from the active project, no unrelated private chats |
 | Proof | Available preview/device tools, repository harness, PTY, or HTTP | Verification on the actual user surface and its side effects |
 | Installation | WSL/Linux home-directory links, optional Windows junctions, bundled prompts, absolute child paths | Skills work outside this repository's checkout in the agent's own environment |
-| Plan checker | Native schedule marker replaces the source `/loop` marker | The executable checker remains mandatory |
-| Orchestration | Native delegated worktrees, parent-owned watches, coordinator-owned notes | Upstream 0.15.36 removes the orchestration CLI; current-head verdicts and independent proof remain |
-| Fixtures | Native Bun executables, platform PATH separator, and final newlines on imported DOT fixtures | Plan rejection and watcher behavior run on Linux and Windows; statechart corpus runs on Linux |
+| Plans and long work | Native T3 delegation and watches in the remaining playbooks | Upstream 0.15.43 removes the plan checker and Orchestrate; figure-it-out handles large/unattended work, with the plan's proof and operator gates retained |
+| Fixtures | Native Bun executables, platform PATH separator, and final newlines on imported DOT fixtures | Watcher behavior runs on Linux and Windows; statechart corpus runs on Linux |
 | Statechart types | An explicit exit-code union and test callbacks that return void | Strict typechecking without casts or behavioral changes |
 | Statechart Windows support | Upstream's native process-tree cleanup, temp variables, and CRLF chunk handling | The same TLC reports and charts on Windows and Linux; our regression test remains after upstream shipped its own trailing-CR fix |
-| Models and budgets | Catalog-resolved upstream model preferences, role-relative effort steps, and preservation of existing T3 choices | Fable and other Claude models are separate families but one cross-judge vendor; setup drops retired How/Why roles without guessing which old catalog choices were defaults |
+| Models and budgets | Catalog-resolved Opus-first preferences, advertised fast options, role-relative effort capped at xhigh, and preserved T3 choices | Fable's explicit-task/two-failed-run exception, fixed panel effort, different-vendor review, three budgets, and retired role removal survive without fabricated model IDs |
 | How and Why | One read-only T3 worker for How; direct record-based Why | Upstream 0.15.42's simplification, removal of old panels/templates, and direct tracing by dependent workflows |
+| Worker rules | Installed absolute worker.md pointer in every complete brief; user/tool authority remains explicit | The operator's bar propagates without parent history, additional ceremony, or permission expansion |
+| Architect and Reflect | Direct design tracing/sketches and scoped transcript reads | Upstream 0.15.43 removes their phase/panel/reference machinery; Reflect still needs approval before edits |
 | Forge | GitHub `gh` is the supported default | Verified bottom-up landing and one topology writer |
 
 The upstream watch-pr engine and worktree audit script remain bundled for provenance and their tests. T3 playbooks use the parent-owned native watch and T3 thread/worktree evidence. The shell worktree audit is not a Windows cleanup command. Cleanup always checks active ownership, dirty and unpushed state, and the resolved target before removal.
@@ -42,4 +43,4 @@ The 0.1.10 review covers the changed delegation status/wakeup text, newest-first
 - https://github.com/pingdotgg/t3code/blob/v0.1.10/apps/server/src/mcp/toolkits/thread/tools.ts
 - https://github.com/pingdotgg/t3code/blob/v0.1.10/apps/server/src/mcp/toolkits/project/tools.ts
 
-Automated checks verify source coverage, principle parity, recorded adaptations, installed references, plan rejection, watcher behavior, and statechart rendering from the recorded TLC corpus. These are not a live model-behavior evaluation. Before widening autonomous use, run a T3 smoke task that creates an isolated worker, returns evidence, links a disposable PR, has the parent watch it, and cancels every monitor on completion. Tool absence must be reported rather than silently replacing the verification bar.
+Automated checks verify source coverage, principle parity, recorded adaptations, installed references and the worker pointer, watcher behavior, and statechart rendering from the recorded TLC corpus. The plan-checker tests were removed with the source checker; unrelated checks remain. These are not a live model-behavior evaluation. Before widening autonomous use, run a T3 smoke task that creates an isolated worker, returns evidence, links a disposable PR, has the parent watch it, and cancels every monitor on completion. Tool absence must be reported rather than silently replacing the verification bar.

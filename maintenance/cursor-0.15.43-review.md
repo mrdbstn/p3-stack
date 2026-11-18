@@ -1,15 +1,15 @@
-# Cursor pstack 0.15.43: pending mirror import
+# pstack 0.15.43 source and T3 review
 
-Reviewed November 17, 2026. This records the author delta and required port decisions; it does not import 0.15.43.
+Author delta reviewed November 17, 2026; mirror import and stable T3 adaptations reviewed November 18, 2026.
 
-## Immutable inputs and remaining blocker
+## Immutable inputs
 
 - Author candidate: [cursor/plugins `2f87c854fe3e2fcda44ca86b46ede35aad3c46b7`](https://github.com/cursor/plugins/commit/2f87c854fe3e2fcda44ca86b46ede35aad3c46b7), version 0.15.43, compared with `bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7` (0.15.42).
-- Port baseline: backnotprop/pstack `74bcc61bd216687b1d6d480c28f109adfc9824ec`, version 0.15.42.
-- Mirror at review: `059190ea76d062acc19b9d733e9096d7be35081c`, version 0.15.42, with the same imported skill tree. Its later commit is bookkeeping only.
+- Previous port baseline: backnotprop/pstack `74bcc61bd216687b1d6d480c28f109adfc9824ec`, version 0.15.42.
+- Imported mirror: [backnotprop/pstack `83a729a182a29b59a2a42fc3d7736b0c376b55d4`](https://github.com/backnotprop/pstack/commit/83a729a182a29b59a2a42fc3d7736b0c376b55d4), version 0.15.43, including the author delta and the mirror's harness-neutral adaptations.
 - Stable T3: v0.1.10, `7d32075e3757ded707914e2450c3e392a9665765`, reviewed and merged separately in [PR #11](https://github.com/mrdbstn/p3-stack/pull/11). Six runtime sources are pinned.
 
-The configured mirror has not incorporated the author delta. It cannot truthfully supply a 0.15.43 source lock yet. Keep this PR in draft; resume it when a mirror snapshot contains the changes, rather than opening a duplicate. Do not advance the source hash or describe the fork as current with 0.15.43. No user decision is needed. Maintenance issue #10 remains open for this source drift.
+The mirror now includes the author delta, so this import resumes the existing PR and records that reviewed snapshot. The six pinned stable T3 files were fetched at the immutable 0.1.10 commit on November 18 and match all recorded hashes. No nightly API or running-installation change is required.
 
 ## Semantic review and port decisions
 
@@ -30,8 +30,8 @@ The configured mirror has not incorporated the author delta. It cannot truthfull
 
 The author delta changes 58 skill/support files, with one added worker file and ten removals. The removed items are three Architect references, four Reflect references, Orchestrate, and the plan-checker script/test. Statechart code is unchanged. Guides, generated alternate-harness trees, assets, and Cursor registration remain outside this skills port.
 
-## Completion and proof
+## Import and proof
 
-After the mirror catches up, review its immutable delta against these inputs; it may contain additional fixes. Resolve three-way conflicts and deletions with built-in apply_patch. Reconcile source-dependent repository instructions and checker/test consumers before recording the new inventory. Keep principle parity exact, installed references valid, and the running T3 installation untouched.
+The three-way proposal identified adapted prose conflicts and the ten reviewed removals. The import uses built-in apply_patch, reconciles source-dependent repository instructions and checker/test consumers, and records 58 skills, 22 playbooks, 514 imported files, and 24 exact principles. Installed worker.md resolution replaces the retired installed-checker assertion; unrelated installer, watcher, and statechart checks remain.
 
-Run the required root/helper checks and Linux/WSL statechart suite/typecheck, plus real Java/TLC smoke and the selected SANY cases. Record actual counts after removing the retired helper tests. Review all current-head CI and feedback before marking ready and merging. The current 0.15.42 baseline tests do not verify these unimported changes. Live T3/provider verification remains unavailable; source review is not live model evaluation.
+The PR records the root/helper checks and Linux/WSL statechart suite/typecheck, real Java/TLC smoke, and selected SANY cases. Helper counts change because the source removes the plan-checker tests. Live T3/provider verification remains unavailable; the worker, model-selection, and prompt simplifications have been reviewed as instructions, not evaluated through a live provider run. Source review is not live model evaluation.
