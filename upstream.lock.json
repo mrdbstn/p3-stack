@@ -16,7 +16,7 @@
       "source": "skills/arena/SKILL.md",
       "target": "skills/arena/SKILL.md",
       "upstreamSha256": "e11fdc32290d799d006ec092604c1f052f96f82760ef4ea816666e7395d64b42",
-      "portSha256": "baaa14a5bb263ee87cae76d52642e489d287a567c90f1b623cd2e7539518ebc3",
+      "portSha256": "f47e86ba6567c0ecf2cb83627c693bb927529f12370e21924c9516bd9e775f5f",
       "kind": "adapted"
     },
     {
@@ -191,7 +191,7 @@
       "source": "skills/poteto-mode/SKILL.md",
       "target": "skills/p3-mode/SKILL.md",
       "upstreamSha256": "1918ce177f8dbf118126b860b3c44d087d6cd4e31447625f78e060d82af0a3fd",
-      "portSha256": "da7b5991f9a4fe330d535896366be8399e500ee6fad0fd59c491d7694acd9c6d",
+      "portSha256": "a3b4654a34fa0a6611cef6c1b22a549162762a0cb1d739340bdb2a8d6a80434a",
       "kind": "adapted"
     },
     {
@@ -660,7 +660,7 @@
       "source": "skills/setup-pstack/SKILL.md",
       "target": "skills/setup-p3/SKILL.md",
       "upstreamSha256": "4930fe921d249b7379817feea7efe5b4f724edc03d41b39317a43adba0e98594",
-      "portSha256": "664a8fd4d13f86c79491a374398399030866aa0520cbf717a5396f7b4e4d40d6",
+      "portSha256": "672f4f13569d3e952e84ed483a674ccf9acd460a136b9e2a3334e1884483df68",
       "kind": "adapted"
     },
     {

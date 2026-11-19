@@ -85,11 +85,11 @@ Resolve explicit roles in `p3-models.md` through the live catalog. Missing roles
 
 - Prefer detected Opus 5.5 for code, prose, and judgment at xhigh, with a supported fast option.
 - Prefer detected Opus 5.5 for trivial mechanics, swarm workers, and verification at high with a supported fast option.
-- Review panels prefer Fable 5.2, Opus 5.5, and Gemini 4 Carbon at high. The default judge pool uses Opus and Gemini, since Fable shares Opus's vendor.
+- Review panels prefer Fable 5.2, Opus 5.5, and Gemini 4 Neon at high. The default judge pool uses Opus and Gemini 4 Neon, since Fable shares Opus's vendor.
 
 **Fable 5.2 is an exception.** Outside a panel it runs only when the user names it for this task or two Opus 5.5 xhigh runs of the same brief failed their check. Say which. Difficulty alone never qualifies. Report unavailable models rather than inventing a target or a qualifying run.
 
-**Match the model to the job.** Keep the configured family. Panel seats keep their listed effort. Raise other roles one supported step, up to xhigh, for the hardest work; lower one step for judgment and two or more for routine work. No explicit role runs above xhigh. Opus 5.5 uses a detected fast option whenever available; omit unsupported speed or effort options and report the limit. Verification keeps the configured swarm model. Never retry a rejected target: use the role's valid target, then its calling skill's fallback, then a valid same-family model, then inherit only when allowed. Report the fallback.
+**Match the model to the job.** Keep the configured family. Panel seats keep their listed effort. Raise other roles one supported step, up to xhigh, for the hardest work; lower one step for judgment and two or more for routine work. No explicit role runs above xhigh, and Gemini seats never exceed high, even when Neon advertises xhigh. Opus 5.5 uses a detected fast option whenever available; omit unsupported speed or effort options and report the limit. Verification keeps the configured swarm model. Never retry a rejected target: use the role's valid target, then its calling skill's fallback, then a valid same-family model, then inherit only when allowed. Report the fallback.
 
 You own every delegate's work. Review the diff and write your own summary. A second opinion uses the same prompt on another model vendor.
 
