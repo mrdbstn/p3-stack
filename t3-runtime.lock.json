@@ -1,13 +1,13 @@
 {
   "repository": "https://github.com/pingdotgg/t3code",
-  "tag": "v0.1.10",
-  "commit": "7d32075e3757ded707914e2450c3e392a9665765",
-  "reviewedAt": "2026-11-17",
+  "tag": "v0.1.11",
+  "commit": "59651c1761f6c63e9b6056839067066968e6a406",
+  "reviewedAt": "2026-11-20",
   "scope": "Reviewed stable orchestration, scheduling, PR, thread and project-tool schemas; live provider behavior is not established by these hashes.",
   "files": [
     {
       "path": "packages/contracts/src/orchestratorMcp.ts",
-      "sha256": "f22c4459b6d1bdf0fee19c103be8f5603174db67f8ac6afb4ad9f1dfd999f875"
+      "sha256": "ad980f83f0312189c11a32c4e7b80e2740eb4c6ce637f772d1b9a2c1568321dd"
     },
     {
       "path": "packages/contracts/src/scheduledTask.ts",
@@ -19,7 +19,7 @@
     },
     {
       "path": "apps/server/src/mcp/toolkits/pullRequests/tools.ts",
-      "sha256": "7241a2fcd7d9f0034dc16fc1d1566b0bdf0a71fed1a0d8a71c37df4018f64ed1"
+      "sha256": "1c122219b96116f4b6ff567da376f9bd88de4688c065cbbedcac1fb30557195a"
     },
     {
       "path": "apps/server/src/mcp/toolkits/thread/tools.ts",
@@ -27,7 +27,7 @@
     },
     {
       "path": "apps/server/src/mcp/toolkits/project/tools.ts",
-      "sha256": "47c5318ae4d7b0d40e4c0a6dd4a1266b427de40bbd1fff3751a04b930064229f"
+      "sha256": "9a19b91b557d5afcc7dce3016343158913e4da94801111af1a5b614b8b822cff"
     }
   ]
 }

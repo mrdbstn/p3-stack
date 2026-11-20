@@ -2,11 +2,11 @@
 
 A maintained T3 Code adaptation of [Lauren Tan's pstack](https://github.com/backnotprop/pstack), forked from [uzairansaruzi/p3-stack](https://github.com/uzairansaruzi/p3-stack).
 
-The reviewed baseline is pstack **0.15.43**, commit `83a729a182a29b59a2a42fc3d7736b0c376b55d4`. All **58 skills**, **24 principles**, and **22 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json).
+The reviewed mirror baseline is pstack **0.15.44**, commit `4a4f41c46c67a006658ac17cef2d092593f6b26a`. All **58 skills**, **24 principles**, and **22 playbooks** are included. Principles stay exact. T3 adaptations and imported-file hashes are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json). The author's newer 0.15.46 is ahead of the mirror and remains a separate pending review/import.
 
 pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
-Compatibility tracks **stable T3 Code v0.1.10**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination. The runtime contract covers reported execution models, model-family diversity and Arena's different-vendor judge, scoped history pagination/search, parent-owned PR inventories, optional fresh-session scheduling, and private secret handoff.
+Compatibility tracks **stable T3 Code v0.1.11**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination. The runtime contract covers reported execution models, model-family diversity and Arena's different-vendor judge, scoped history pagination/search, native PR/CI tools, parent-owned watches and merge wakeups, optional fresh-session scheduling, and private secret handoff.
 
 ## Install in WSL or Linux
 
