@@ -324,7 +324,7 @@
       "source": "skills/poteto-mode/playbooks/shipping.md",
       "target": "skills/p3-mode/playbooks/shipping.md",
       "upstreamSha256": "486a6211859eeacfc9a85c7a9d2632b7dddecad189a6b2551212ef274ef1d85c",
-      "portSha256": "a01eedcce681e8a28ef4c9086253fb70ca0db1e5e760e2ec7f8cdfb55fe92881",
+      "portSha256": "0053d2a540b1613ab428aa4bace6db4add7684814dd6fd778372a41716311133",
       "kind": "adapted"
     },
     {
