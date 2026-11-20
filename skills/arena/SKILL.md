@@ -21,7 +21,7 @@ Every candidate gets the same prompt, so the prompt is the contract.
 
 Use the runtime contract's model-family grouping for runners and its vendor grouping for the cross-judge. Fable is a separate family from other Claude models, but both are one vendor. Every other distinct model prefix is its own family. A provider instance is neither a model family nor a vendor. Keep complete catalog IDs unchanged when passing targets.
 
-Setup's default Gemini runner and judge preference is detected Gemini 4 Neon at high. Gemini seats never exceed high, even if xhigh is advertised. Missing roles still inherit as above; do not fabricate a target from the preference name.
+Setup's default Gemini runner and judge preference is detected Gemini 4 Neon at xhigh, using only advertised options. A configured seat keeps its listed level. Missing roles still inherit as above; do not fabricate a target from the preference name.
 
 ## Phase B: Fan out
 

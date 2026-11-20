@@ -16,7 +16,7 @@
       "source": "skills/arena/SKILL.md",
       "target": "skills/arena/SKILL.md",
       "upstreamSha256": "f756a8c8a83e912a4a2dcde3a76018221767d8f71c7d1c6df499474acb84e9ee",
-      "portSha256": "f47e86ba6567c0ecf2cb83627c693bb927529f12370e21924c9516bd9e775f5f",
+      "portSha256": "5328b497e864ee227130bddc5111b85af589c41168d4a11404504b08ab4e0bcc",
       "kind": "adapted"
     },
     {
@@ -191,7 +191,7 @@
       "source": "skills/poteto-mode/SKILL.md",
       "target": "skills/p3-mode/SKILL.md",
       "upstreamSha256": "e55716487e7b36c1a9dc15f7d67fc6059bc62b9e9f2898a721962964ea772870",
-      "portSha256": "a3b4654a34fa0a6611cef6c1b22a549162762a0cb1d739340bdb2a8d6a80434a",
+      "portSha256": "e46e1fcdf53cb744a55ed4e5e2233201e726ef4b1fd360b14204e07969039492",
       "kind": "adapted"
     },
     {
@@ -660,7 +660,7 @@
       "source": "skills/setup-pstack/SKILL.md",
       "target": "skills/setup-p3/SKILL.md",
       "upstreamSha256": "318a6d8f5fb36cb5b03b25bbb84279868a5a7854a6614f5d3f335f1073587d8a",
-      "portSha256": "672f4f13569d3e952e84ed483a674ccf9acd460a136b9e2a3334e1884483df68",
+      "portSha256": "5b3d5e04546de083698aa48758b460badfc61c44914edc24672e0a5559bcb8bd",
       "kind": "adapted"
     },
     {
@@ -695,8 +695,8 @@
       "source": "skills/statechart/SKILL.md",
       "target": "skills/statechart/SKILL.md",
       "upstreamSha256": "010b7b4532406739b1c3a426d1a45f02bb618a42561fc96b3976e064a7f8384d",
-      "portSha256": "010b7b4532406739b1c3a426d1a45f02bb618a42561fc96b3976e064a7f8384d",
-      "kind": "exact"
+      "portSha256": "ca7b3e43b1ddc4fb2425a33960f9390357323a869e1d921b6e2aff4f3004d55e",
+      "kind": "adapted"
     },
     {
       "source": "skills/statechart/references/render.md",
@@ -744,8 +744,8 @@
       "source": "skills/statechart/scripts/frontends/dot.ts",
       "target": "skills/statechart/scripts/frontends/dot.ts",
       "upstreamSha256": "48797ec0f76a5b5b25d2a3ad6ca8ddabe5eed89d5148fea47574bd3eb655296b",
-      "portSha256": "48797ec0f76a5b5b25d2a3ad6ca8ddabe5eed89d5148fea47574bd3eb655296b",
-      "kind": "exact"
+      "portSha256": "cd2e681ff58c759ddeaa17c2f3d4af1f0c3e71273566be555187b5d0e7767dac",
+      "kind": "adapted"
     },
     {
       "source": "skills/statechart/scripts/frontends/marks.ts",
@@ -877,7 +877,7 @@
       "source": "skills/statechart/scripts/run.ts",
       "target": "skills/statechart/scripts/run.ts",
       "upstreamSha256": "bd74a0ec572f90dfb2520adec7ffc83fa4f7ecb38f12635e8fca723bf6597cc8",
-      "portSha256": "d70f2f300fec7039987f234e69d64c2105451068a78861900cfbd82ead7f3725",
+      "portSha256": "05fa16903d756f93874bf5b4edc1e5af7daed5df40a72ab167a390b6a7efe022",
       "kind": "adapted"
     },
     {
@@ -891,8 +891,8 @@
       "source": "skills/statechart/scripts/statechart.ts",
       "target": "skills/statechart/scripts/statechart.ts",
       "upstreamSha256": "9ec96054f28cba0a055fdb34c3df87532c638d65ef7590509e897d5fba43089f",
-      "portSha256": "9ec96054f28cba0a055fdb34c3df87532c638d65ef7590509e897d5fba43089f",
-      "kind": "exact"
+      "portSha256": "2153f6119fb85b227461da1effed7adb0250c98f3a4b10155b69b61a84f5b002",
+      "kind": "adapted"
     },
     {
       "source": "skills/statechart/scripts/test/ConfigOracle.java",
@@ -933,7 +933,7 @@
       "source": "skills/statechart/scripts/test/cli.test.ts",
       "target": "skills/statechart/scripts/test/cli.test.ts",
       "upstreamSha256": "fdd3154882a0c4505868973a9de133b3f5d2140f0ca9e0a9dcfd7b2cc55871df",
-      "portSha256": "af4847c8ad3a38220e53169fd39640f9f324615740a965768187bf49eb54194c",
+      "portSha256": "de353e73381152ea646d09612bb61a59bb644ae4e71a971b4c7d23e127950756",
       "kind": "adapted"
     },
     {
@@ -3495,8 +3495,8 @@
       "source": "skills/statechart/scripts/test/messages.test.ts",
       "target": "skills/statechart/scripts/test/messages.test.ts",
       "upstreamSha256": "e7ca0ea446907074452df5388719598bb297d7f8ee50145b8b8f2a41c0c4c92f",
-      "portSha256": "e7ca0ea446907074452df5388719598bb297d7f8ee50145b8b8f2a41c0c4c92f",
-      "kind": "exact"
+      "portSha256": "70dc23d0a9c76e9949f052c8f426d35463a1416aca2457d09de544654d0f5721",
+      "kind": "adapted"
     },
     {
       "source": "skills/statechart/scripts/test/pipeline.test.ts",
