@@ -660,7 +660,7 @@
       "source": "skills/setup-pstack/SKILL.md",
       "target": "skills/setup-p3/SKILL.md",
       "upstreamSha256": "318a6d8f5fb36cb5b03b25bbb84279868a5a7854a6614f5d3f335f1073587d8a",
-      "portSha256": "5b3d5e04546de083698aa48758b460badfc61c44914edc24672e0a5559bcb8bd",
+      "portSha256": "71fee356effdb94917006e619ce4507ccbfa76be720b3c1cd07a9e224bb0495d",
       "kind": "adapted"
     },
     {
