@@ -16,3 +16,5 @@
 | 2026-10-16 | 0.15.25, `6f131f137de64fdaf928278c0fd9ecec520ccbee` | Public source schemas reviewed | Initial faithful fork sync and Linux/Windows verification. |
 
 The lock files name the exact reviewed inputs. Record a row when importing source changes or reviewing a new stable T3 release. Quiet no-change checks do not need commits. CI does not establish live T3/provider model behavior; run that smoke task in the installed T3 environment.
+
+November 20 stable-runtime follow-up: make the new watch `until` input explicit. Shipping uses `until: "merged"` so owned work stays working past checks; new/default `"checks"` and an omitted existing value have distinct working-status semantics. Monitoring itself persists. Source and stable release revisions are unchanged; the reviewed Shipping adaptation hash is refreshed.
