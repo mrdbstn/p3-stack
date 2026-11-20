@@ -8,7 +8,7 @@ Reviewed November 19, 2026.
 - Recorded mirror baseline: backnotprop/pstack `83a729a182a29b59a2a42fc3d7736b0c376b55d4`, version 0.15.43. Observed mirror head `0d2dc00df47d7686c94324cfe9c3444710d9f16d` has the same skill tree and is not a new import.
 - Stable T3 remains v0.1.10, `7d32075e3757ded707914e2450c3e392a9665765`. All six pinned sources were fetched again and match their recorded hashes. Catalog IDs, provider instances, and advertised options remain runtime data.
 
-The standalone mirror has not imported 0.15.44. This PR prepares the reviewed author changes and stays draft until the mirror catches up. The source lock retains the actual 0.15.43 commit/version and source hashes; recording reviewed local adaptations at that baseline does not claim a 0.15.44 import. Recheck and reconcile the mirror delta before advancing the baseline or merging.
+On November 19 the standalone mirror had not imported 0.15.44, so this PR prepared the author changes as a draft with the real 0.15.43 baseline. On November 20, mirror `4a4f41c46c67a006658ac17cef2d092593f6b26a` includes exactly the three reviewed skill changes, with harness-neutral wording. The import records that actual 0.15.44 snapshot after semantic review. The author's newer 0.15.45/46 changes are reviewed separately; this import does not claim they are already mirrored. Stable T3 advances separately within this PR to 0.1.11, with its own review evidence.
 
 ## Semantic review
 

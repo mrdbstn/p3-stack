@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "repository": "https://github.com/backnotprop/pstack",
-  "commit": "83a729a182a29b59a2a42fc3d7736b0c376b55d4",
-  "version": "0.15.43",
+  "commit": "4a4f41c46c67a006658ac17cef2d092593f6b26a",
+  "version": "0.15.44",
   "scope": "All skills and bundled support files. Harness-neutral principles stay exact. See PORTING.md for reviewed T3 adaptations.",
   "files": [
     {
@@ -15,7 +15,7 @@
     {
       "source": "skills/arena/SKILL.md",
       "target": "skills/arena/SKILL.md",
-      "upstreamSha256": "e11fdc32290d799d006ec092604c1f052f96f82760ef4ea816666e7395d64b42",
+      "upstreamSha256": "f756a8c8a83e912a4a2dcde3a76018221767d8f71c7d1c6df499474acb84e9ee",
       "portSha256": "f47e86ba6567c0ecf2cb83627c693bb927529f12370e21924c9516bd9e775f5f",
       "kind": "adapted"
     },
@@ -190,7 +190,7 @@
     {
       "source": "skills/poteto-mode/SKILL.md",
       "target": "skills/p3-mode/SKILL.md",
-      "upstreamSha256": "1918ce177f8dbf118126b860b3c44d087d6cd4e31447625f78e060d82af0a3fd",
+      "upstreamSha256": "e55716487e7b36c1a9dc15f7d67fc6059bc62b9e9f2898a721962964ea772870",
       "portSha256": "a3b4654a34fa0a6611cef6c1b22a549162762a0cb1d739340bdb2a8d6a80434a",
       "kind": "adapted"
     },
@@ -226,7 +226,7 @@
       "source": "skills/poteto-mode/playbooks/babysit.md",
       "target": "skills/p3-mode/playbooks/babysit.md",
       "upstreamSha256": "06fed1fa997c8899d7365fb0f21c0177084fcb8d0561841d2eca753660f63a85",
-      "portSha256": "c2dfc92cc0bd859d99bb0c44d31a2657f8629d93541dc532cc1cd156b8bc1d4d",
+      "portSha256": "4a53a8c37478e6ea97866a742b46ee4c21a3046bb7ad725f9319ee00e89b026f",
       "kind": "adapted"
     },
     {
@@ -275,7 +275,7 @@
       "source": "skills/poteto-mode/playbooks/opening-a-pr.md",
       "target": "skills/p3-mode/playbooks/opening-a-pr.md",
       "upstreamSha256": "a14cf04833cd6a3eb899fb8814759c937294d0faa3da1ef09d568f45002026b4",
-      "portSha256": "04886b4a3b61201f346ac8804c4e1f702fc705e4aa9cee7f92af88d7d8ada4c3",
+      "portSha256": "d11b7474944d9fb055eb3ee21f751eb93cb28fd3828e91d1adaf5722fb5ab23a",
       "kind": "adapted"
     },
     {
@@ -324,7 +324,7 @@
       "source": "skills/poteto-mode/playbooks/shipping.md",
       "target": "skills/p3-mode/playbooks/shipping.md",
       "upstreamSha256": "486a6211859eeacfc9a85c7a9d2632b7dddecad189a6b2551212ef274ef1d85c",
-      "portSha256": "53dae3afdca6b7d5966fcdfa14027da9340b725b73cdd7973a605bf64ac4d1fc",
+      "portSha256": "a01eedcce681e8a28ef4c9086253fb70ca0db1e5e760e2ec7f8cdfb55fe92881",
       "kind": "adapted"
     },
     {
@@ -659,7 +659,7 @@
     {
       "source": "skills/setup-pstack/SKILL.md",
       "target": "skills/setup-p3/SKILL.md",
-      "upstreamSha256": "4930fe921d249b7379817feea7efe5b4f724edc03d41b39317a43adba0e98594",
+      "upstreamSha256": "318a6d8f5fb36cb5b03b25bbb84279868a5a7854a6614f5d3f335f1073587d8a",
       "portSha256": "672f4f13569d3e952e84ed483a674ccf9acd460a136b9e2a3334e1884483df68",
       "kind": "adapted"
     },
