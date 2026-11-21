@@ -20,7 +20,7 @@ Call `orchestrator_capabilities` and search it for preferred models absent from 
 
 Read the existing file and its budget and choices. Drop roles absent from step 5, including hardest tasks, Architect runners, Reflect tooling/judgment, and old How/Why roles. List every dropped line.
 
-In every file, including `# defaults: 3`, migrate non-Neon Gemini 4 entries in `arena runners`, `arena cross-judge pool`, and `interrogate reviewers` to detected Gemini 4 Neon at high. Upstream treats those older panel entries as old defaults. Identify the model component using the runtime contract's namespace/prefix rules; keep other models, roles, and aliases. Resolve the replacement's actual provider, catalog ID, and supported options. If Neon is unavailable or ambiguous, mark the entry as needing a choice in step 3(c), never invent a target. List each replacement.
+In every file, including `# defaults: 3`, migrate non-Neon Gemini 4 entries and Gemini 4 Neon entries at high in `arena runners`, `arena cross-judge pool`, and `interrogate reviewers` to detected Gemini 4 Neon with an xhigh starting target. Upstream treats those entries as old defaults. Keep Neon at other levels through this migration, plus other models, roles, and aliases; step 3 still applies the selected budget and highest supported effort at or below its target. Identify the model component using the runtime contract's namespace/prefix rules and effort from its advertised options. Resolve the replacement's actual provider, catalog ID, and supported options. If Neon is unavailable or ambiguous, mark the entry as needing a choice in step 3(c), never invent a target. List each replacement and any effort fallback.
 
 A file without `# defaults: 3` predates these defaults. Migrate `unlimited` to `large`, since explicit roles are capped at xhigh. Recommend the new Opus/Gemini judge pool instead of the previous three-entry Fable/Opus/Gemini default. T3's older setup selected catalog models, so a name alone cannot prove an entry was generated rather than chosen. Apart from the explicit Gemini migration above, preserve deliberate targets, lists, speed choices, and aliases; show ambiguous changes for step 3(c)'s review instead of silently replacing them. Say which values changed.
 
@@ -34,9 +34,9 @@ A file without `# defaults: 3` predates these defaults. Migrate `unlimited` to `
 
 **(b) Apply it.** Prefer detected Opus 5.5 for code, prose, judgment, and swarm work. Arena runners and Interrogate reviewers prefer one each of detected Fable 5.2, Opus 5.5, and Gemini 4 Neon. The default cross-judge pool prefers Opus and Gemini 4 Neon, since Fable and Opus share one vendor. When unavailable, choose supported capability equivalents and report missing diversity. Never fabricate an ID or option. Preserve existing model choices on re-runs except for step 2's explicit migrations or the user's changes.
 
-Code and judgment/prose start at xhigh. Swarm workers and panel entries start at high. Large keeps the role's starting effort, medium lowers it one step, and small lowers it two on `xhigh > high > medium > low`, clamped at low. Rebuild from starting efforts on each run so the same budget is idempotent. No explicit role exceeds xhigh. Use the highest advertised effort at or below the target, or mark the role as needing a choice when none fits. Omit unsupported effort options. Aliases do not change.
+Code and judgment/prose start at xhigh. Swarm workers and panel entries start at high, except each Gemini 4 Neon panel entry has its own xhigh starting target. Large keeps each starting effort, medium lowers it one step, and small lowers it two on `xhigh > high > medium > low`, clamped at low. Thus the Neon panel target is xhigh/high/medium for large/medium/small, while Fable and Opus panel targets are high/medium/low. Rebuild from starting efforts on each run so the same budget is idempotent. No explicit role exceeds xhigh. Use the highest advertised effort at or below the target, or mark the role as needing a choice when none fits. Omit unsupported effort options. Aliases do not change.
 
-Gemini entries stay at high when their role targets xhigh, even if the catalog advertises Neon xhigh. Lower budget targets still apply. This is an upstream policy cap, not a claim about the model's available options.
+Gemini 4 Neon uses only detected low-through-xhigh effort values. Do not add max or fast options from the preference name. At invocation, a configured panel seat keeps its listed effort.
 
 Opus 5.5 always uses its advertised fast option when available; omit an unavailable option and report the limit. Do not invent fast support for another model. At invocation, panel seats keep their listed level; non-panel work adjusts per the runtime contract. Fable outside panels requires the user's explicit request for that task or two failed Opus 5.5 xhigh runs of the same brief. Difficulty alone never qualifies.
 
@@ -44,7 +44,7 @@ Opus 5.5 always uses its advertised fast option when available; omit an unavaila
 
 ### 4. Validate
 
-Every real target must exist under its detected provider instance, with only supported options and effort at xhigh or below, capped at high for Gemini. Aliases inherit. Resolve an unavailable choice with the user rather than writing an invented target.
+Every real target must exist under its detected provider instance, with only supported options and effort at xhigh or below. Aliases inherit. Resolve an unavailable choice with the user rather than writing an invented target.
 
 ### 5. Write the file
 
