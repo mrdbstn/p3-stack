@@ -23,11 +23,12 @@ test('installs every skill outside the checkout, preserves real directories, and
   for (let round = 0; round < 2; round++) {
     const result = run('install.mjs', ['--project', dir], dir);
     assert.equal(result.status, 0, result.stderr);
-    assert.match(result.stdout, /linked 57 skills.*skipped 1/);
+    assert.match(result.stdout, /linked 58 skills.*skipped 1/);
     assert.equal(readFileSync(join(target, 'bro/SKILL.md'), 'utf8'), 'my existing skill');
     assert.equal(realpathSync(join(target, 'p3-mode')), realpathSync(join(root, 'skills/p3-mode')));
     assert.match(readFileSync(join(target, 'no-comments/references/comment-sicko.md'), 'utf8'), /comment/i);
-    for (const name of ['sharpen', 'in-your-own-words', 'ketchup', 'ketchup-video', 'statechart', 'create-formal-verification-skill', 'maintain-formal-verification-skill']) assert.match(readFileSync(join(target, name, 'SKILL.md'), 'utf8'), new RegExp(`name: ${name}`));
+    for (const name of ['sharpen', 'reframe', 'in-your-own-words', 'ketchup', 'ketchup-video', 'statechart', 'create-formal-verification-skill', 'maintain-formal-verification-skill']) assert.match(readFileSync(join(target, name, 'SKILL.md'), 'utf8'), new RegExp(`name: ${name}`));
+    for (const name of ['p3-mode', 'p3-help', 'setup-p3', 'reframe', 'principle-prove-it-works']) assert.match(readFileSync(join(target, name, 'agents/openai.yaml'), 'utf8'), /^  allow_implicit_invocation: false$/m);
     assert.equal(realpathSync(join(target, 'p3-mode/worker.md')), realpathSync(join(root, 'skills/p3-mode/worker.md')));
   }
 }));

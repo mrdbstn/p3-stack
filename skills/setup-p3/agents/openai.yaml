@@ -1,0 +1,3 @@
+# Preserve setup-p3's existing explicit-only frontmatter for Codex providers.
+policy:
+  allow_implicit_invocation: false

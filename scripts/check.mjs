@@ -28,7 +28,9 @@ for (const path of walk(join(root, 'skills')).filter(p => p.endsWith('.md') && !
     const name = text.match(/^name: (.+)$/m)?.[1];
     if (name !== dirname(path).split(/[\\/]/).at(-1)) errors.push(`Skill name/path mismatch: ${path}`);
     if (!/^description: .+$/m.test(text)) errors.push(`Missing description: ${path}`);
-    if (!/^disable-model-invocation: true$/m.test(text) && name !== 'p3-help') errors.push(`Unexpected automatic skill: ${name}`);
+    if (!/^disable-model-invocation: true$/m.test(text)) errors.push(`Unexpected automatic skill: ${name}`);
+    const policy = join(dirname(path), 'agents', 'openai.yaml');
+    if (!existsSync(policy) || !/^policy:\n  allow_implicit_invocation: false(?:\n|$)/m.test(read(policy))) errors.push(`Missing explicit-invocation policy: ${name}`);
   }
   if (/\bCursor\b|cursor-team-kit|control-ui|control-cli|subagent_type|agent-transcripts|AskQuestion|claude-|grok-|gpt-|\/loop|icon:|pstack\/skills|agents\/(?:p3-agent|comment-sicko)\.md/.test(text)) errors.push(`Stale harness instruction: ${path}`);
   if (/scripts\/orch\//.test(text)) errors.push(`Unsupported stable T3 instruction: ${path}`);
