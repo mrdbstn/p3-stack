@@ -16,6 +16,8 @@ When a playbook says to re-read its trunk version, that trunk belongs to the ski
 
 Read project-root `p3-models.md` at task start. If absent, read `~/.agents/p3-models.md`. The project file wins. An absent role, `auto`, or `inherit-parent` inherits the parent target. Configure a panel with `/setup-p3` before promising model diversity. Installing a skill does not invoke it; use `/p3-mode` for rigorous tasks, or invoke individual skills.
 
+Skills retain explicit-invocation frontmatter and bundled `agents/openai.yaml` with `allow_implicit_invocation: false` for Codex providers that consume it. The help entry follows the same explicit policy, and setup-p3 retains its existing explicit behavior. Metadata is not an MCP option or a permission grant; other providers can ignore it. Use the installed provider's supported named invocation, and never claim live loading behavior solely from these files.
+
 ## Models and effort
 
 Each configured entry names a provider instance, model, and optional effort. Resolve these against the live catalog. `orchestrator_capabilities` returns a short list; use its `search` input for configured or other catalog models absent from that list. Pass `target: {providerInstanceId, model, options}` using only option keys and values actually advertised for that model. Never invent a model slug or attach a reasoning suffix to a model ID. Omit the target for `auto` or `inherit-parent`. A rejected entry is not retried; use the calling skill's valid same-family fallback, or inherit only when that skill allows it, and report the change. Never replace Arena's different-vendor judge with the parent's vendor.

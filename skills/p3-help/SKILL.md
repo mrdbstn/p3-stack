@@ -1,6 +1,7 @@
 ---
 name: p3-help
 description: Guides users through p3-stack setup, /p3-mode, and picking the skill, playbook, or principle for a task. Use for /p3-help, or when the user asks how to install, set up, or use p3-stack, or which p3-stack skill fits. Not for requests to do work, even ones that name p3-stack.
+disable-model-invocation: true
 ---
 
 # P3 help
@@ -57,6 +58,7 @@ The default answer is `/p3-mode`, which runs most of the others when its steps n
 | Apply TypeScript rules to `.ts` or `.tsx` work | [`/typescript-best-practices`](../typescript-best-practices/SKILL.md) |
 | Strip comments before review, using a reviewer that didn't write them | [`/no-comments`](../no-comments/SKILL.md) |
 | Sharpen the task before starting | [`/sharpen`](../sharpen/SKILL.md) |
+| Learn the expert words for what they're building, including words borrowed from neighboring fields, with every cited source checked, and get their description rewritten with them | [`/reframe`](../reframe/SKILL.md) |
 | Have the agent restate the goal | [`/in-your-own-words`](../in-your-own-words/SKILL.md) |
 | Catch up on this chat in a short video | [`/ketchup-video`](../ketchup-video/SKILL.md) |
 | Create a formal verification skill | [`/create-formal-verification-skill`](../create-formal-verification-skill/SKILL.md) |

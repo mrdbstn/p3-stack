@@ -2,7 +2,7 @@
 
 A maintained T3 Code adaptation of [Lauren Tan's pstack](https://github.com/backnotprop/pstack), forked from [uzairansaruzi/p3-stack](https://github.com/uzairansaruzi/p3-stack).
 
-The reviewed mirror baseline is pstack **0.15.46**, commit `c3464c11c60b1352d5e8f5f0428a3a6943837568`. All **58 skills**, **24 principles**, and **22 playbooks** are included. Principles stay exact. T3 adaptations and all **516 imported-file hashes** are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json). [The source review](maintenance/cursor-0.15.46-review.md) covers the author changes and mirror watcher fix.
+The reviewed mirror baseline is pstack **0.15.48**, commit `9dd340887a043aa1da07a0d5c4e6918bbb3a02a0`. All **59 skills**, **24 principles**, and **22 playbooks** are included. Principles stay exact. T3 adaptations and all **575 imported-file hashes** are recorded in [PORTING.md](PORTING.md) and [upstream.lock.json](upstream.lock.json). [The source review](maintenance/cursor-0.15.48-review.md) covers Reframe and explicit-invocation metadata.
 
 pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
@@ -30,6 +30,8 @@ For one project, use `node install.mjs --project /home/you/src/project`. The ins
 3. Ask `/p3-help` when unsure which skill fits.
 
 Project-root `p3-models.md` overrides `~/.agents/p3-models.md`. Settings are read at task start. Unconfigured roles inherit the parent model; configure panels to obtain model diversity. Installation alone does not invoke the skills. Save the full mode for work that needs its extra review and verification.
+
+Use `/reframe` to name an unclear problem, learn the relevant expert terms and neighboring-field analogies, and rewrite the description. It opens every cited link and drops citations it cannot confirm. Skills include explicit-invocation frontmatter and Codex policy metadata; call `/p3-help` when you want the guide. Providers that ignore that metadata still require their own supported skill invocation.
 
 T3 must expose the orchestration tools used by the chosen workflow. Models and options come from `orchestrator_capabilities`. Writers use isolated delegated worktrees. The parent owns PR watches. Ordinary top-level conversations are created only when explicitly requested. See the [runtime contract](skills/p3-mode/references/t3-runtime.md).
 

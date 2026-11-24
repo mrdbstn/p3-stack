@@ -2,7 +2,7 @@
 
 This fork preserves pstack's engineering behavior and adapts its harness mechanics to T3 Code. The source is the standalone backnotprop/pstack mirror of Lauren Tan's cursor/plugins/pstack. `upstream.lock.json` records the reviewed source commit, version, every imported skill/support file, and hashes before and after adaptation.
 
-All 58 upstream skills and 22 playbooks are included. The 24 principle skills are byte-equivalent after newline normalization, including the 14 bodies shortened by upstream in 0.15.43. The only entry-point renames are poteto-mode to p3-mode, poteto-help to p3-help, and setup-pstack to setup-p3. Do not shorten a source rule just to make the port smaller.
+All 59 upstream skills and 22 playbooks are included. The 24 principle skills and their imported policy metadata are byte-equivalent after newline normalization, including the 14 bodies shortened by upstream in 0.15.43. The only entry-point renames are poteto-mode to p3-mode, poteto-help to p3-help, and setup-pstack to setup-p3. Do not shorten a source rule just to make the port smaller.
 
 ## Reviewed adaptations
 
@@ -25,6 +25,7 @@ All 58 upstream skills and 22 playbooks are included. The 24 principle skills ar
 | Worker rules | Installed absolute worker.md pointer in every complete brief; user/tool authority remains explicit | The operator's bar propagates without parent history, additional ceremony, or permission expansion |
 | Architect and Reflect | Direct design tracing/sketches and scoped transcript reads | Upstream 0.15.43 removes their phase/panel/reference machinery; Reflect still needs approval before edits |
 | Forge | Prefer stable T3's native PR/CI tools; GitHub `gh` remains the unavailable-operation/tool fallback | Complete paginated review, head-pinned bottom-up landing, parent-owned links/watches, and one topology writer |
+| Reframe and invocation policy | Import Reframe unchanged, route it from help, and bundle the mirror's Codex policy metadata | Preserve its ambiguity step, checked citations and rewritten description. Align p3-help's frontmatter with the source's explicit-only policy; add matching local metadata for setup-p3's already explicit frontmatter. This metadata does not claim universal T3/provider enforcement or change a running installation |
 
 The upstream watch-pr engine and worktree audit script remain bundled for provenance and their tests. T3 playbooks use the parent-owned native watch and T3 thread/worktree evidence. The shell worktree audit is not a Windows cleanup command. Cleanup always checks active ownership, dirty and unpushed state, and the resolved target before removal.
 

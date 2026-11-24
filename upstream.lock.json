@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "repository": "https://github.com/backnotprop/pstack",
-  "commit": "c3464c11c60b1352d5e8f5f0428a3a6943837568",
-  "version": "0.15.46",
+  "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
+  "version": "0.15.48",
   "scope": "All skills and bundled support files. Harness-neutral principles stay exact. See PORTING.md for reviewed T3 adaptations.",
   "files": [
     {
@@ -13,11 +13,25 @@
       "kind": "exact"
     },
     {
+      "source": "skills/architect/agents/openai.yaml",
+      "target": "skills/architect/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/arena/SKILL.md",
       "target": "skills/arena/SKILL.md",
       "upstreamSha256": "aa0ef8f61f44a5307cb97ce40f8f76d2325cd3ca379d4bcf670dee6f6eaa8626",
       "portSha256": "5328b497e864ee227130bddc5111b85af589c41168d4a11404504b08ab4e0bcc",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/arena/agents/openai.yaml",
+      "target": "skills/arena/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/automate-me/SKILL.md",
@@ -27,10 +41,24 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/automate-me/agents/openai.yaml",
+      "target": "skills/automate-me/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/benchmark-checklist/SKILL.md",
       "target": "skills/benchmark-checklist/SKILL.md",
       "upstreamSha256": "5efd79495e3eebf3b53814861330fe812458212958f8f009492e866c329161f6",
       "portSha256": "5efd79495e3eebf3b53814861330fe812458212958f8f009492e866c329161f6",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/benchmark-checklist/agents/openai.yaml",
+      "target": "skills/benchmark-checklist/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -41,10 +69,24 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/blast-radius/agents/openai.yaml",
+      "target": "skills/blast-radius/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/bro/SKILL.md",
       "target": "skills/bro/SKILL.md",
       "upstreamSha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
       "portSha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/bro/agents/openai.yaml",
+      "target": "skills/bro/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -55,10 +97,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/correct/agents/openai.yaml",
+      "target": "skills/correct/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/create-formal-verification-skill/SKILL.md",
       "target": "skills/create-formal-verification-skill/SKILL.md",
       "upstreamSha256": "30ef0ac27612ecd16fdc081112113221d673053cef3f8603db11932193861211",
       "portSha256": "30ef0ac27612ecd16fdc081112113221d673053cef3f8603db11932193861211",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/create-formal-verification-skill/agents/openai.yaml",
+      "target": "skills/create-formal-verification-skill/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -67,6 +123,13 @@
       "upstreamSha256": "bba612e8b81a02df0f49e6f6911f3b543c8c7d9f1f3c13ae6c0e2d58cc8c3ad3",
       "portSha256": "7e05779e3f4ece2aa258ca736d220fdfcf6ef4b76675478cffe2935ff26bf7f6",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/create-verification-skill/agents/openai.yaml",
+      "target": "skills/create-verification-skill/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/create-verification-skill/references/feature-map-example/README.md",
@@ -97,6 +160,13 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/figure-it-out/agents/openai.yaml",
+      "target": "skills/figure-it-out/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/how/SKILL.md",
       "target": "skills/how/SKILL.md",
       "upstreamSha256": "b911c4eac292e458e6685e445562c3aed98155b2be80b43d6d1ed1aa2b13c154",
@@ -104,10 +174,24 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/how/agents/openai.yaml",
+      "target": "skills/how/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/in-your-own-words/SKILL.md",
       "target": "skills/in-your-own-words/SKILL.md",
       "upstreamSha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
       "portSha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/in-your-own-words/agents/openai.yaml",
+      "target": "skills/in-your-own-words/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -118,10 +202,24 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/interrogate/agents/openai.yaml",
+      "target": "skills/interrogate/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/ketchup-video/SKILL.md",
       "target": "skills/ketchup-video/SKILL.md",
       "upstreamSha256": "027aed9a01adf208aeac3a134f47d12f7c1e42d6fea03095aedc2bae58cdcfd1",
       "portSha256": "027aed9a01adf208aeac3a134f47d12f7c1e42d6fea03095aedc2bae58cdcfd1",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/ketchup-video/agents/openai.yaml",
+      "target": "skills/ketchup-video/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -132,10 +230,24 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/ketchup/agents/openai.yaml",
+      "target": "skills/ketchup/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/maintain-formal-verification-skill/SKILL.md",
       "target": "skills/maintain-formal-verification-skill/SKILL.md",
       "upstreamSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c",
       "portSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/maintain-formal-verification-skill/agents/openai.yaml",
+      "target": "skills/maintain-formal-verification-skill/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -146,6 +258,13 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/maintain-verification-skill/agents/openai.yaml",
+      "target": "skills/maintain-verification-skill/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/make-bot-ui/SKILL.md",
       "target": "skills/make-bot-ui/SKILL.md",
       "upstreamSha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f",
@@ -153,11 +272,25 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/make-bot-ui/agents/openai.yaml",
+      "target": "skills/make-bot-ui/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/no-comments/SKILL.md",
       "target": "skills/no-comments/SKILL.md",
       "upstreamSha256": "0b0818290f21a841100c8364d7792bcae2ce3be2666ea6787e6b6aa97e692850",
       "portSha256": "2234d0438b381d600be606e2c77fd31f199315b4fa7f80209699e651b5029cb6",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/no-comments/agents/openai.yaml",
+      "target": "skills/no-comments/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/no-comments/references/comment-sicko.md",
@@ -169,9 +302,16 @@
     {
       "source": "skills/poteto-help/SKILL.md",
       "target": "skills/p3-help/SKILL.md",
-      "upstreamSha256": "521dca9fc6025e9c9160dafd45457805554c5423084df0756afdd754f7d96fab",
-      "portSha256": "a2d811df1cb019f79e85ccbdc72b48ea602d808cd71bbebf12a1b9fbcf4e9a4e",
+      "upstreamSha256": "641d8f39a2dd13f99f8d44d7bee30c0c41db2120209ec7adcb9e5e25b830885d",
+      "portSha256": "c6322df363405d98dd140bdbf1a29cb4b0738e28f3d3b45f3d7f3f314740f496",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/poteto-help/agents/openai.yaml",
+      "target": "skills/p3-help/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/poteto-help/references/prompting.md",
@@ -193,6 +333,13 @@
       "upstreamSha256": "6bf6de6c221cc246f97f351b2ac1ba616a4dcd3723c4b7fcea06f5315e23e466",
       "portSha256": "e46e1fcdf53cb744a55ed4e5e2233201e726ef4b1fd360b14204e07969039492",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/poteto-mode/agents/openai.yaml",
+      "target": "skills/p3-mode/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/poteto-mode/playbooks/authoring-a-skill.md",
@@ -482,10 +629,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-attack-the-premise/agents/openai.yaml",
+      "target": "skills/principle-attack-the-premise/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-boundary-discipline/SKILL.md",
       "target": "skills/principle-boundary-discipline/SKILL.md",
       "upstreamSha256": "c02c26cca3906bfd57829535f8fa7ee9e00df037b4dbb24e5f85ec9e12710b48",
       "portSha256": "c02c26cca3906bfd57829535f8fa7ee9e00df037b4dbb24e5f85ec9e12710b48",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-boundary-discipline/agents/openai.yaml",
+      "target": "skills/principle-boundary-discipline/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -496,10 +657,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-build-the-lever/agents/openai.yaml",
+      "target": "skills/principle-build-the-lever/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-encode-lessons-in-structure/SKILL.md",
       "target": "skills/principle-encode-lessons-in-structure/SKILL.md",
       "upstreamSha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
       "portSha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-encode-lessons-in-structure/agents/openai.yaml",
+      "target": "skills/principle-encode-lessons-in-structure/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -510,10 +685,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-exhaust-the-design-space/agents/openai.yaml",
+      "target": "skills/principle-exhaust-the-design-space/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-experience-first/SKILL.md",
       "target": "skills/principle-experience-first/SKILL.md",
       "upstreamSha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
       "portSha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-experience-first/agents/openai.yaml",
+      "target": "skills/principle-experience-first/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -524,10 +713,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-explain-the-number/agents/openai.yaml",
+      "target": "skills/principle-explain-the-number/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-fix-root-causes/SKILL.md",
       "target": "skills/principle-fix-root-causes/SKILL.md",
       "upstreamSha256": "79afd7e67d8951203231f6f1ccfc7b4a1f30d8d6cdb68e92755c80012414dbeb",
       "portSha256": "79afd7e67d8951203231f6f1ccfc7b4a1f30d8d6cdb68e92755c80012414dbeb",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-fix-root-causes/agents/openai.yaml",
+      "target": "skills/principle-fix-root-causes/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -538,10 +741,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-foundational-thinking/agents/openai.yaml",
+      "target": "skills/principle-foundational-thinking/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-guard-the-context-window/SKILL.md",
       "target": "skills/principle-guard-the-context-window/SKILL.md",
       "upstreamSha256": "af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a",
       "portSha256": "af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-guard-the-context-window/agents/openai.yaml",
+      "target": "skills/principle-guard-the-context-window/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -552,10 +769,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-laziness-protocol/agents/openai.yaml",
+      "target": "skills/principle-laziness-protocol/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-make-operations-idempotent/SKILL.md",
       "target": "skills/principle-make-operations-idempotent/SKILL.md",
       "upstreamSha256": "76ad0a99b6ff2a05a159accfeee48412d62f62774eb8d05bbff26a1f3aa3eab5",
       "portSha256": "76ad0a99b6ff2a05a159accfeee48412d62f62774eb8d05bbff26a1f3aa3eab5",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-make-operations-idempotent/agents/openai.yaml",
+      "target": "skills/principle-make-operations-idempotent/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -566,10 +797,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-migrate-callers-then-delete-legacy-apis/agents/openai.yaml",
+      "target": "skills/principle-migrate-callers-then-delete-legacy-apis/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-minimize-reader-load/SKILL.md",
       "target": "skills/principle-minimize-reader-load/SKILL.md",
       "upstreamSha256": "22d27deffb0a3726858d0d4b02d71acd4a3eb4d44e218bc89b66e49dc9823937",
       "portSha256": "22d27deffb0a3726858d0d4b02d71acd4a3eb4d44e218bc89b66e49dc9823937",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-minimize-reader-load/agents/openai.yaml",
+      "target": "skills/principle-minimize-reader-load/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -580,10 +825,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-model-the-domain/agents/openai.yaml",
+      "target": "skills/principle-model-the-domain/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-never-block-on-the-human/SKILL.md",
       "target": "skills/principle-never-block-on-the-human/SKILL.md",
       "upstreamSha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
       "portSha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-never-block-on-the-human/agents/openai.yaml",
+      "target": "skills/principle-never-block-on-the-human/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -594,10 +853,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-outcome-oriented-execution/agents/openai.yaml",
+      "target": "skills/principle-outcome-oriented-execution/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-prove-it-works/SKILL.md",
       "target": "skills/principle-prove-it-works/SKILL.md",
       "upstreamSha256": "3d6c482e341974cfcb8d19ebf66fb1d4274d8673af35e36d3c231a6aa9e03f25",
       "portSha256": "3d6c482e341974cfcb8d19ebf66fb1d4274d8673af35e36d3c231a6aa9e03f25",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-prove-it-works/agents/openai.yaml",
+      "target": "skills/principle-prove-it-works/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -608,10 +881,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-redesign-from-first-principles/agents/openai.yaml",
+      "target": "skills/principle-redesign-from-first-principles/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
       "target": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
       "upstreamSha256": "2e5625d686b657e0b607c329fd8043bf50261b808239308fe4c6776e2817e95a",
       "portSha256": "2e5625d686b657e0b607c329fd8043bf50261b808239308fe4c6776e2817e95a",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-separate-before-serializing-shared-state/agents/openai.yaml",
+      "target": "skills/principle-separate-before-serializing-shared-state/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -622,10 +909,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-sequence-verifiable-units/agents/openai.yaml",
+      "target": "skills/principle-sequence-verifiable-units/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-subtract-before-you-add/SKILL.md",
       "target": "skills/principle-subtract-before-you-add/SKILL.md",
       "upstreamSha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
       "portSha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-subtract-before-you-add/agents/openai.yaml",
+      "target": "skills/principle-subtract-before-you-add/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -636,10 +937,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/principle-test-behavior-not-implementation/agents/openai.yaml",
+      "target": "skills/principle-test-behavior-not-implementation/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/principle-type-system-discipline/SKILL.md",
       "target": "skills/principle-type-system-discipline/SKILL.md",
       "upstreamSha256": "9cd1ce345bc9d666c73c64c89c89164217b659aa4c4dde5600cbbe6f6e775461",
       "portSha256": "9cd1ce345bc9d666c73c64c89c89164217b659aa4c4dde5600cbbe6f6e775461",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/principle-type-system-discipline/agents/openai.yaml",
+      "target": "skills/principle-type-system-discipline/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -650,11 +965,39 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/recall/agents/openai.yaml",
+      "target": "skills/recall/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/reflect/SKILL.md",
       "target": "skills/reflect/SKILL.md",
       "upstreamSha256": "37ea2b7c2eba897459022202d8cc6a7c7dddad34196a675cd97e03ddf2d39774",
       "portSha256": "ada37bb7026ef00b3d4d0f72fda52f7f8b6c52f8d2cc1d900116ce4a4a0fb40c",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/reflect/agents/openai.yaml",
+      "target": "skills/reflect/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/reframe/SKILL.md",
+      "target": "skills/reframe/SKILL.md",
+      "upstreamSha256": "1e2e8a11da838c9169dae6fb71257041cf4e91d58862d1629354648b9bd458f3",
+      "portSha256": "1e2e8a11da838c9169dae6fb71257041cf4e91d58862d1629354648b9bd458f3",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/reframe/agents/openai.yaml",
+      "target": "skills/reframe/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/setup-pstack/SKILL.md",
@@ -671,11 +1014,25 @@
       "kind": "exact"
     },
     {
+      "source": "skills/sharpen/agents/openai.yaml",
+      "target": "skills/sharpen/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/show-me-your-work/SKILL.md",
       "target": "skills/show-me-your-work/SKILL.md",
       "upstreamSha256": "88b7eaeb25c178ffe36ed567ec560bd16c61058af16bdea90526cc1b59fdc4a7",
       "portSha256": "57392cf66d415e6a25e24ce5a786bb8c80db84483e5879d72fd0a5e59ca6ddbb",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/show-me-your-work/agents/openai.yaml",
+      "target": "skills/show-me-your-work/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/show-me-your-work/references/decision-log-template.tsv",
@@ -696,6 +1053,13 @@
       "target": "skills/statechart/SKILL.md",
       "upstreamSha256": "ca7b3e43b1ddc4fb2425a33960f9390357323a869e1d921b6e2aff4f3004d55e",
       "portSha256": "ca7b3e43b1ddc4fb2425a33960f9390357323a869e1d921b6e2aff4f3004d55e",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/statechart/agents/openai.yaml",
+      "target": "skills/statechart/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -3569,10 +3933,24 @@
       "kind": "adapted"
     },
     {
+      "source": "skills/swarm/agents/openai.yaml",
+      "target": "skills/swarm/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/tdd/SKILL.md",
       "target": "skills/tdd/SKILL.md",
       "upstreamSha256": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f",
       "portSha256": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/tdd/agents/openai.yaml",
+      "target": "skills/tdd/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -3583,10 +3961,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/teach/agents/openai.yaml",
+      "target": "skills/teach/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/technical-writing/SKILL.md",
       "target": "skills/technical-writing/SKILL.md",
       "upstreamSha256": "0a620885599cdde5a0a31fa39878144c10f61c894b56bf4a9ff779496e718b14",
       "portSha256": "0a620885599cdde5a0a31fa39878144c10f61c894b56bf4a9ff779496e718b14",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/technical-writing/agents/openai.yaml",
+      "target": "skills/technical-writing/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     },
     {
@@ -3595,6 +3987,13 @@
       "upstreamSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
       "portSha256": "827145b1bd795b2b03ba0d1ca6087fe20c37aacd1b367e6a37c87ce4a2b4a6bf",
       "kind": "adapted"
+    },
+    {
+      "source": "skills/typescript-best-practices/agents/openai.yaml",
+      "target": "skills/typescript-best-practices/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
     },
     {
       "source": "skills/typescript-best-practices/references/patterns.md",
@@ -3611,10 +4010,24 @@
       "kind": "exact"
     },
     {
+      "source": "skills/unslop/agents/openai.yaml",
+      "target": "skills/unslop/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "kind": "exact"
+    },
+    {
       "source": "skills/why/SKILL.md",
       "target": "skills/why/SKILL.md",
       "upstreamSha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd",
       "portSha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd",
+      "kind": "exact"
+    },
+    {
+      "source": "skills/why/agents/openai.yaml",
+      "target": "skills/why/agents/openai.yaml",
+      "upstreamSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
+      "portSha256": "b9b07e5ea44b7e271957aedf60277653809da9e54bd90c0833fabcb384c7dc95",
       "kind": "exact"
     }
   ]
