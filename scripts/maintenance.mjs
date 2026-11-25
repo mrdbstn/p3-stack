@@ -12,6 +12,7 @@ const contractPaths = [
   'apps/server/src/mcp/toolkits/pullRequests/tools.ts',
   'apps/server/src/mcp/toolkits/thread/tools.ts',
   'apps/server/src/mcp/toolkits/project/tools.ts',
+  'packages/contracts/src/orchestrationV2.ts',
 ];
 const sha256 = text => createHash('sha256').update(text.replaceAll('\r\n', '\n')).digest('hex');
 const api = async path => {
@@ -60,7 +61,7 @@ async function recordStable(tag) {
   if (release.prerelease || release.draft) throw new Error('Only published stable releases can be recorded');
   const { sha: commit } = await api(`repos/pingdotgg/t3code/commits/${encodeURIComponent(tag)}`);
   const files = await Promise.all(contractPaths.map(async path => ({ path, sha256: sha256(await content('pingdotgg/t3code', path, commit)) })));
-  const next = JSON.stringify({ repository: 'https://github.com/pingdotgg/t3code', tag, commit, reviewedAt: new Date().toISOString().slice(0, 10), scope: 'Reviewed stable orchestration, scheduling, PR, thread and project-tool schemas; live provider behavior is not established by these hashes.', files }, null, 2) + '\n';
+  const next = JSON.stringify({ repository: 'https://github.com/pingdotgg/t3code', tag, commit, reviewedAt: new Date().toISOString().slice(0, 10), scope: 'Reviewed stable orchestration, scheduling, PR, thread and project tools, plus workspace and structured-output types in orchestrationV2; live provider behavior is not established by these hashes.', files }, null, 2) + '\n';
   let before;
   try { before = readFileSync(resolve(root, 't3-runtime.lock.json'), 'utf8').replaceAll('\r\n', '\n'); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }

@@ -11,7 +11,7 @@ const walk = dir => readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isD
 const errors = [];
 const lock = JSON.parse(read(join(root, 'upstream.lock.json')));
 const runtime = JSON.parse(read(join(root, 't3-runtime.lock.json')));
-if (!/^v\d+\.\d+\.\d+$/.test(runtime.tag) || !/^[a-f0-9]{40}$/.test(runtime.commit) || runtime.files.length !== 6 || runtime.files.some(f => !/^[a-f0-9]{64}$/.test(f.sha256))) errors.push('Invalid reviewed stable T3 baseline');
+if (!/^v\d+\.\d+\.\d+$/.test(runtime.tag) || !/^[a-f0-9]{40}$/.test(runtime.commit) || runtime.files.length !== 7 || runtime.files.some(f => !/^[a-f0-9]{64}$/.test(f.sha256))) errors.push('Invalid reviewed stable T3 baseline');
 const sourceSkills = lock.files.filter(f => /^skills\/[^/]+\/SKILL.md$/.test(f.source));
 const installedSkills = readdirSync(join(root, 'skills')).filter(name => existsSync(join(root, 'skills', name, 'SKILL.md')));
 if (installedSkills.length !== sourceSkills.length) errors.push(`Expected ${sourceSkills.length} skills, found ${installedSkills.length}`);
