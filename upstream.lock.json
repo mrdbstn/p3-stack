@@ -373,7 +373,7 @@
       "source": "skills/poteto-mode/playbooks/babysit.md",
       "target": "skills/p3-mode/playbooks/babysit.md",
       "upstreamSha256": "06fed1fa997c8899d7365fb0f21c0177084fcb8d0561841d2eca753660f63a85",
-      "portSha256": "4a53a8c37478e6ea97866a742b46ee4c21a3046bb7ad725f9319ee00e89b026f",
+      "portSha256": "5c78bb566ecf4c393df84d76037064ca206a480d333f081c8343259941d80e0a",
       "kind": "adapted"
     },
     {
@@ -422,7 +422,7 @@
       "source": "skills/poteto-mode/playbooks/opening-a-pr.md",
       "target": "skills/p3-mode/playbooks/opening-a-pr.md",
       "upstreamSha256": "a14cf04833cd6a3eb899fb8814759c937294d0faa3da1ef09d568f45002026b4",
-      "portSha256": "d11b7474944d9fb055eb3ee21f751eb93cb28fd3828e91d1adaf5722fb5ab23a",
+      "portSha256": "8a9525b24f55a5103dd753ec0b8d0978b9f6de20267acdf3ffe30983902271fd",
       "kind": "adapted"
     },
     {
@@ -471,7 +471,7 @@
       "source": "skills/poteto-mode/playbooks/shipping.md",
       "target": "skills/p3-mode/playbooks/shipping.md",
       "upstreamSha256": "486a6211859eeacfc9a85c7a9d2632b7dddecad189a6b2551212ef274ef1d85c",
-      "portSha256": "0053d2a540b1613ab428aa4bace6db4add7684814dd6fd778372a41716311133",
+      "portSha256": "6616ed8aa3574a68f00e9269c22e35fdfa90618ead00c58770f74e6637ede88b",
       "kind": "adapted"
     },
     {

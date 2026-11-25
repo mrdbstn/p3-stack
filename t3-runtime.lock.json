@@ -1,33 +1,37 @@
 {
   "repository": "https://github.com/pingdotgg/t3code",
-  "tag": "v0.1.11",
-  "commit": "59651c1761f6c63e9b6056839067066968e6a406",
-  "reviewedAt": "2026-11-20",
-  "scope": "Reviewed stable orchestration, scheduling, PR, thread and project-tool schemas; live provider behavior is not established by these hashes.",
+  "tag": "v0.1.12",
+  "commit": "ca81b7b97a1c4b91e5ac25768d0f6629f37732fd",
+  "reviewedAt": "2026-11-25",
+  "scope": "Reviewed stable orchestration, scheduling, PR, thread and project tools, plus workspace and structured-output types in orchestrationV2; live provider behavior is not established by these hashes.",
   "files": [
     {
       "path": "packages/contracts/src/orchestratorMcp.ts",
-      "sha256": "ad980f83f0312189c11a32c4e7b80e2740eb4c6ce637f772d1b9a2c1568321dd"
+      "sha256": "e6b184c3e35bddc891cce3b2d880d6691068195daf9991a50e56eabf2d956350"
     },
     {
       "path": "packages/contracts/src/scheduledTask.ts",
-      "sha256": "317b47d17d07cf88165815e5b3ca428320ca4f19fa01d1c434eda56b6461c63b"
+      "sha256": "09e51db1aaed32cb5084ea38a1d3051b7d5f9a4aace4442f0051b33b98267cb4"
     },
     {
       "path": "apps/server/src/mcp/toolkits/orchestrator/tools.ts",
-      "sha256": "5224ca9189218d639d67fc205d602e9301043bdf59aa94db4849bef89b0cde56"
+      "sha256": "268bd452f1a6be9b0342a9ebab465193985a98527dea97a92ca0c06fc47a0531"
     },
     {
       "path": "apps/server/src/mcp/toolkits/pullRequests/tools.ts",
-      "sha256": "1c122219b96116f4b6ff567da376f9bd88de4688c065cbbedcac1fb30557195a"
+      "sha256": "11327528637ddce22a8cfba9ac52ab61931b85bafb3bbd2bc735cf10f47af737"
     },
     {
       "path": "apps/server/src/mcp/toolkits/thread/tools.ts",
-      "sha256": "62a1b5df0f6d10a45f6e8c9933a8cd4351fa4d50ad948d619d4fe0a17f8b0c67"
+      "sha256": "9f5d16a415127d64db5e577b133bc7700c562cbd7dc68737a702d014ac996d54"
     },
     {
       "path": "apps/server/src/mcp/toolkits/project/tools.ts",
-      "sha256": "9a19b91b557d5afcc7dce3016343158913e4da94801111af1a5b614b8b822cff"
+      "sha256": "ccfc7e421032d62e2849b67a495c49776b46e7bec5bf0424d7caf0ac031afca1"
+    },
+    {
+      "path": "packages/contracts/src/orchestrationV2.ts",
+      "sha256": "0b2fe4d38008086a99b73a6e3c3e9d93563154a61f15458d7fb8df7632c43eb8"
     }
   ]
 }
