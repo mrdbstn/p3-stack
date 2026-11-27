@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/pingdotgg/t3code",
-  "tag": "v0.1.12",
-  "commit": "ca81b7b97a1c4b91e5ac25768d0f6629f37732fd",
-  "reviewedAt": "2026-11-25",
+  "tag": "v0.1.13",
+  "commit": "bc0f04da94f64b5e487c598761a43b4cf06b2ac9",
+  "reviewedAt": "2026-11-27",
   "scope": "Reviewed stable orchestration, scheduling, PR, thread and project tools, plus workspace and structured-output types in orchestrationV2; live provider behavior is not established by these hashes.",
   "files": [
     {
@@ -19,11 +19,11 @@
     },
     {
       "path": "apps/server/src/mcp/toolkits/pullRequests/tools.ts",
-      "sha256": "11327528637ddce22a8cfba9ac52ab61931b85bafb3bbd2bc735cf10f47af737"
+      "sha256": "a9d300beb83eef6ad9a93b6d69f1bf42523031a5ba66c24f9fa739eb12240832"
     },
     {
       "path": "apps/server/src/mcp/toolkits/thread/tools.ts",
-      "sha256": "9f5d16a415127d64db5e577b133bc7700c562cbd7dc68737a702d014ac996d54"
+      "sha256": "cdfc21f28d996da13d16a5c0a9c16bc9c39a73f6cf0474e8a0f445214ee2a580"
     },
     {
       "path": "apps/server/src/mcp/toolkits/project/tools.ts",
@@ -31,7 +31,7 @@
     },
     {
       "path": "packages/contracts/src/orchestrationV2.ts",
-      "sha256": "0b2fe4d38008086a99b73a6e3c3e9d93563154a61f15458d7fb8df7632c43eb8"
+      "sha256": "84dc805b77a850d81ff99e67df410b8b0581b904c39afdb80cb8c9676af46fe4"
     }
   ]
 }

@@ -35,7 +35,7 @@ The root `agents/` files are retained from the original port for source compatib
 
 ## Compatibility evidence
 
-The runtime contract was checked against **stable T3 Code v0.1.12**, commit `ca81b7b97a1c4b91e5ac25768d0f6629f37732fd`, on November 25, 2026. `t3-runtime.lock.json` records seven sources: the prior six orchestration, scheduling, PR, thread, and project sources plus orchestrationV2's workspace and structured-output types. The review of that broad contract file is scoped to those types. Nightly-only APIs are not required. Scoped thread search is available but skips subagents and is not exhaustive. Thread reads default to newest items; complete audits start with `afterPosition: -1`. PR watches persist across wakeups, and `task_status` consumes completed results rather than polling running tasks.
+The runtime contract was checked against **stable T3 Code v0.1.13**, commit `bc0f04da94f64b5e487c598761a43b4cf06b2ac9`, on November 27, 2026. `t3-runtime.lock.json` records seven sources: the prior six orchestration, scheduling, PR, thread, and project sources plus orchestrationV2's workspace and structured-output types. The review of that broad contract file covers those types and the release delta; its hash is not an audit of every event. Nightly-only APIs are not required. Scoped thread search is available but skips subagents and is not exhaustive. Thread reads default to newest items; complete audits start with `afterPosition: -1`. PR watches persist across wakeups, and `task_status` consumes completed results rather than polling running tasks.
 
 The 0.1.8 review covers optional `executedModel` evidence, `freshContext` sends, opt-in `freshSession` schedules, and private single-value secret requests. Delegation inputs, worktree isolation, model catalog options, completed-task consumption, project-scoped history, schedule binding, and parent-only PR watches retain their prior contracts. A PR error variant was removed without changing these call shapes. Actual execution models qualify diversity claims; absent evidence stays a gap. Fresh-session features do not replace independent delegates or reset existing coordinators by default.
 
@@ -45,11 +45,13 @@ The 0.1.11 review adds native PR reads/lists/creation/update/replies/reviews/mer
 
 The 0.1.12 review updates PR reads to `include` and top-level `headSha`, approval head pins, creation's branch push, partial-count evidence and already-ended/already-green watch outcomes. It qualifies isolation across tracked repositories, documents optional typed outputs and multi-field private file delivery, and preserves coordinator context/binding. Workflows and connections remain optional beta features, without restoring Orchestrate or bypassing human gates. [Review evidence](maintenance/t3-0.1.12-review.md) records immutable implementation checks and the live T3/provider gap.
 
-- https://github.com/pingdotgg/t3code/blob/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd/apps/server/src/mcp/toolkits/orchestrator/tools.ts
-- https://github.com/pingdotgg/t3code/blob/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd/apps/server/src/mcp/toolkits/pullRequests/tools.ts
-- https://github.com/pingdotgg/t3code/blob/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd/packages/contracts/src/orchestratorMcp.ts
-- https://github.com/pingdotgg/t3code/blob/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd/apps/server/src/mcp/toolkits/thread/tools.ts
-- https://github.com/pingdotgg/t3code/blob/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd/apps/server/src/mcp/toolkits/project/tools.ts
-- https://github.com/pingdotgg/t3code/blob/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd/packages/contracts/src/orchestrationV2.ts
+The 0.1.13 review adds native creation's push-hook approval/skip-note handling and the guard on provider agent-mode options. Respect declines, report skipped verification, and keep effective runtime/managed limits. The unchanged async delegation, worktree, history, typed-output, secret, schedule and watch schemas retain their existing use. Workflow subject filtering remains optional and does not replace the coordinator. [Review evidence](maintenance/t3-0.1.13-review.md) records immutable handler checks and the live-runtime limitation.
+
+- https://github.com/pingdotgg/t3code/blob/bc0f04da94f64b5e487c598761a43b4cf06b2ac9/apps/server/src/mcp/toolkits/orchestrator/tools.ts
+- https://github.com/pingdotgg/t3code/blob/bc0f04da94f64b5e487c598761a43b4cf06b2ac9/apps/server/src/mcp/toolkits/pullRequests/tools.ts
+- https://github.com/pingdotgg/t3code/blob/bc0f04da94f64b5e487c598761a43b4cf06b2ac9/packages/contracts/src/orchestratorMcp.ts
+- https://github.com/pingdotgg/t3code/blob/bc0f04da94f64b5e487c598761a43b4cf06b2ac9/apps/server/src/mcp/toolkits/thread/tools.ts
+- https://github.com/pingdotgg/t3code/blob/bc0f04da94f64b5e487c598761a43b4cf06b2ac9/apps/server/src/mcp/toolkits/project/tools.ts
+- https://github.com/pingdotgg/t3code/blob/bc0f04da94f64b5e487c598761a43b4cf06b2ac9/packages/contracts/src/orchestrationV2.ts
 
 Automated checks verify source coverage, principle parity, recorded adaptations, installed references and the worker pointer, watcher behavior, and statechart rendering from the recorded TLC corpus. The plan-checker tests were removed with the source checker; unrelated checks remain. These are not a live model-behavior evaluation. Before widening autonomous use, run a T3 smoke task that creates an isolated worker, returns evidence, links a disposable PR, has the parent watch it, and cancels every monitor on completion. Tool absence must be reported rather than silently replacing the verification bar.
