@@ -6,7 +6,7 @@ The reviewed mirror baseline is pstack **0.15.48**, commit `9dd340887a043aa1da07
 
 pstack helps agents write less, higher quality code through deliberate design, independent review, and proof on the real application. Use individual skills when you need them, or let `/p3-mode` route rigorous work.
 
-Compatibility tracks **stable T3 Code v0.1.12**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination. The runtime contract covers reported execution models, model-family diversity and Arena's different-vendor judge, scoped history pagination/search, native PR/CI tools with current-head pins and watch-result handling, multi-repository isolation limits, optional structured outputs and fresh-session scheduling, and private secret handoff. Beta Workflows do not replace the source's existing playbooks.
+Compatibility tracks **stable T3 Code v0.1.13**, pinned in [t3-runtime.lock.json](t3-runtime.lock.json). Nightly-only functionality stays optional. Runtime capabilities must still be checked for the installed app/provider combination. The runtime contract covers reported execution models, model-family diversity and Arena's different-vendor judge, scoped history pagination/search, native PR/CI tools with current-head pins, watch results and push-hook approval notes, provider mode restrictions, multi-repository isolation limits, optional structured outputs and fresh-session scheduling, and private secret handoff. Beta Workflows do not replace the source's existing playbooks.
 
 ## Install in WSL or Linux
 

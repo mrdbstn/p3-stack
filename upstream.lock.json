@@ -422,7 +422,7 @@
       "source": "skills/poteto-mode/playbooks/opening-a-pr.md",
       "target": "skills/p3-mode/playbooks/opening-a-pr.md",
       "upstreamSha256": "a14cf04833cd6a3eb899fb8814759c937294d0faa3da1ef09d568f45002026b4",
-      "portSha256": "8a9525b24f55a5103dd753ec0b8d0978b9f6de20267acdf3ffe30983902271fd",
+      "portSha256": "f6dc9be2c80b045917c26677384dcd0ede46854a5d62d67be8dc8d7b2cff616f",
       "kind": "adapted"
     },
     {
